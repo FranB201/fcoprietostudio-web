@@ -1,16 +1,17 @@
 import { Box } from "@mui/material"
+import { NavBar } from "../components"
+import "../styles/HomeStyle.css"
 
 
 export const HomeLayout = ({ children }) => {
   return (
 
-        <Box sx={{ display:'flex' }}>
+        <Box className="HomeLayout">
 
             {/* Navbar */}
+            <NavBar />
 
-            <Box component='main'
-                sx={{ flexGrow: 1, p: 3 }}
-            >
+            <Box component='main' className="HomeLayout-main">
 
             { children }
 

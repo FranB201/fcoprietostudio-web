@@ -1,0 +1,20 @@
+
+  
+  .NavBar-logo {
+
+    height: 300px;
+    width: 100;
+    
+
+  }
+  
+
+  .HomeLayout {
+    display: flex;
+  }
+  
+  .HomeLayout-main {
+    flex-grow: 1;
+    padding: 3px;
+    
+  }

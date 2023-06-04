@@ -6,6 +6,7 @@
     width: 100;
   
   }
+ 
   
 
   .HomeLayout {
@@ -16,4 +17,11 @@
     flex-grow: 1;
     padding: 3px;
     
+  }
+
+
+  @media (max-width: 600px) {
+    .NavBar-logo {
+      height: 200px;
+    }
   }

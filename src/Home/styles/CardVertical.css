@@ -1,0 +1,30 @@
+.card-wrapper {
+    position: relative;
+    /*width: 20%;*/
+  }
+
+  .image-Card{
+    width: "30%";
+    height: "auto";
+  }
+  .div-image {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%;
+    height: auto;
+    z-index: 1;
+  }
+  .content-Card{
+      text-align: center;
+      background-color: #dce0e4;
+      padding-top: 3em;
+  }
+  
+  
+  
+  
+  
+  
+  

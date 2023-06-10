@@ -1,5 +1,6 @@
 import { Typography } from "@mui/material"
 import { HomeLayout } from "../layout/HomeLayout"
+import { CardVertical } from "../components"
 
 
 export const HomePage = () => {
@@ -7,7 +8,18 @@ export const HomePage = () => {
 
         <HomeLayout>
 
-            <Typography>Bienvenido a tu centro deportivo</Typography>
+        <div className="row">
+            <div className="col-12 col-md-4">
+                <CardVertical />
+            </div>
+            <div className="col-12 col-md-4">
+                <CardVertical />
+            </div>
+            <div className="col-12 col-md-4">
+                <CardVertical />
+            </div>
+        </div>
+
 
          </HomeLayout>
 

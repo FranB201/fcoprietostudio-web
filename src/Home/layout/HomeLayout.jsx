@@ -1,25 +1,37 @@
 import { Box } from "@mui/material"
-import { NavBar } from "../components"
+import { NavBar, Footer, SideBar } from "../components"
 import "../styles/HomeStyle.css"
-
-
+import React, { useState } from 'react';
+import MenuIcon from '@mui/icons-material/Menu';
 export const HomeLayout = ({ children }) => {
-  return (
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleSidebar = () => {
+        console.log(isOpen)
+        setIsOpen(!isOpen);
+    };
 
-        <Box className="HomeLayout">
+    return (
+        <>
+            <Box className="HomeLayout">
+                {/* Navbar */}
+                <NavBar />
 
-            {/* Navbar */}
-            <NavBar />
+                {/* Botón para abrir el Sidebar en pantallas pequeñas */}
+                <button className="navbar-toggler" type="button" onClick={toggleSidebar}>
+                <MenuIcon />
+                </button>
+            
+                {/* Sidebar */}
+                <SideBar isOpen={isOpen} toggle={toggleSidebar} />
 
-            <Box component='main' className="HomeLayout-main">
-
-            { children }
-
+                <Box component='main' className="HomeLayout-main">
+                    { children }
+                </Box>
             </Box>
 
-            {/* BottomBar */}
-
-        </Box>
-
+            <Box>
+                <Footer />
+            </Box>
+        </>
     )
 }

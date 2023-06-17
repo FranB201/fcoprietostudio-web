@@ -1,22 +1,37 @@
 
-  
+
   .NavBar-logo {
 
     height: 300px;
-    width: 100;
   
   }
- 
-  
+  .nav-link {
+
+    color: white;
+
+  }
+
 
   .HomeLayout {
     display: flex;
+    min-height: 100vh;
+    width: '100%';
+    background-color:#e8ebed
   }
   
   .HomeLayout-main {
+    justify-content: center;
+    align-items: center;
     flex-grow: 1;
-    padding: 3px;
+    background-color:#e8ebed;
+  
     
+  }
+  .background-sections{
+    background-color:#e8ebed;
+    border: 12px solid white;
+
+
   }
 
 
@@ -25,3 +40,124 @@
       height: 200px;
     }
   }
+
+
+  .homeImg-container {
+    width: 100%;
+    height: 50vh; /* Ajusta la altura a tu necesidad */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+
+.homeImg-container img {
+  width: 100%;
+  height: 100%;  /* Asegúrate de que la altura sea automática para mantener las proporciones de la imagen */
+  object-fit: cover;  /* Esto hará que la imagen se ajuste a su contenedor mientras mantiene sus proporciones */
+}
+
+.card-section {
+  padding: 0 15% 0 15%;
+}
+
+@media (min-width: 2000px) {
+  .HomeLayout-main {
+     background-color: red;
+     margin-left: 20%;
+     margin-right: 20%;
+  }
+}
+
+.container-proximamente {
+
+  transform: rotate(-5deg); /* Ajusta el ángulo de inclinación */
+  background-color: black;
+  position: relative;
+  overflow: hidden;
+  height: 80px; /* Ajusta a tu necesidad */
+  margin-bottom: 80px;
+  width:110%
+}
+
+.texto-proximamente {
+  color: yellow;
+  position: absolute;
+  white-space: nowrap;
+  font-size: 4em; /* Ajusta el tamaño del texto */
+  animation: mover 50s linear infinite; /* Ajusta la velocidad de la animación */
+  font-weight: 800;
+  word-spacing: 40px; /* Ajusta el espacio entre las palabras */
+  font-family: Anton;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.texto-proximamente div {
+  margin: 0 20px; /* Ajusta este valor a tu preferencia */
+}
+
+@keyframes mover {
+  0% {
+      left: 0;
+  }
+  100% {
+      left: -50%;
+  }
+}
+
+
+.background-sections {
+  position: relative;
+}
+
+.background-Hola{
+
+  background: linear-gradient(90deg, rgba(255,255,255,0.3) 2%, rgba(184,184,184,0.5) 39%, rgba(129,129,129,0.3) 98%);
+}
+
+
+.background-dicenDeMi {
+  background-image: linear-gradient(to right, rgba(0, 180, 219, 0.2), rgba(0, 131, 176, 0.2));
+}
+
+
+
+.h1Cardvertical h1, .h1EncuentraTu h1 {
+  position: relative;
+  display: inline-block; /* para que la línea ocupe sólo el espacio del texto */
+}
+
+.h1Cardvertical h1::after, .h1EncuentraTu h1::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 4px; /* incrementa esto para una línea más gruesa */
+  background: #1F92D1;
+  transform: scaleX(0);
+  transform-origin: center;
+  transition: transform .3s;
+}
+
+
+
+.background-sections:hover .h1Cardvertical h1::after, 
+.background-sections:hover .h1EncuentraTu h1::after {
+  transform: scaleX(1);
+}
+
+
+.banner-container{
+
+  overflow: hidden;
+  position: relative;
+
+
+}
+
+.holaNdReview-Section{
+
+/*   height: 50vh;
+ */}
+

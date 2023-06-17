@@ -1,0 +1,25 @@
+.navbar-horizontal, .navbar-toggler {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-horizontal, .navbar-toggler {
+        display: block;
+    }
+}
+
+.navbar-horizontal, .navbar-toggler {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-horizontal {
+        display: block;
+    }
+}

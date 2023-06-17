@@ -1,26 +1,27 @@
 import React from 'react'
 import "../../styles/CardVertical.css"
-export const CardVertical = () => {
+
+
+ 
+export const CardVertical = ({ imageUrl, title, descriptionItems }) => {
     return (
         
         <div className="card-wrapper">
             <div className="div-image">
-            <img className="img-thumbnail"
-                    src="../../../src/assets/cardImages/grupxpress.jpg"
-                    alt="..."
-                />
+            <img className="img-thumbnail" src={imageUrl} alt={title} />
             </div>
             <div className="card">
                 
                 <div className="card-body content-Card">
-                    <h5 className="card-title">Card title</h5>
-                    <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h3 className="card-title">{title}</h3>
 
                     <ul>
-                        <li>dcdjfcdjfjdf</li>
-                        <li>fdfdfd</li>
-                        <li>fdfdf</li>
-                        <li>fdfdfgd</li>
+                    {descriptionItems.map((item, index) => (
+                    <li key={index}>
+                        {item}
+                        <br />
+                    </li>
+                    ))}
                     </ul>
                 </div>
             </div>

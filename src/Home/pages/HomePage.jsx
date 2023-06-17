@@ -6,7 +6,7 @@ import studioCard from "../../../src/assets/cardImages/studioCard.png"
 import grupxpressCard from "../../../src/assets/cardImages/grupxpressCard.png"
 import personaltrainingCard from "../../../src/assets/cardImages/personaltrainingCard.png"
 import proximamente from "../../../src/assets/cardImages/proximamente.png"
-import HomeImg from "../../../src/assets/HomeImage/HomeImg.png"
+import HomeImg3 from "../../../src/assets/HomeImage/HomeImg3.png"
 import WarningIcon from '@mui/icons-material/Warning';
 
 
@@ -17,8 +17,11 @@ export const HomePage = () => {
 
         <HomeLayout>
 
-<div className="homeImg-container" style={{ backgroundImage: `url(${HomeImg})` }}>
-    </div>
+            <div className="homeImg-container" style={{ backgroundImage: `url(${HomeImg3})` }}> 
+                <div className="motivationSentence">
+                    <span> el dolor pasa, el sudor seca, el cansancio termina. Pero hay algo que nunca desaparecerá: la satisfacción de haberlo logrado. </span>
+                </div>
+            </div>
 
 
             <div className="background-sections">

@@ -1,71 +1,94 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
 .card-wrapper {
-    position: relative;
-    max-width: 320px; /* Ajusta según sea necesario */
-    margin: auto;
-  }
+  position: relative;
+  max-width: 320px;
+  /* Ajusta según sea necesario */
+  margin: auto;
+  transition: transform 0.3s;
 
-  .image-Card{
-    width: "30%";
-    height: "auto";
+}
 
-    
-  }
-  .div-image {
-    position: absolute;
-    top: -35%;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    
-  }
-  .content-Card{
-      text-align: left;
-      background-color: #dce0e4;
-      padding-top: 3em;
-      padding-bottom: 3em;
-      color: #797F86;
-      border-radius: 25px;
-      border: 1px solid #fff;
+.card-wrapper:hover {
+  position: relative;
+  transform: scale(1.1);
+}
 
-  }
-  
-  .card-title {
-    text-align: center;
-    color: black;
-    margin-bottom: 20px;
-    font-weight: 600;
+.card-wrapper:active {
+  position: relative;
+  transform: scale(1.05);
+}
 
 
-  }
-  .h1Cardvertical{
-    font-weight: 800 !important;
-    text-align: center;
-    margin-bottom: 10%;
-   
-    
-  }
-  .card{
-    border-radius: 25px;
-    margin-bottom: 5em;
-  }
-  
-
-  .h1EncuentraTu{
-
-    text-align: center;
-    margin-top: 5%;
+.image-Card {
+  width: "30%";
+  height: "auto";
 
 
-  }
+}
 
-  .img-thumbnail {
-    width: 150px;
-    height: 150px;
-    border-radius: 25px;
-    object-fit: cover; /* Para mantener la proporción de la imagen */
+.div-image {
+  position: absolute;
+  top: -35%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+
+}
+
+.content-Card {
+  text-align: left;
+  background-color: #dce0e4;
+  padding-top: 3em;
+  padding-bottom: 3em;
+  color: #797F86;
+  border-radius: 25px;
+  border: 1px solid #fff;
+
+}
+
+.card-title {
+  text-align: center;
+  color: black;
+  margin-bottom: 20px;
+  font-weight: 600;
+
+
+}
+
+.h1Cardvertical {
+  font-size: 18px;
+  font-family: Poppins;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 10%;
+  letter-spacing: -0.05em;
+  color: #ffffff;
+
+}
+
+.card {
+  border-radius: 25px;
+  margin-bottom: 5em;
+}
+
+
+.h1EncuentraTu {
+
+  text-align: center;
+  margin-top: 5%;
+
+
+}
+
+.img-thumbnail {
+  width: 150px;
+  height: 150px;
+  border-radius: 25px;
+  object-fit: cover;
+  /* Para mantener la proporción de la imagen */
 }
 
 .image-container {
@@ -83,9 +106,12 @@
 
 @media (max-width: 575.98px) {
   .card-wrapper {
-    margin-top: 4em; /* Ajusta este valor según lo que necesites */
-    margin-bottom: 4em; /* Ajusta este valor según lo que necesites */
+    margin-top: 4em;
+    /* Ajusta este valor según lo que necesites */
+    margin-bottom: 4em;
+    /* Ajusta este valor según lo que necesites */
   }
+
   .card-title {
     margin-top: 1em;
   }
@@ -93,14 +119,22 @@
 
 @media (max-width: 575.98px) {
   .h1Cardvertical h1 {
-    font-size: 2em; /* Ajusta este valor según lo que necesites */
+    font-size: 2em;
+    /* Ajusta este valor según lo que necesites */
     margin-top: 3em;
   }
 
   .h1EncuentraTu h1 {
-    font-size: 2em; /* Ajusta este valor según lo que necesites */
-    margin-bottom: 1.5em;
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10%;
+    letter-spacing: -0.05em;
+    color: #ffffff;
 
   }
-}
 
+
+  
+}

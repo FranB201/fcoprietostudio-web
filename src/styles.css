@@ -31,8 +31,11 @@ body {
 
 h1 {
   font-size: 3.2em;
-  line-height: 1.1;
+  font-family: Poppins;
   font-weight: 800;
+  text-align: center;
+  letter-spacing: -0.05em;
+  color: #ffffff;
 }
 
 button {

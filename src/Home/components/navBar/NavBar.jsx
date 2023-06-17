@@ -3,7 +3,7 @@ import { AppBar, Grid, IconButton, Toolbar, Typography, Box } from "@mui/materia
 import { styled } from "@mui/system";
 import MenuIcon from '@mui/icons-material/Menu';
 import "../../styles/NavBarStyle.css";
-import logo from "../../../../src/assets/logo/LogoNavBar.png";
+import logo from "../../../../src/assets/logo/LogoSinFondo.png";
 
   
 export const NavBar = () => {
@@ -12,7 +12,7 @@ export const NavBar = () => {
           position="fixed"
           className="navbar-horizontal"
           sx={{ 
-              backgroundColor:'#1F92D1',
+              backgroundColor:'#124559',
               height:100,
           }}
       >

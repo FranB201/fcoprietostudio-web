@@ -11,14 +11,35 @@
 
   }
 
+  .startRadial{
+
+/*  background: rgb(56,166,226);
+background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 24%, rgba(43,121,163,1) 38%, rgba(41,100,130,1) 51%, rgba(40,99,129,1) 62%, rgba(16,78,102,1) 80%);
+ */
+/*  background: rgb(31,146,209);
+ background: radial-gradient(circle, rgba(31,146,209,1) 10%, rgba(41,99,129,1) 54%, rgba(40,99,129,1) 64%, rgba(16,78,102,1) 78%);
+ */
+ background: rgb(88,123,143);
+ background: radial-gradient(circle, rgba(88,123,143,1) 2%, rgba(41,99,129,1) 30%, rgba(34,85,111,1) 64%, rgba(16,78,102,1) 78%);
+/*     background: rgb(56,166,226);
+    background: radial-gradient(circle, rgba(56,166,226,1) 7%, rgba(31,146,209,1) 18%, rgba(41,100,130,1) 37%, rgba(40,99,129,1) 58%); */
+  }
+
+  .backgroundradialconinue{
+  /* background-color: #104e66 */
+    background-color: #286381
+  } 
+
+
 
   .HomeLayout {
     display: flex;
     min-height: 100vh;
     width: '100%';
-    background-color:#e8ebed
+    background-color:#e8ebed;
+    padding-top: 75px;
   }
-  
+
   .HomeLayout-main {
     justify-content: center;
     align-items: center;
@@ -31,7 +52,11 @@
     background-color:#e8ebed;
     border: 12px solid white;
 
+  }
 
+  .encuentraTuEntrenamiento-container {
+
+    background-color:#01161E;
   }
 
 
@@ -45,6 +70,7 @@
   .homeImg-container {
     width: 100%;
     height: 80vh; /* Ajusta la altura a tu necesidad */
+    
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -59,22 +85,7 @@
   object-fit: cover;  /* Esto hará que la imagen se ajuste a su contenedor mientras mantiene sus proporciones */
 }
 
-.motivationSentence{
 
-  
-  color: #ffffff;
-  font-family: var(--s-font-05b6dab0);
-  font-size: 64px;
-  font-weight: 700;
-  height: auto;
-  letter-spacing: -0.05em;
-  line-height: 1;
-  margin: 25px 0px 25px 0px;
-  text-align: left;
-  width: auto;
-  max-width: 100%;
-  justify-content: flex-start;
-}
 
 
 .card-section {
@@ -180,4 +191,86 @@
 
 /*   height: 50vh;
  */}
+
+
+
+
+
+
+.motivation-text {
+  color: #ffffff;
+  /* font-family: var(--s-font-05b6dab0); */
+  letter-spacing: -0.05em;
+  text-align: left;
+  line-height: 1;
+  justify-content: flex-start;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  margin: 25px 0px 25px 0px;
+}
+.motivationSentence{
+  font-size: 64px;
+  font-weight: 700;
+}
+.img-text{
+  padding-top: 2em;
+  padding-left: 4em
+}
+.title-img-text{
+  font-size: 19px;
+  font-weight: 600;
+  line-height: 1.4;
+  
+  
+}
+.footer-img-text{
+  font-weight: 400;
+  font-size: 22px;
+  width: 70%;
+  max-width: 70%;
+  line-height: 1.;
+}
+a.join-now {
+  display: inline-block; /* Añadido */
+  width: 30%; /* Ahora esto debería funcionar */
+  height: 50px; /* Añadido para incrementar la altura */
+  line-height: 50px; /* Añadido para centrar el texto verticalmente */
+  background: linear-gradient(180deg, #65bce8 0%, #306485 100%);
+  transition: all .3s;
+  text-align: center; /* Añadido para centrar el texto horizontalmente */
+  border-bottom: 0px solid rgba(0, 0, 0, 0);
+  border-left: 0px solid rgba(0, 0, 0, 0);
+  border-radius: 32px;
+  border-right: 0px solid rgba(0, 0, 0, 0);
+  border-top: 0px solid rgba(0, 0, 0, 0);
+}
+
+
+a.join-now:hover {
+  background: linear-gradient(180deg, #306485 0%, #124559 100%);
+  transition: all .3s;
+  color: #ffffff;
+}
+
+.text-button-join-now {
+  padding-right: 10px;
+
+}
+
+.text-button-motivation-text{
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 700;
+  height: auto;
+  line-height: 1.4;
+  margin: 0px 50px 0px 0px;
+  text-align: center;
+  width: auto;
+  max-width: calc(100% - 50px);
+  justify-content: center;
+}
+.container-button-motivation-text{
+  width: 20%;
+}
 

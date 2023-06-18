@@ -307,6 +307,7 @@ a.join-now {
 .motivation-text-encuentraTuEnt {
   color: #ffffff;
   font-family: Poppins;
+  font-weight: 700;
   letter-spacing: -0.05em;
   text-align: left;
   line-height: 1.4;
@@ -315,6 +316,7 @@ a.join-now {
   width: auto;
   margin: 5px 0px 25px 0px;
 }
+
 .container-button-motivation-text{
   width: 100%; /* Para pantallas pequeñas, el contenedor ocupará el 100% del ancho */
 }
@@ -352,8 +354,10 @@ a.join-now:hover {
 
 .facts-container{
 
-  height: auto;
+  height: 800px;
   background-color: #104e66;
+ padding-top: 7em;
+  
 }
 
 .cardFact-section{
@@ -423,12 +427,20 @@ a.join-now:hover {
   line-height: 1.5;
   text-align: center;
   justify-content: center;
+  display: block; /* Hace que el elemento span se comporte como un bloque, lo que permite agregar margen superior e inferior */
+  margin: 45px 0; /* Agrega un margen de 20px arriba y abajo */
 
+}
+.info-hola{
+  padding-top: 10em;
 }
 
 .thick-white-line {
-  border: 1px solid white;
-  background-color: white;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+  width: 100%; /* Ajusta este valor para controlar la longitud de la línea */
+  margin: 0 auto; /* Centra la línea horizontalmente */
 }
 
 
@@ -440,6 +452,18 @@ a.join-now:hover {
 
  background: rgb(88,123,143);
  background: radial-gradient(circle, rgba(88,123,143,1) 2%, rgba(41,99,129,1) 30%, rgba(34,85,111,1) 64%, rgba(16,78,102,1) 78%);
+}
+
+
+.hola-img-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100%; /* Asegúrate de que el contenedor tenga una altura establecida */
+}
+.hola-img-info {
+  max-width: 100%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */
+  height: auto; /* Mantén la proporción de la imagen */
 }
 
 @media (max-width: 600px) {
@@ -460,7 +484,7 @@ a.join-now:hover {
     width: 60%; 
   }
   .card-section {
-    padding: 5px 12% 0 12%;
+    padding: 5px 12% 0 5%;
   }
   .container-button-motivation-text{
     width: 100%; 
@@ -603,6 +627,7 @@ a.join-now:hover {
     .sub-hola-contacto{
 
       font-size: 16px;
+      
 
     }
 
@@ -681,7 +706,7 @@ a.join-now:hover {
     width: 100%; 
   }
   .card-section {
-    padding: 1% 12% 10% 12%;
+    padding: 1% 12% 10% 10%;
   }
   .homeImg-container {
     height: 60vh; /* Ajusta la altura a tu necesidad */
@@ -718,7 +743,7 @@ a.join-now:hover {
     width: 100%; 
   }
   .card-section {
-    padding: 15px 12% 0 12%;
+    padding: 15px 12% 0 5%;
   }
   .homeImg-container {
     height: 80vh; /* Ajusta la altura a tu necesidad */
@@ -757,7 +782,7 @@ a.join-now:hover {
   }
 
   .card-section {
-    padding: 15px 12% 0 12%;
+    padding: 15px 12% 0 5%;
   }
   .homeImg-container {
     height: 70vh; /* Ajusta la altura a tu necesidad */
@@ -772,6 +797,11 @@ a.join-now:hover {
 
   .title-img-text {
     font-size: 15px;
+  }
+  .dicenDeMi-Title{
+
+    margin-top: 45px;
+
   }
   
 }

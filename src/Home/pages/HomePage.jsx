@@ -11,7 +11,10 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
 import RestaurantIcon from '@mui/icons-material/Restaurant';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Fade } from "react-awesome-reveal";
+import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
+import HolaImg from "../../../src/assets/infoImage/fisicocultirismo-francisco-prieto-studio.jpg"
 
 
 
@@ -162,7 +165,7 @@ export const HomePage = () => {
             </div>
             <div>
 
-                <div className="facts-container rezise p-5">
+                <div className="facts-container rezise ">
 
 {/*                     <Fade direction="up" triggerOnce={true} fraction={0.6} className="fade-element">
  */}
@@ -218,16 +221,29 @@ export const HomePage = () => {
 
                 <div id="contacto" className="row hola-subcontainerBody">
                     <div className="col-lg-6 hola-img-container">
-                        <img className="hola-img-info" src="src/assets/infoImage/fisicocultirismo-francisco-prieto-studio.jpg"></img>
+                    <img className="hola-img-info" src={HolaImg} alt="imagen de holaSection"/>
 
                     </div>
-                    <div className="col-lg-6">
-                        <hr className="thick-white-line"></hr>
-                        <span className="sub-hola-contacto">¿Aún con dudas?, escribenos al email</span>
-                        <hr className="thick-white-line"></hr>
-                        <span className="sub-hola-contacto">¿Aún con dudas?, escribenos al email</span>
+                    <div className="col-lg-6 info-hola">
+                    <hr className="thick-white-line"></hr>
+                    <span className="sub-hola-contacto">
+                        <MailOutlineIcon style={{ color: 'white', marginRight: '10px' }}/>
+                        ¿Necesitas más información? Escríbenos a <br /><strong>hola@franciscoprietostudio.es</strong>
+                    </span>
+                    <hr className="thick-white-line"></hr>
+                    <span className="sub-hola-contacto">
+                        <LocalPhoneIcon style={{ color: 'white', marginRight: '10px' }}/>
+                        ¿Prefieres una conversación directa? <br />Llámanos al  
+                        <strong> 693 02 32 21</strong>
+                    </span>
+                </div>
 
-                    </div>
+
+
+
+
+
+
                 </div>
             </div>
 

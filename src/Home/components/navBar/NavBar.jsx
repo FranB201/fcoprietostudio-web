@@ -6,6 +6,8 @@ import "../../styles/NavBarStyle.css";
 import logo from "../../../../src/assets/logo/LogoSinFondo.png";
 
   
+
+
 export const NavBar = () => {
     return (
         <AppBar
@@ -19,38 +21,30 @@ export const NavBar = () => {
             }}
         >
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                <Box sx={{ flex: 1 }}>
+                <Box sx={{ flex: 0.5, display: { xs: 'none', md: 'block' } }}>
                     <a className="nav-link" href="#hola">Hola</a>
                 </Box>
-                <Box sx={{ flex: 2 }}>
+                <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' } }}>
                     <a className="nav-link" href="#comoEmpezar">Como empezar</a>
                 </Box>
-                <Box sx={{ flex: 1 }}>
+                <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' } }}>
                     <a className="nav-link" href="#entrenamientos">Entrenamientos</a>
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'center', flex: 1 }}>
                     <img src={logo} alt="logo" className="NavBar-logo"/>
                 </Box>
-                <Box sx={{ flex: 2 }}>
+                <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' } }}>
                     <a className="nav-link" href="#testimonios">Dicen de mi</a>
                 </Box>
-                <Box sx={{ flex: 1 }}>
+                <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' } }}>
                     <a className="nav-link" href="#contacto">Contacto</a>
                 </Box>
-                <Box sx={{ flex: 1 }}>
+                <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' } }}>
                     <a className="nav-link" href="#acceso">Acceso</a>
                 </Box>
             </Toolbar>
         </AppBar>
     )
 }
-
-
-
-
-
-
-
-
 
 

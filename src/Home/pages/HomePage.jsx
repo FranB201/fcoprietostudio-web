@@ -164,8 +164,8 @@ export const HomePage = () => {
 
                 <div className="facts-container rezise p-5">
 
-                    <Fade direction="up" triggerOnce={true} fraction={0.6} className="fade-element">
-
+{/*                     <Fade direction="up" triggerOnce={true} fraction={0.6} className="fade-element">
+ */}
                         <div className="row cardFact-section " >
                             <div id="experience" className="col-lg-4 col-md-6 col-sm-12">
                                 <CardVerticalFact
@@ -179,7 +179,7 @@ export const HomePage = () => {
                                 />
                             </div>
                             <div id="interview" className="col-lg-4 col-md-6 col-sm-12 interview-card">
-                                <CardVerticalFact
+                                <CardVerticalFact sx={{height:900}}
                                     iconCard={<AssignmentIndIcon className="fact-icon" style={{ fontSize: 80 }} />}
                                     title="Entrevista inicial"
                                     descriptionItem={`Escuchamos a nuestros clientes, en una entrevista incial, evaluamos
@@ -200,8 +200,8 @@ export const HomePage = () => {
                             </div>
                         </div>
 
-                    </Fade>
-
+{/*                     </Fade>
+ */}
                 </div>
 
 

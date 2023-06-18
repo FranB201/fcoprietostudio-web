@@ -10,6 +10,11 @@
 
 }
 
+
+.interview-card .cardFact-wrapper {
+  height: 900px;
+}
+
 .startRadial {
 
   /*  background: rgb(56,166,226);
@@ -287,6 +292,7 @@ a.join-now {
 .motivation-text {
   color: #ffffff;
   font-family: Poppins;
+  font-weight: 700;
   letter-spacing: -0.05em;
   text-align: left;
   line-height: 1;
@@ -349,6 +355,12 @@ a.join-now:hover {
   height: auto;
   background-color: #104e66;
 }
+
+.cardFact-section{
+
+  margin-top: 5em;
+}
+
 
 .fact-icon{
   color: #1F92D1
@@ -533,6 +545,7 @@ a.join-now:hover {
     margin-left: 15px; /* o el valor que funcione mejor en tu caso */
   }
 
+
   
 }
 
@@ -597,8 +610,15 @@ a.join-now:hover {
 
     .hola-img-info{
 
-
+      margin-left: 2em;
       width: 80%;
+    }
+
+    .hola-subcontainerBody{
+
+      margin: 2em;
+
+ 
     
     }
 
@@ -614,7 +634,7 @@ a.join-now:hover {
 /* Estilo para pantallas pequeñas (móviles en modo horizontal y tabletas en modo vertical) */
 @media (min-width: 481px) and (max-width: 768px) {
   a.join-now {
-    width: 45%; 
+    width: 200px; 
   }
   .card-section {
     padding: 45px 12% 0 12%;
@@ -653,7 +673,7 @@ a.join-now:hover {
 /* Estilo para pantallas medianas (tabletas en modo horizontal, pequeños ordenadores) */
 @media (min-width: 769px) and (max-width: 1024px) {
   a.join-now {
-    width: 25%; 
+    width: 200px; 
   }
 
  
@@ -691,7 +711,7 @@ a.join-now:hover {
 
 @media (min-width: 1024px) and (max-width: 1999px) {
   a.join-now {
-    width: 30%; 
+    width: 40%; 
   }
 
   .container-button-motivation-text{
@@ -705,8 +725,8 @@ a.join-now:hover {
     
   } 
   .img-text{
-    padding-top: 2em;
-    padding-left: 2em;
+    padding-top: 4.5em;
+    padding-left: 2.5em;
     padding-right: 5em;
   }
   .motivationSentence {

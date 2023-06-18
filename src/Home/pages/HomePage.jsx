@@ -1,16 +1,16 @@
-import { Typography } from "@mui/material"
+
 import { HomeLayout } from "../layout/HomeLayout"
-import { CardVertical, CardReview } from "../components"
+import { CardVertical, CardReview, CardVerticalFact } from "../components"
 import studioCard from "../../../src/assets/cardImages/studioCard.png"
 import grupxpressCard from "../../../src/assets/cardImages/grupxpressCard.png"
 import personaltrainingCard from "../../../src/assets/cardImages/personaltrainingCard.png"
-import proximamente from "../../../src/assets/cardImages/proximamente.png"
 import HomeImg3 from "../../../src/assets/HomeImage/HomeImg5.png"
 import WarningIcon from '@mui/icons-material/Warning';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
-import SkipNextIcon from '@mui/icons-material/SkipNext';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
+import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
+import RestaurantIcon from '@mui/icons-material/Restaurant';
 
 
 
@@ -124,14 +124,22 @@ export const HomePage = () => {
 
 
                             <div className="col-lg-6 col-md-12 col-sm-12 img-text">
-                                <div className="motivation-text-encuentraTuEnt title-img-text">
-                                    Ejercicios
+                                <div className="row">
+                                    <div className="col">
+                                    <div className="motivation-text-encuentraTuEnt title-img-text">
+                                        Ejercicios
+
+                                        <div className="lineStyle"/>
+                                    </div> 
+
+                                    </div>
                                 </div>
-                                <span className="motivationSentence motivation-text-encuentraTuEnt">ENCUENTRA TU ENTRENAMIENTO</span>
+                                <div className="motivationSentence motivation-text-encuentraTuEnt">ENCUENTRA TU ENTRENAMIENTO</div>
                                 <div className="motivation-text-encuentraTuEnt footer-img-text-encuentraT">
-                                    Bienvenidos a nuestra sección de videos de entrenamiento personal. Aquí encontrarás una amplia gama de rutinas de ejercicios diseñadas para adaptarse a tus necesidades y preferencias, ya sea que te encuentres en casa, en el gimnasio o al aire libre..
-                                    <br></br>
-                                    Así que no importa si tu objetivo es aumentar tu fuerza, mejorar tu resistencia, perder peso, o simplemente sentirte más enérgico y saludable, <br></br>¡estamos aquí para ayudarte en tu viaje!
+                                <p style={{ fontWeight: 'bold' }}>Bienvenidos a nuestro <span style={{ color: '#EFF6E0' }}>portal de entrenamiento personal</span>.</p>
+                                <p>Descubre <span style={{ color: '#EFF6E0', fontWeight: 'bold' }}>rutinas de ejercicios personalizadas</span> para cualquier lugar: casa, gimnasio o al aire libre.</p>
+                                <p>No importa si buscas ganar fuerza, aumentar la resistencia, perder peso, o simplemente impulsar tu energía y bienestar.</p>
+                                <p style={{ fontWeight: 'bold' }}>¡Estamos para apoyarte en tu <span style={{ color: '#EFF6E0' }}>viaje hacia la salud y la fitness</span>!</p>
 
                                 </div>
 
@@ -146,14 +154,56 @@ export const HomePage = () => {
 
             
             </div>
-            <div id="factServices" className="row">
-                <div className="col-12 facts-container">
-
-                    <div>
-
-                        
+            <div>
+                <div className="facts-container rezise">
+                    <div id="comoEmpezar" className="row pt-5">
+                
                     </div>
+                    <div className="row cardFact-section m-5" >
+                        <div id="experience" className="col-lg-4 col-md-6 col-sm-12">
+                            <CardVerticalFact
+                                icon={<WorkspacePremiumIcon  className="fact-icon" style={{ fontSize: 80 }}/>}
 
+                                title="Experiencia"
+                                descriptionItems={[
+                                    "No somos un gimnasio. Entrenadores, Nutricionista,",
+                                    " Quiromasajista y Fisioterapeuta trabajamos unidos ",
+                                    "y en perfecta comunicación para garantizar siempre ",
+                                    " el mejor resultado.",
+                                    <br></br>,
+                                    <br></br>,
+
+                                  
+                                ]}
+                            />
+                        </div>
+                        <div id="interview" className="col-lg-4 col-md-6 col-sm-12 interview-card">
+                            <CardVerticalFact
+                                icon={<AssignmentIndIcon  className="fact-icon" style={{ fontSize: 80 }}/>}
+                                title="Entrevista inicial"
+                                descriptionItems={[
+                                    "Escuchamos a nuestros clientes",
+                                    "en una entrevista incial, evaluamos",
+                                    "su situación personal y hacemos lo que",
+                                    "entendemos que necesitasn para ayudarles",
+                                    " a conseguir su objetivo.",
+                                   <br></br>,
+                                   <br></br>
+
+                                ]}
+                            />
+                        </div>
+                        <div id="personaltraining" className="col-lg-4 col-md-6 col-sm-12">
+                            <CardVerticalFact
+                                icon={<RestaurantIcon  className="fact-icon" style={{ fontSize: 80 }}/>}
+
+                                title="Plan nutricional"
+                                descriptionItems={[
+                                    "Plan adaptado a tus necesidades y preferencias individuales ayudándote a maximizar el rendimiento físico, mejorar la recuperación post-entrenamiento y alcanzar tus metas de peso de forma saludable y sostenible."
+                                ]}
+                            />
+                        </div>
+                    </div>
 
                 </div>
 

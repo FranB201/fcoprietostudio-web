@@ -114,6 +114,20 @@
   height: auto;
 }
 
+
+.card-title {
+  color: #EFF6E0; /* verde claro */
+}
+
+.card-wrapper:hover {
+  border-radius: 25px;
+  background-color: #85B8CB; /* azul medio */
+}
+
+.card:hover .card-title {
+  color: #EFF6E0; /* oscuro negro */
+}
+
 @media (max-width: 575.98px) {
   .card-wrapper {
     margin-top: 4em;

@@ -8,51 +8,49 @@ import logo from "../../../../src/assets/logo/LogoSinFondo.png";
   
 export const NavBar = () => {
     return (
-      <AppBar
-          position="fixed"
-          className="navbar-horizontal"
-          sx={{ 
-              backgroundColor:'#124559',
-              height:100,
-              fontFamily:'Poppinns',
-              fontSize:'18px'
-              
-          }}
-      >
-          <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-               <Box sx={{ flex: 1 }} /> 
-              <Box sx={{ display: 'flex', justifyContent: 'center', flex: 1 }}>
-              <img src={logo} alt="logo" className="NavBar-logo"/>
-              </Box>
-              <Box sx={{ display: 'flex', justifyContent: 'flex-end', flex: 1 }}>
-                  <div className="navbar navbar-expand-lg">
-                      <div className="collapse navbar-collapse" id="navbarNav">
-                          <ul className="navbar-nav">
-                              <li className="nav-item">
-                                  <a className="nav-link" href="#hola">Hola</a>
-                              </li>
-                              <li className="nav-item">
-                                  <a className="nav-link" href="#comoEmpezar">Como empezar</a>
-                              </li>
-                              <li className="nav-item">
-                                  <a className="nav-link" href="#entrenamientos">Entrenamientos</a>
-                              </li>
-                              <li className="nav-item">
-                                  <a className="nav-link" href="#testimonios">Dicen de mi</a>
-                              </li>  
-                              <li className="nav-item">
-                                  <a className="nav-link" href="#testimonios">Contacto</a>
-                              </li> 
-                               <li className="nav-item">
-                                  <a className="nav-link" href="#testimonios">Acceso</a>
-                              </li>
-                          </ul>
-                      </div>
-                  </div>
-              </Box>
-          </Toolbar>
-      </AppBar>
+        <AppBar
+            position="fixed"
+            className="navbar-horizontal"
+            sx={{ 
+                backgroundColor:'#124559',
+                height:100,
+                fontFamily:'Poppins',
+                fontSize:'18px'
+            }}
+        >
+            <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
+                <Box sx={{ flex: 1 }}>
+                    <a className="nav-link" href="#hola">Hola</a>
+                </Box>
+                <Box sx={{ flex: 2 }}>
+                    <a className="nav-link" href="#comoEmpezar">Como empezar</a>
+                </Box>
+                <Box sx={{ flex: 1 }}>
+                    <a className="nav-link" href="#entrenamientos">Entrenamientos</a>
+                </Box>
+                <Box sx={{ display: 'flex', justifyContent: 'center', flex: 1 }}>
+                    <img src={logo} alt="logo" className="NavBar-logo"/>
+                </Box>
+                <Box sx={{ flex: 2 }}>
+                    <a className="nav-link" href="#testimonios">Dicen de mi</a>
+                </Box>
+                <Box sx={{ flex: 1 }}>
+                    <a className="nav-link" href="#contacto">Contacto</a>
+                </Box>
+                <Box sx={{ flex: 1 }}>
+                    <a className="nav-link" href="#acceso">Acceso</a>
+                </Box>
+            </Toolbar>
+        </AppBar>
     )
 }
+
+
+
+
+
+
+
+
 
 

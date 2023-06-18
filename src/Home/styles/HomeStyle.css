@@ -113,12 +113,17 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
   overflow: hidden;
   position: relative;
-  width: 80%;
+  width: 90%;
   height: 90%;
   margin-left: 3em;
   border-top-right-radius: 90px; /* Esto afectará solo a la esquina superior derecha */
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 2%, rgba(184, 184, 184, 0.5) 39%, rgba(129, 129, 129, 0.3) 98%);
 
+}
+
+.fade-element {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
 }
 
 
@@ -169,24 +174,6 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   100% {
     left: -50%;
   }
-}
-
-
-@keyframes slideInUp {
-  from {
-    transform: translateY(20%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-.animate-slideInUp {
-  animation-name: slideInUp;
-  animation-duration: 1s;
-  animation-fill-mode: both;
 }
 
 
@@ -378,7 +365,6 @@ a.join-now:hover {
 
   height: auto;
   background-color: #104e66;
-
 }
 
 .fact-icon{

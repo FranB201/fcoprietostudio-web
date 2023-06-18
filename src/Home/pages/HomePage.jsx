@@ -101,7 +101,6 @@ export const HomePage = () => {
             <div className="encuentraTuEntrenamiento-container">
                 <div id="entrenamientos" className="row">
                     <div className="col-12  h1EncuentraTu">
-
                         <div className="row">
                             <div className="col-lg-6">
                                 <div className="banner-container">
@@ -119,11 +118,8 @@ export const HomePage = () => {
                                     <div className="play-icon-container">
                                         <PlayArrowIcon className="play-icon" style={{ fontSize: 200 }} />
                                     </div>
-
                                 </div>
-
                             </div>
-
 
                             <div className="col-lg-6 col-md-12 col-sm-12 img-text">
                                 <div className="row">
@@ -158,15 +154,11 @@ export const HomePage = () => {
             </div>
             <div>
 
-                <div className="facts-container rezise">
+                <div className="facts-container rezise p-5">
 
-                        <div id="comoEmpezar" className="row pt-5">
+                        <Fade direction="up" triggerOnce={true} fraction={0.3} className="fade-element">
 
-                        </div>
-
-                        <Fade direction="up" triggerOnce={true} fraction={0.4}>
-
-                        <div className="row cardFact-section m-5" >
+                        <div className="row cardFact-section " >
                             <div id="experience" className="col-lg-4 col-md-6 col-sm-12">
                                 <CardVerticalFact
                                     icon={<WorkspacePremiumIcon className="fact-icon" style={{ fontSize: 80 }} />}

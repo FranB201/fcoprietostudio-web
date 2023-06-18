@@ -1,88 +1,96 @@
+.NavBar-logo {
 
+  height: 300px;
 
-  .NavBar-logo {
+}
 
-    height: 300px;
-  
-  }
-  .nav-link {
+.nav-link {
 
-    color: white;
+  color: white;
 
-  }
+}
 
-  .startRadial{
+.startRadial {
 
-/*  background: rgb(56,166,226);
+  /*  background: rgb(56,166,226);
 background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 24%, rgba(43,121,163,1) 38%, rgba(41,100,130,1) 51%, rgba(40,99,129,1) 62%, rgba(16,78,102,1) 80%);
  */
-/*  background: rgb(31,146,209);
+  /*  background: rgb(31,146,209);
  background: radial-gradient(circle, rgba(31,146,209,1) 10%, rgba(41,99,129,1) 54%, rgba(40,99,129,1) 64%, rgba(16,78,102,1) 78%);
  */
- background: rgb(88,123,143);
- background: radial-gradient(circle, rgba(88,123,143,1) 2%, rgba(41,99,129,1) 30%, rgba(34,85,111,1) 64%, rgba(16,78,102,1) 78%);
-/*     background: rgb(56,166,226);
-    background: radial-gradient(circle, rgba(56,166,226,1) 7%, rgba(31,146,209,1) 18%, rgba(41,100,130,1) 37%, rgba(40,99,129,1) 58%); */
-  }
-
-  .backgroundradialconinue{
-  /* background-color: #104e66 */
-    background-color: #286381
-  } 
-
-
-
-  .HomeLayout {
-    display: flex;
-    min-height: 100vh;
-    width: '100%';
-    background-color:#e8ebed;
-    padding-top: 75px;
-  }
-
-  .HomeLayout-main {
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1;
-    background-color:#e8ebed;
+/*   background: rgb(88, 123, 143);
+  background: radial-gradient(circle, rgba(88, 123, 143, 1) 2%, rgba(41, 99, 129, 1) 30%, rgba(34, 85, 111, 1) 64%, rgba(16, 78, 102, 1) 78%);
   
-    
-  }
-  .background-sections{
-    background-color:#e8ebed;
-    border: 12px solid white;
+   */
+  
+  /*     background: rgb(56,166,226);
+    background: radial-gradient(circle, rgba(56,166,226,1) 7%, rgba(31,146,209,1) 18%, rgba(41,100,130,1) 37%, rgba(40,99,129,1) 58%); */
+
+
+    background: rgb(88,123,143);
+    background: linear-gradient(180deg, rgba(88,123,143,1) 2%, rgba(41,99,129,1) 30%, rgba(34,85,111,1) 64%, rgba(16,78,102,1) 78%);
 
   }
 
-  .encuentraTuEntrenamiento-container {
+.backgroundradialconinue {
+  /* background-color: #104e66 */
+  background-color: #286381
+}
 
-    background-color:#01161E;
+
+
+.HomeLayout {
+  display: flex;
+  min-height: 100vh;
+  width: '100%';
+  background-color: #e8ebed;
+  padding-top: 75px;
+}
+
+.HomeLayout-main {
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  background-color: #e8ebed;
+
+
+}
+
+.background-sections {
+  background-color: #e8ebed;
+  border: 12px solid white;
+
+}
+
+
+
+
+@media (max-width: 600px) {
+  .NavBar-logo {
+    height: 200px;
   }
+}
 
 
-  @media (max-width: 600px) {
-    .NavBar-logo {
-      height: 200px;
-    }
-  }
+.homeImg-container {
+  width: 100%;
+  height: 65vh;
+  /* Ajusta la altura a tu necesidad */
 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  .homeImg-container {
-    width: 100%;
-    height: 80vh; /* Ajusta la altura a tu necesidad */
-    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-} 
+}
 
 
 
 .homeImg-container img {
   width: 100%;
-  height: 100%;  /* Asegúrate de que la altura sea automática para mantener las proporciones de la imagen */
-  object-fit: cover;  /* Esto hará que la imagen se ajuste a su contenedor mientras mantiene sus proporciones */
+  height: 100%;
+  /* Asegúrate de que la altura sea automática para mantener las proporciones de la imagen */
+  object-fit: cover;
+  /* Esto hará que la imagen se ajuste a su contenedor mientras mantiene sus proporciones */
 }
 
 
@@ -94,58 +102,106 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 @media (min-width: 2000px) {
   .HomeLayout-main {
-     background-color: red;
-     margin-left: 20%;
-     margin-right: 20%;
+    background-color: red;
+    margin-left: 20%;
+    margin-right: 20%;
   }
 }
 
+.encuentraTuEntrenamiento-container {
+
+  background-color: #104e66;
+
+  
+}
+
+.banner-container {
+
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  height: 90%;
+  margin-left: 3em;
+  border-top-right-radius: 90px; /* Esto afectará solo a la esquina superior derecha */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 2%, rgba(184, 184, 184, 0.5) 39%, rgba(129, 129, 129, 0.3) 98%);
+
+}
+
+
+
+
+
 .container-proximamente {
 
-  transform: rotate(-5deg); /* Ajusta el ángulo de inclinación */
+  transform: rotate(-5deg);
+  /* Ajusta el ángulo de inclinación */
   background-color: black;
   position: relative;
   overflow: hidden;
-  height: 80px; /* Ajusta a tu necesidad */
-  margin-bottom: 80px;
-  width:110%
+  height: 80px;
+  /* Ajusta a tu necesidad */
+  width: 110%;
+  margin-top: 13em;
+  
 }
 
 .texto-proximamente {
   color: yellow;
   position: absolute;
   white-space: nowrap;
-  font-size: 4em; /* Ajusta el tamaño del texto */
-  animation: mover 50s linear infinite; /* Ajusta la velocidad de la animación */
+  font-size: 4em;
+  /* Ajusta el tamaño del texto */
+  animation: mover 50s linear infinite;
+  /* Ajusta la velocidad de la animación */
   font-weight: 800;
-  word-spacing: 40px; /* Ajusta el espacio entre las palabras */
+  word-spacing: 40px;
+  /* Ajusta el espacio entre las palabras */
   font-family: Anton;
   display: flex;
   justify-content: space-between;
-  
+
 }
 
 .texto-proximamente div {
-  margin: 0 20px; /* Ajusta este valor a tu preferencia */
+  margin: 0 20px;
+  /* Ajusta este valor a tu preferencia */
 }
 
 @keyframes mover {
   0% {
-      left: 0;
+    left: 0;
   }
+
   100% {
-      left: -50%;
+    left: -50%;
   }
 }
+
+
+
+.play-icon-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Los siguientes estilos son opcionales, pero pueden ayudarte a hacer que el ícono sea más visible en el fondo */
+  border-radius: 50%; /* Esto hace que el fondo sea un círculo */
+  padding: 10px; /* Ajusta el espaciado alrededor del ícono */
+}
+
+.play-icon {
+  color: white; /* Cambia el color del ícono */
+}
+
 
 
 .background-sections {
   position: relative;
 }
 
-.background-Hola{
+.background-Hola {
 
-  background: linear-gradient(90deg, rgba(255,255,255,0.3) 2%, rgba(184,184,184,0.5) 39%, rgba(129,129,129,0.3) 98%);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 2%, rgba(184, 184, 184, 0.5) 39%, rgba(129, 129, 129, 0.3) 98%);
 }
 
 
@@ -155,16 +211,20 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 
 
-.h1Cardvertical h1, .h1EncuentraTu h1 {
+.h1Cardvertical h1,
+.h1EncuentraTu h1 {
   position: relative;
-  display: inline-block; /* para que la línea ocupe sólo el espacio del texto */
+  display: inline-block;
+  /* para que la línea ocupe sólo el espacio del texto */
 }
 
-.h1Cardvertical h1::after, .h1EncuentraTu h1::after {
+.h1Cardvertical h1::after,
+.h1EncuentraTu h1::after {
   content: '';
   display: block;
   width: 100%;
-  height: 4px; /* incrementa esto para una línea más gruesa */
+  height: 4px;
+  /* incrementa esto para una línea más gruesa */
   background: #1F92D1;
   transform: scaleX(0);
   transform-origin: center;
@@ -173,24 +233,19 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 
 
-.background-sections:hover .h1Cardvertical h1::after, 
-.background-sections:hover .h1EncuentraTu h1::after {
+.rezise:hover .h1Cardvertical h1::after, 
+.rezise:hover .h1EncuentraTu h1::after {
   transform: scaleX(1);
+  
+} 
+
+
+
+.holaNdReview-Section {
+
+  /*   height: 50vh;
+ */
 }
-
-
-.banner-container{
-
-  overflow: hidden;
-  position: relative;
-
-
-}
-
-.holaNdReview-Section{
-
-/*   height: 50vh;
- */}
 
 
 
@@ -199,7 +254,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 .motivation-text {
   color: #ffffff;
-  /* font-family: var(--s-font-05b6dab0); */
+  font-family: Poppins;
   letter-spacing: -0.05em;
   text-align: left;
   line-height: 1;
@@ -209,41 +264,77 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   width: auto;
   margin: 25px 0px 25px 0px;
 }
-.motivationSentence{
+
+
+.motivation-text-encuentraTuEnt {
+  color: #ffffff;
+  font-family: Poppins;
+  letter-spacing: -0.05em;
+  text-align: left;
+  line-height: 1;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  margin: 25px 0px 25px 0px;
+}
+
+.motivationSentence {
   font-size: 64px;
   font-weight: 700;
 }
-.img-text{
+
+.img-text {
   padding-top: 2em;
   padding-left: 4em
 }
-.title-img-text{
+
+.title-img-text {
   font-size: 19px;
   font-weight: 600;
   line-height: 1.4;
-  
-  
+
+
 }
-.footer-img-text{
+
+.footer-img-text {
   font-weight: 400;
-  font-size: 22px;
+  font-size: 16px;
   width: 70%;
   max-width: 70%;
   line-height: 1.;
+  margin-top: 3em;
 }
+
+.footer-img-text-encuentraT {
+  font-weight: 400;
+  font-size: 21px;
+  font-family: 'Poppins';
+  width: 70%;
+  max-width: 70%;
+  line-height: 1.3;
+  color: #E8EBED;
+  margin-bottom: 3em;
+
+}
+
 a.join-now {
-  display: inline-block; /* Añadido */
-  width: 30%; /* Ahora esto debería funcionar */
-  height: 50px; /* Añadido para incrementar la altura */
-  line-height: 50px; /* Añadido para centrar el texto verticalmente */
+  display: inline-flex; /* Cambiado de inline-block a inline-flex */
+  align-items: center; /* Añadido para alinear verticalmente los elementos */
+  justify-content: center; /* Para alinear horizontalmente los elementos */
+  width: 100%; /* Para pantallas pequeñas, el botón ocupará el 100% del ancho */
+  height: 50px;
   background: linear-gradient(180deg, #65bce8 0%, #306485 100%);
   transition: all .3s;
-  text-align: center; /* Añadido para centrar el texto horizontalmente */
   border-bottom: 0px solid rgba(0, 0, 0, 0);
   border-left: 0px solid rgba(0, 0, 0, 0);
   border-radius: 32px;
   border-right: 0px solid rgba(0, 0, 0, 0);
   border-top: 0px solid rgba(0, 0, 0, 0);
+}
+
+
+.container-button-motivation-text{
+  width: 100%; /* Para pantallas pequeñas, el contenedor ocupará el 100% del ancho */
 }
 
 
@@ -258,7 +349,7 @@ a.join-now:hover {
 
 }
 
-.text-button-motivation-text{
+.text-button-motivation-text {
   color: #ffffff;
   font-size: 17px;
   font-weight: 700;
@@ -270,7 +361,87 @@ a.join-now:hover {
   max-width: calc(100% - 50px);
   justify-content: center;
 }
-.container-button-motivation-text{
+
+.container-button-motivation-text {
   width: 20%;
 }
 
+
+.facts-container{
+
+  height: 600px;
+  background-color: #01161E;
+}
+
+
+
+
+@media (max-width: 600px) {
+  .NavBar-logo {
+    height: 200px;
+  }
+
+
+
+}
+
+/* Para tabletas y smartphones */
+@media (max-width: 1024px) {
+  .motivationSentence {
+    font-size: 55px !important;
+  }
+ 
+
+  .title-img-text {
+    font-size: 15px !important;
+  }
+
+
+}
+
+/* Para smartphones */
+@media (max-width: 700px) {
+  .motivationSentence {
+    font-size: 25px !important;
+  }
+ 
+
+  .title-img-text {
+    font-size: 15px !important;
+  }
+
+
+}
+
+/* Para smartphones pequeños */
+@media (max-width: 480px) {
+  .motivationSentence {
+    font-size: 25px !important;
+  }
+ 
+
+  .title-img-text {
+    font-size: 15px !important;
+  }
+  .img-text{
+    padding-top: 2em;
+    padding-left: 1em !important;
+    padding-right: 5em !important;
+  }
+  .homeImg-container {
+    height: 55vh !important; /* Ajusta la altura a tu necesidad */
+    
+} 
+
+}
+
+/* Cambios específicos para pantallas mayores a 768px */
+@media (min-width: 768px) {
+  a.join-now {
+    width: 30%; /* En pantallas mayores, el botón ocupará el 30% del ancho */
+  }
+
+  .container-button-motivation-text{
+    width: 20%; /* En pantallas mayores, el contenedor ocupará el 20% del ancho */
+  }
+}

@@ -14,6 +14,9 @@ export const NavBar = () => {
           sx={{ 
               backgroundColor:'#124559',
               height:100,
+              fontFamily:'Poppinns',
+              fontSize:'18px'
+              
           }}
       >
           <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>

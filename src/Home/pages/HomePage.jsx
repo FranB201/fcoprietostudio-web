@@ -5,9 +5,12 @@ import studioCard from "../../../src/assets/cardImages/studioCard.png"
 import grupxpressCard from "../../../src/assets/cardImages/grupxpressCard.png"
 import personaltrainingCard from "../../../src/assets/cardImages/personaltrainingCard.png"
 import proximamente from "../../../src/assets/cardImages/proximamente.png"
-import HomeImg3 from "../../../src/assets/HomeImage/HomeImg4.png"
+import HomeImg3 from "../../../src/assets/HomeImage/HomeImg5.png"
 import WarningIcon from '@mui/icons-material/Warning';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
+import SmartDisplayIcon from '@mui/icons-material/SmartDisplay';
+import SkipNextIcon from '@mui/icons-material/SkipNext';
+import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
 
 
@@ -17,9 +20,14 @@ export const HomePage = () => {
 
         <HomeLayout>
 
-            <div className="homeImg-container" style={{ backgroundImage: `url(${HomeImg3})` }}>
+           {/*  <div className="homeImg-container" style={{ 
+                    backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 28%, rgba(16,78,102,0.2) 40%, rgba(34,85,111,0.2) 40%, rgba(41,99,129,0.3) 50%, rgba(88,123,143,1)
+                    80%), url(${HomeImg3})`}}> */}
 
-                <div className="col-lg-5 col-md-12 col-sm-12 img-text">
+
+
+<div className="homeImg-container" style={{ backgroundImage: `url(${HomeImg3})` }}>
+                <div className="col-lg-6 col-md-12 col-sm-12 img-text">
                     <div className="motivation-text title-img-text">
                         Ángel Di Maria dijo:
                     </div>
@@ -38,8 +46,8 @@ export const HomePage = () => {
 
             </div>
 
-            <div className="background-sections">
-                <div className="startRadial">
+            <div>
+                <div className="startRadial rezise">
                     <div id="comoEmpezar" className="row">
                         <div className="col-12 mt-5 h1Cardvertical">
                             <h1>PROGRAMAS PRESENCIALES</h1>
@@ -87,37 +95,72 @@ export const HomePage = () => {
 
                 </div>
 
-
-
-
             </div>
-            <div className="background-sections encuentraTuEntrenamiento-container">
+            <div className="encuentraTuEntrenamiento-container">
                 <div id="entrenamientos" className="row">
                     <div className="col-12  h1EncuentraTu">
-                        <h1>ENCUENTRA TU ENTRENAMIENTO</h1>
+
+                        <div className="row">
+                            <div className="col-lg-6">
+                                <div className="banner-container">
+
+                                    <div className="container-proximamente">
+                                        <span className="texto-proximamente">
+                                            <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
+                                            <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
+                                            <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
+                                            <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
+                                            <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
+                                            <div><span>PRÓXIMAMENTE</span></div>
+                                        </span>
+                                    </div>
+                                    <div className="play-icon-container">
+                                        <PlayArrowIcon className="play-icon" style={{ fontSize: 200 }} />
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+
+                            <div className="col-lg-6 col-md-12 col-sm-12 img-text">
+                                <div className="motivation-text-encuentraTuEnt title-img-text">
+                                    Ejercicios
+                                </div>
+                                <span className="motivationSentence motivation-text-encuentraTuEnt">ENCUENTRA TU ENTRENAMIENTO</span>
+                                <div className="motivation-text-encuentraTuEnt footer-img-text-encuentraT">
+                                    Bienvenidos a nuestra sección de videos de entrenamiento personal. Aquí encontrarás una amplia gama de rutinas de ejercicios diseñadas para adaptarse a tus necesidades y preferencias, ya sea que te encuentres en casa, en el gimnasio o al aire libre..
+                                    <br></br>
+                                    Así que no importa si tu objetivo es aumentar tu fuerza, mejorar tu resistencia, perder peso, o simplemente sentirte más enérgico y saludable, <br></br>¡estamos aquí para ayudarte en tu viaje!
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
                     </div>
                 </div>
 
-                <div className="row justify-content-center">
-                    <div className="col-12 banner-container">
-                        <div className="image-container">
-                            {/* <img src={proximamente} alt="Imagen de entrenamiento" /> */}
-
-                        </div>
-                        <div className="container-proximamente">
-                            <span className="texto-proximamente">
-                                <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
-                                <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
-                                <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
-                                <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
-                                <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
-                                <div><span>PRÓXIMAMENTE</span></div>
-                            </span>
-                        </div>
-
-                    </div>
-                </div>
+            
             </div>
+            <div id="factServices" className="row">
+                <div className="col-12 facts-container">
+
+                    <div>
+
+                        
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+
 
             <div className="row holaNdReview-Section">
                 <div className="background-sections col-lg-6 col-sm-10 background-Hola">
@@ -156,6 +199,8 @@ export const HomePage = () => {
 
 
             </div>
+
+
 
             <div className="background-sections">
                 <div id="contacto" className="row">

@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+.cardFact-wrapper {
+    position: relative;
+    max-width: 350px;
+    /* Ajusta según sea necesario */
+    margin: auto;
+    transition: transform 0.3s;
+
+}
+
+.interview-card .cardFact-body{
+
+}
+
+.cardFact-wrapper:hover {
+    position: relative;
+    transform: scale(1.1);
+}
+
+.cardFact-wrapper:active {
+    position: relative;
+    transform: scale(1.05);
+}
+
+
+.image-cardFact {
+    width: "30%";
+    height: "auto";
+
+
+}
+
+.div-image {
+    position: absolute;
+    top: -35%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+
+}
+
+
+.cardFact,
+.cardFact-body {
+    background-color: #07374a !important;
+}
+
+.content-cardFact {
+    text-align: left;
+    background-color: transparent;
+    /* Cambiado de black a transparent */
+    padding-top: 3em;
+    padding-bottom: 3em;
+    color: #ffffff;
+    border-radius: 25px;
+    border: 1px solid #fff;
+}
+
+
+
+.cardFact-title {
+    text-align: left;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    font-family: Poppins;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    justify-content: flex-start;
+    height: auto;
+    max-width: 100%;
+    width: auto;
+    margin: 25px 0px 25px 0px;
+
+
+}
+
+.h1CardverticalFact {
+    font-size: 18px;
+    font-family: Poppins;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 10%;
+    letter-spacing: -0.05em;
+    color: #ffffff;
+
+}
+
+.cardFact {
+    border-radius: 25px;
+    margin-bottom: 5em;
+}
+
+.h1EncuentraTuFact {
+
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+.descriptionItemsFact {
+
+    color: #c0c0c0;
+    font-size: 16px;
+    font-weight: 400;
+    height: auto;
+    line-height: 1.5;
+    margin: 30px 0px 30px 0px;
+    text-align: left;
+    width: auto;
+    max-width: 100%;
+    justify-content: flex-start;
+
+
+}
+
+.img-thumbnail {
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    object-fit: cover;
+    /* Para mantener la proporción de la imagen */
+}
+
+.image-container {
+    background-color: #DCE0E4;
+    border-radius: 25px;
+    overflow: hidden;
+    margin-bottom: 10%;
+
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+
+
+@media (max-width: 575.98px) {
+    .cardFact-wrapper {
+        margin-top: 4em;
+        /* Ajusta este valor según lo que necesites */
+        margin-bottom: 4em;
+        /* Ajusta este valor según lo que necesites */
+    }
+
+    .cardFact-title {
+        margin-top: 1em;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .h1CardverticalFact h1 {
+        font-size: 2em;
+        /* Ajusta este valor según lo que necesites */
+        margin-top: 0em;
+        margin-bottom: 2em;
+    }
+
+    .h1EncuentraTuFact h1 {
+        font-size: 18px;
+        font-family: Poppins;
+        font-weight: 800;
+        text-align: center;
+        margin-bottom: 10%;
+        letter-spacing: -0.05em;
+        color: #ffffff;
+
+    }
+
+
+
+}

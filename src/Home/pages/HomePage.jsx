@@ -156,7 +156,7 @@ export const HomePage = () => {
 
                 <div className="facts-container rezise p-5">
 
-                        <Fade direction="up" triggerOnce={true} fraction={0.3} className="fade-element">
+                        <Fade direction="up" triggerOnce={true} fraction={0.6} className="fade-element">
 
                         <div className="row cardFact-section " >
                             <div id="experience" className="col-lg-4 col-md-6 col-sm-12">
@@ -215,30 +215,8 @@ export const HomePage = () => {
 
 
             <div className="row holaNdReview-Section">
-                <div className="background-sections col-lg-6 col-sm-10 background-Hola">
-                    <div id="holaSection" className="row">
-                        <div className="h1EncuentraTu">
-                            <h1>HOLA</h1>
-
-                            <div className="row m-5">
-                                <span className="HolaTxtDescription">"Somos un centro de entrenamiento personal cuya preocupación es la satisfacción
-                                    de nuestros clientes en cuanto a salud y condición física se refiere.
-                                    No somos un gimnasio. Entrenadores, Nutricionista, Quiromasajista y Fisioterapeuta
-                                    trabajamos unidos y en perfecta comunicación para garantizar siempre el mejor resultado.
-                                    No hacemos lo que está de moda o lo que se lleva. Escuchamos a nuestros clientes en
-                                    una entrevista inicial, evaluamos su situación personal y hacemos lo que entendemos que
-                                    necesitan para ayudarles a conseguir su objetivo de la forma más profesional y responsable
-                                    posible. Y esto es así gracias a nuestro afán de formación continua y a los
-                                    más de 30 años de experiencia en el mundo del entrenamiento personal de Francisco Prieto"</span>
-
-                            </div>
-
-                        </div>
-
-
-                    </div>
-                </div>
-                <div className="background-sections col-lg-6 col-sm-10 background-dicenDeMi">
+                
+                <div className="col-lg-12 col-sm-10 background-dicenDeMi">
                     <div id="holaSection" className="row">
                         <div className="h1EncuentraTu">
                             <h1>DICEN DE MI</h1>

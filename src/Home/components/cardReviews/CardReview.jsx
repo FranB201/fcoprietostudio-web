@@ -8,8 +8,6 @@ import StarIcon from '@mui/icons-material/Star';
 export const CardReview = () => {
     return (
 
-   
-
         <div id="carouselExampleInterval" className="carousel slide mt-5 mb-5" data-bs-ride="carousel">
             <div className="carousel-inner">
                 <div className="carousel-item active" data-bs-interval="10000">
@@ -105,8 +103,7 @@ export const CardReview = () => {
                             <div className="row">
                                 <div className="col-lg-4 d-flex justify-content-center">
                                     <img src="src/assets/reviewImages/CarmenReview.png"
-                                        className="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
-                                        height="150" />
+                                        className="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" />
                                 </div>
                                 <div
                                     className="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
@@ -119,7 +116,7 @@ export const CardReview = () => {
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                     </p>
                                     <p className="mb-0 pb-3 bodyReview">
-                                    Hay sitios que siempre tratan de sacar la mejor versión de ti mismo, y este gimnasio es, sin lugar a duda, uno de ellos. El mérito se debe , principalmente, a sus entrenadores, Francisco y Mar, grandes profesionales del Fitness. No sólo te estimulan a esforzarte ( con resultados visibles) sino que, además, aprendes el cómo y el porqué de las reacciones de tu cuerpo con sus claras explicaciones.
+                                        Hay sitios que siempre tratan de sacar la mejor versión de ti mismo, y este gimnasio es, sin lugar a duda, uno de ellos. El mérito se debe , principalmente, a sus entrenadores, Francisco y Mar, grandes profesionales del Fitness. No sólo te estimulan a esforzarte ( con resultados visibles) sino que, además, aprendes el cómo y el porqué de las reacciones de tu cuerpo con sus claras explicaciones.
                                     </p>
                                 </div>
                             </div>

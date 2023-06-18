@@ -38,22 +38,35 @@
 
 }
 
+
+.card, .card-body {
+  background-color: transparent !important;
+}
+
 .content-Card {
   text-align: left;
-  background-color: #dce0e4;
+  background-color: transparent; /* Cambiado de black a transparent */
   padding-top: 3em;
   padding-bottom: 3em;
-  color: #797F86;
+  color: #ffffff;
   border-radius: 25px;
   border: 1px solid #fff;
-
 }
+
+
 
 .card-title {
   text-align: center;
-  color: black;
   margin-bottom: 20px;
   font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.05em;
+  line-height: 1;
+  justify-content: flex-start;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  margin: 25px 0px 25px 0px;
 
 
 }
@@ -74,13 +87,10 @@
   margin-bottom: 5em;
 }
 
-
 .h1EncuentraTu {
 
   text-align: center;
   margin-top: 5%;
-
-
 }
 
 .img-thumbnail {
@@ -121,7 +131,8 @@
   .h1Cardvertical h1 {
     font-size: 2em;
     /* Ajusta este valor según lo que necesites */
-    margin-top: 3em;
+    margin-top: 0em;
+    margin-bottom: 2em;
   }
 
   .h1EncuentraTu h1 {

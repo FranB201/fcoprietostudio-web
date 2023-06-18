@@ -100,13 +100,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   padding: 0 15% 0 15%;
 }
 
-@media (min-width: 2000px) {
-  .HomeLayout-main {
-    background-color: red;
-    margin-left: 20%;
-    margin-right: 20%;
-  }
-}
+
 
 .encuentraTuEntrenamiento-container {
 
@@ -241,45 +235,13 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 
 
-.holaNdReview-Section {
-
-  /*   height: 50vh;
- */
-}
 
 
 
 
-
-
-.motivation-text {
-  color: #ffffff;
-  font-family: Poppins;
-  letter-spacing: -0.05em;
-  text-align: left;
-  line-height: 1;
-  justify-content: flex-start;
-  height: auto;
-  max-width: 100%;
-  width: auto;
-  margin: 25px 0px 25px 0px;
-}
-
-
-.motivation-text-encuentraTuEnt {
-  color: #ffffff;
-  font-family: Poppins;
-  letter-spacing: -0.05em;
-  text-align: left;
-  line-height: 1;
-  height: auto;
-  max-width: 100%;
-  width: auto;
-  margin: 25px 0px 25px 0px;
-}
 
 .motivationSentence {
-  font-size: 64px;
+  font-size: 37px;
   font-weight: 700;
 }
 
@@ -333,6 +295,31 @@ a.join-now {
 }
 
 
+.motivation-text {
+  color: #ffffff;
+  font-family: Poppins;
+  letter-spacing: -0.05em;
+  text-align: left;
+  line-height: 1;
+  justify-content: flex-start;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  margin: 25px 0px 25px 0px;
+}
+
+
+.motivation-text-encuentraTuEnt {
+  color: #ffffff;
+  font-family: Poppins;
+  letter-spacing: -0.05em;
+  text-align: left;
+  line-height: 1;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  margin: 25px 0px 25px 0px;
+}
 .container-button-motivation-text{
   width: 100%; /* Para pantallas pequeñas, el contenedor ocupará el 100% del ancho */
 }
@@ -387,61 +374,238 @@ a.join-now:hover {
 
 /* Para tabletas y smartphones */
 @media (max-width: 1024px) {
-  .motivationSentence {
+/*   .motivationSentence {
     font-size: 55px !important;
   }
  
 
   .title-img-text {
     font-size: 15px !important;
-  }
+  } */
 
 
 }
 
 /* Para smartphones */
 @media (max-width: 700px) {
-  .motivationSentence {
+/*   .motivationSentence {
     font-size: 25px !important;
   }
  
 
   .title-img-text {
     font-size: 15px !important;
-  }
+  } */
 
 
 }
 
-/* Para smartphones pequeños */
-@media (max-width: 480px) {
-  .motivationSentence {
-    font-size: 25px !important;
-  }
- 
 
-  .title-img-text {
-    font-size: 15px !important;
-  }
+
+/* Para smartphones pequeños */
+/* @media (max-width: 480px) {
+
+  .homeImg-container {
+    height: 55vh !important; 
+    
+  } 
   .img-text{
     padding-top: 2em;
     padding-left: 1em !important;
     padding-right: 5em !important;
   }
-  .homeImg-container {
-    height: 55vh !important; /* Ajusta la altura a tu necesidad */
-    
-} 
+  .motivationSentence {
+    font-size: 25px !important;
+  }
 
+  .title-img-text {
+    font-size: 15px !important;
+  }
+
+} */
+
+
+
+/* Estilo para pantallas muy pequeñas (móviles en modo vertical) */
+@media (max-width: 480px) {
+
+  a.join-now {
+    width: 60%; 
+  }
+  .card-section {
+    padding: 5px 12% 0 5%;
+  }
+  .container-button-motivation-text{
+    width: 100%; 
+  }
+
+  .homeImg-container {
+    height: 50vh !important; /* Ajusta la altura a tu necesidad */
+    
+  } 
+  .img-text{
+    padding-top: 2em;
+    padding-left: 1em !important;
+    padding-right: 5em !important;
+  }
+  .motivationSentence {
+    font-size: 25px !important;
+  }
+
+  .title-img-text {
+    font-size: 15px !important;
+  }
+  /* Ajustwe de la barra de scroll */
+  body::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  body::-webkit-scrollbar-track {
+      background: 888;
+  }
+
+  body::-webkit-scrollbar-thumb {
+      background: #888;
+  }
+
+  body::-webkit-scrollbar-thumb:hover {
+      background: #555;
+  }
+
+  
 }
 
-/* Cambios específicos para pantallas mayores a 768px */
-@media (min-width: 768px) {
+/* Estilo para pantallas pequeñas (móviles en modo horizontal y tabletas en modo vertical) */
+@media (min-width: 481px) and (max-width: 768px) {
   a.join-now {
-    width: 30%; /* En pantallas mayores, el botón ocupará el 30% del ancho */
+    width: 45%; 
+  }
+  .card-section {
+    padding: 45px 12% 0 5%;
   }
 
   .container-button-motivation-text{
-    width: 20%; /* En pantallas mayores, el contenedor ocupará el 20% del ancho */
+    width: 100%; 
   }
+  .homeImg-container {
+    height: 50vh !important; /* Ajusta la altura a tu necesidad */
+    
+  } 
+  .img-text{
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 5em;
+  }
+  .motivationSentence {
+    font-size: 25px !important;
+  }
+
+  .title-img-text {
+    font-size: 15px !important;
+  }
+}
+
+/* Estilo para pantallas medianas (tabletas en modo horizontal, pequeños ordenadores) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  a.join-now {
+    width: 25%; 
+  }
+
+  .container-button-motivation-text{
+    width: 100%; 
+  }
+  .card-section {
+    padding: 1% 12% 10% 10%;
+  }
+  .homeImg-container {
+    height: 60vh; /* Ajusta la altura a tu necesidad */
+    
+  } 
+  .img-text{
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 5em;
+  }
+  .motivationSentence {
+    font-size: 30px;
+  }
+
+  .title-img-text {
+    font-size: 15px;
+  }
+
+
+}
+
+/* Estilo para pantallas grandes (ordenadores de escritorio) */
+/* @media (min-width: 1025px) {
+
+} */
+
+
+@media (min-width: 1024px) and (max-width: 1999px) {
+  a.join-now {
+    width: 30%; 
+  }
+
+  .container-button-motivation-text{
+    width: 100%; 
+  }
+  .card-section {
+    padding: 15px 12% 0 5%;
+  }
+  .homeImg-container {
+    height: 60vh; /* Ajusta la altura a tu necesidad */
+    
+  } 
+  .img-text{
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 5em;
+  }
+  .motivationSentence {
+    font-size: 40px;
+  }
+
+  .title-img-text {
+    font-size: 15px;
+  }
+
+}
+
+@media  (min-width: 2000px) and (max-width: 4000px) {
+  a.join-now {
+    width: 35%; 
+  }
+
+  .container-button-motivation-text{
+    width: 20%; 
+  }
+  .HomeLayout-main {
+    margin-left: 20%;
+    margin-right: 20%;
+    
+  }
+  .motivationSentence {
+    font-size: 45px;
+  }
+
+  .card-section {
+    padding: 15px 12% 0 5%;
+  }
+  .homeImg-container {
+    height: 70vh; /* Ajusta la altura a tu necesidad */
+    
+  } 
+  .img-text{
+    padding-top: 2em;
+    padding-left: 2em;
+    padding-right: 5em;
+  }
+ 
+
+  .title-img-text {
+    font-size: 15px;
+  }
+  
 }

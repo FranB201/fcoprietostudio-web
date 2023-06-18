@@ -27,6 +27,7 @@ a:hover {
 
 body {
   font-family: sans-serif !important;
+  overflow-x: hidden;
 }
 
 h1 {

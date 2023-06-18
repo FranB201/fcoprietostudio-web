@@ -46,11 +46,12 @@
 .content-Card {
   text-align: left;
   background-color: transparent; /* Cambiado de black a transparent */
-  padding-top: 3em;
+  padding-top: 1em;
   padding-bottom: 3em;
   color: #ffffff;
   border-radius: 25px;
   border: 1px solid #fff;
+  height: 340px;
 }
 
 
@@ -126,6 +127,26 @@
 
 .card:hover .card-title {
   color: #EFF6E0; /* oscuro negro */
+}
+
+.description-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.description-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.description-list li {
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  font-size: 0.9rem;
+  position: relative;
+  padding-left: 1.2em;
+  display: flex; /* Asegura que el icono y el texto estén alineados correctamente */
+  align-items: center; /* Alineación vertical del contenido */
 }
 
 @media (max-width: 575.98px) {

@@ -99,10 +99,10 @@ export const HomePage = () => {
 
             </div>
             <div className="encuentraTuEntrenamiento-container">
-                <div id="entrenamientos" className="row">
+                <div id="entrenamientos" className="row gx-1">
                     <div className="col-12  h1EncuentraTu">
                         <div className="row">
-                            <div className="col-lg-6">
+                            <div className="col-lg-6 find-work-out">
                                 <div className="banner-container">
 
                                     <div className="container-proximamente">
@@ -121,7 +121,7 @@ export const HomePage = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-6 col-md-12 col-sm-12 img-text">
+                            <div className="col-lg-6 col-md-12 col-sm-12 img-text img-text-find">
                                 <div className="row">
                                     <div className="col">
                                         <div className="motivation-text-encuentraTuEnt title-img-text">
@@ -132,14 +132,26 @@ export const HomePage = () => {
 
                                     </div>
                                 </div>
-                                <div className="motivationSentence motivation-text-encuentraTuEnt">ENCUENTRA TU ENTRENAMIENTO</div>
-                                <div className="motivation-text-encuentraTuEnt footer-img-text-encuentraT">
-                                    <p style={{ fontWeight: 'bold' }}>Bienvenidos a nuestro <span style={{ color: '#EFF6E0' }}>portal de entrenamiento personal</span>.</p>
-                                    <p>Descubre <span style={{ color: '#EFF6E0', fontWeight: 'bold' }}>rutinas de ejercicios personalizadas</span> para cualquier lugar: casa, gimnasio o al aire libre.</p>
-                                    <p>No importa si buscas ganar fuerza, aumentar la resistencia, perder peso, o simplemente impulsar tu energía y bienestar.</p>
-                                    <p style={{ fontWeight: 'bold' }}>¡Estamos para apoyarte en tu <span style={{ color: '#EFF6E0' }}>viaje hacia la salud y la fitness</span>!</p>
-
+                                <div className="row">
+                                    <div className="col">
+                                        <div className="motivationSentence motivation-text-encuentraTuEnt">
+                                            ENCUENTRA TU ENTRENAMIENTO
+                                        </div>  
+                                    </div>
                                 </div>
+                                <div className="row">
+                                    <div className="col">
+                                        <div className="motivation-text-encuentraTuEnt footer-img-text-encuentraT">
+                                        <p style={{ fontWeight: 'bold' }}>Bienvenidos a nuestro <span style={{ color: '#EFF6E0' }}>portal de entrenamiento personal</span>.</p>
+                                        <p>Descubre <span style={{ color: '#EFF6E0', fontWeight: 'bold' }}>rutinas de ejercicios personalizadas</span> para cualquier lugar: casa, gimnasio o al aire libre.</p>
+                                        <p>No importa si buscas ganar fuerza, aumentar la resistencia, perder peso, o simplemente impulsar tu energía y bienestar.</p>
+                                        <p style={{ fontWeight: 'bold' }}>¡Estamos para apoyarte en tu <span style={{ color: '#EFF6E0' }}>viaje hacia la salud y al fitness</span>!</p>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                
 
                             </div>
 
@@ -154,97 +166,99 @@ export const HomePage = () => {
             </div>
             <div>
 
-                <div className="facts-container rezise p-5">
+            <div className="facts-container rezise p-5">
 
-                        <Fade direction="up" triggerOnce={true} fraction={0.6} className="fade-element">
+<Fade direction="up" triggerOnce={true} fraction={0.6} className="fade-element">
 
-                        <div className="row cardFact-section " >
-                            <div id="experience" className="col-lg-4 col-md-6 col-sm-12">
-                                <CardVerticalFact
-                                    icon={<WorkspacePremiumIcon className="fact-icon" style={{ fontSize: 80 }} />}
+    <div className="row cardFact-section " >
+        <div id="experience" className="col-lg-4 col-md-6 col-sm-12">
+            <CardVerticalFact
+                iconCard={<WorkspacePremiumIcon className="fact-icon" style={{ fontSize: 80 }} />}
 
-                                    title="Experiencia"
-                                    descriptionItems={[
-                                        "No somos un gimnasio. Entrenadores, Nutricionista,",
-                                        " Quiromasajista y Fisioterapeuta trabajamos unidos ",
-                                        "y en perfecta comunicación para garantizar siempre ",
-                                        " el mejor resultado.",
-                                        <br></br>,
-                                        <br></br>,
-
-
-                                    ]}
-                                />
-                            </div>
-                            <div id="interview" className="col-lg-4 col-md-6 col-sm-12 interview-card">
-                                <CardVerticalFact
-                                    icon={<AssignmentIndIcon className="fact-icon" style={{ fontSize: 80 }} />}
-                                    title="Entrevista inicial"
-                                    descriptionItems={[
-                                        "Escuchamos a nuestros clientes",
-                                        "en una entrevista incial, evaluamos",
-                                        "su situación personal y hacemos lo que",
-                                        "entendemos que necesitasn para ayudarles",
-                                        " a conseguir su objetivo.",
-                                        <br></br>,
-                                        <br></br>
-
-                                    ]}
-                                />
-                            </div>
-                            <div id="personaltraining" className="col-lg-4 col-md-6 col-sm-12">
-                                <CardVerticalFact
-                                    icon={<RestaurantIcon className="fact-icon" style={{ fontSize: 80 }} />}
-
-                                    title="Plan nutricional"
-                                    descriptionItems={[
-                                        "Plan adaptado a tus necesidades y preferencias individuales ayudándote a maximizar el rendimiento físico, mejorar la recuperación post-entrenamiento y alcanzar tus metas de peso de forma saludable y sostenible."
-                                    ]}
-                                />
-                            </div>
-                        </div>
-
-                    </Fade>
-
-                </div>
-
-
-            </div>
-
-
-
-
-            <div className="row holaNdReview-Section">
+                title="Experiencia"
+                descriptionItem={`No somos un gimnasio. Entrenadores, Nutricionista, Quiromasajista y Fisioterapeuta trabajamos unidos y en perfecta comunicación para garantizar siempre el mejor resultado.
                 
-                <div className="col-lg-12 col-sm-10 background-dicenDeMi">
-                    <div id="holaSection" className="row">
-                        <div className="h1EncuentraTu">
-                            <h1>DICEN DE MI</h1>
-                        </div>
-                        <CardReview />
-
-                    </div>
-                </div>
+                `}
 
 
+            />
+        </div>
+        <div id="interview" className="col-lg-4 col-md-6 col-sm-12 interview-card">
+            <CardVerticalFact
+                iconCard={<AssignmentIndIcon className="fact-icon" style={{ fontSize: 80 }} />}
+                title="Entrevista inicial"
+                descriptionItem={`Escuchamos a nuestros clientes, en una entrevista incial, evaluamos
+                su situación personal y hacemos lo que entendemos que necesitasn para ayudarles
+                a conseguir su objetivo.
+                `}
+            />
+        </div>
+        <div id="personaltraining" className="col-lg-4 col-md-6 col-sm-12">
+            <CardVerticalFact
+                iconCard={<RestaurantIcon className="fact-icon" style={{ fontSize: 80 }} />}
 
-            </div>
+                title="Plan nutricional"
+                descriptionItem={`Plan adaptado a tus necesidades y preferencias individuales ayudándote a maximizar el rendimiento físico, mejorar la recuperación post-entrenamiento y alcanzar tus metas de peso de forma saludable y sostenible.
+                 `}
+
+            />
+        </div>
+    </div>
+
+</Fade>
+
+</div>
+
+
+</div>
+
+
+<div className="hola-container">
+<div id="contacto" className="row hola-subcontainer">
+<div className="col-12">
+    <h1>HOLA</h1>
+    <span className="sub-hola rezise">¡Contacta conmigo hoy para comenzar tu transformación!</span>
+</div>
+</div>
+
+<div id="contacto" className="row hola-subcontainerBody">
+<div className="col-lg-6">
+    <img className="hola-img-info" src="src/assets/infoImage/fisicocultirismo-francisco-prieto-studio.jpg"></img>
+
+</div>
+<div className="col-lg-6">
+    <hr className="thick-white-line"></hr>
+    <span className="sub-hola">¿Aún con dudas?, escribenos al email</span>
+    <hr className="thick-white-line"></hr>
+    <span className="sub-hola">¿Aún con dudas?, escribenos al email</span>
+
+</div>
+</div>
+</div>
 
 
 
-            <div className="background-sections">
-                <div id="contacto" className="row">
-                    <div className="h1EncuentraTu">
-                        <h1>CONTACTO</h1>
+<div className="row holaNdReview-Section">
 
-                    </div>
+<div className="col-lg-12 col-sm-10 background-dicenDeMi">
+<div id="holaSection" className="row">
+    <div className="h1EncuentraTu">
+        <h1>DICEN DE MI</h1>
+    </div>
+    <CardReview />
+
+</div>
+</div>
 
 
 
-                </div>
-            </div>
+</div>
 
-        </HomeLayout>
+
+
+
+
+</HomeLayout>
 
 
 

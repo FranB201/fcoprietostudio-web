@@ -198,15 +198,8 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   position: relative;
 }
 
-.background-Hola {
-
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 2%, rgba(184, 184, 184, 0.5) 39%, rgba(129, 129, 129, 0.3) 98%);
-}
 
 
-.background-dicenDeMi {
-  background-image: linear-gradient(to right, rgba(0, 180, 219, 0.2), rgba(0, 131, 176, 0.2));
-}
 
 
 
@@ -240,16 +233,6 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 
 
-
-
-
-
-
-.motivationSentence {
-  font-size: 37px;
-  font-weight: 700;
-}
-
 .img-text {
   padding-top: 2em;
   padding-left: 4em
@@ -280,7 +263,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   max-width: 70%;
   line-height: 1.3;
   color: #E8EBED;
-  margin-bottom: 3em;
+  
 
 }
 
@@ -373,6 +356,64 @@ a.join-now:hover {
   
 
 
+
+
+.hola-container{
+
+  background-color: #021f2a;
+  height: auto;
+  padding-bottom: 1em;
+
+}
+
+
+.hola-subcontainer{
+
+  padding-top: 5%;
+  text-align: center;
+
+}
+
+.hola-subcontainerBody{
+
+  margin: 3em;
+  margin-left: 5em;
+  margin-right: 5em;
+
+}
+
+.hola-img-info{
+
+
+  width: 60%;
+
+}
+
+.sub-hola{
+  color: #c0c0c0;
+  flex: none;
+  font-family: Poppins;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.thick-white-line {
+  border: 1px solid white;
+  background-color: white;
+}
+
+
+.background-dicenDeMi {
+/*   background-image: linear-gradient(to right, rgba(0, 180, 219, 0.2), rgba(0, 131, 176, 0.2));
+ */
+ background: rgb(88,123,143);
+ background: radial-gradient(circle, rgba(88,123,143,1) 2%, rgba(41,99,129,1) 30%, rgba(34,85,111,1) 64%, rgba(16,78,102,1) 78%);
+}
+
 @media (max-width: 600px) {
   .NavBar-logo {
     height: 200px;
@@ -398,7 +439,7 @@ a.join-now:hover {
   }
 
   .homeImg-container {
-    height: 50vh !important; /* Ajusta la altura a tu necesidad */
+    height: 50vh !important;
     
   } 
   .img-text{
@@ -409,6 +450,7 @@ a.join-now:hover {
   .motivationSentence {
     font-size: 25px !important;
   }
+  
 
   .title-img-text {
     font-size: 15px !important;
@@ -429,6 +471,46 @@ a.join-now:hover {
   body::-webkit-scrollbar-thumb:hover {
       background: #555;
   }
+  .find-work-out{
+    padding: 0 10% 0 10%;
+
+    
+  }
+  .banner-container {
+    width: 100%;
+    height:80%;
+    margin-left: 0;
+  
+  }
+  .container-proximamente {
+
+    transform: rotate(-5deg);
+    /* Ajusta el ángulo de inclinación */
+    background-color: black;
+    position: relative;
+    overflow: hidden;
+    height: 80px;
+    /* Ajusta a tu necesidad */
+    width: 110%;
+    margin-top: 13em;
+    
+  }
+
+  .motivation-text-encuentraTuEnt {
+    box-sizing: border-box;
+    padding-left: 2em;
+}
+
+  .title-img-text {
+    font-size: 15px !important;
+    margin-left: 15px; /* o el valor que funcione mejor en tu caso */
+  }
+
+
+  
+  
+  
+  
 
   
 }
@@ -577,4 +659,9 @@ a.join-now:hover {
     font-size: 15px;
   }
   
+}
+@media (min-width: 100px) and (max-width: 767px) {
+  .navbar-horizontal, .navbar-toggler {
+      display: block;
+  }
 }

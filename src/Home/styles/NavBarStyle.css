@@ -2,11 +2,7 @@
         display: none;
     }
 
-    @media (max-width: 768px) {
-        .navbar-horizontal, .navbar-toggler {
-            display: block;
-        }
-    }
+
 
     .navbar-horizontal, .navbar-toggler {
         display: none;
@@ -22,10 +18,16 @@
     }
 
     @media (max-width: 768px) {
-        .navbar-toggler {
+        .navbar-horizontal, .navbar-toggler {
             display: block;
         }
     }
+
+/*     @media (max-width: 768px) {
+        .navbar-toggler {
+            display: block;
+        }
+    } */
 
     @media (min-width: 768px) {
         .navbar-horizontal {
@@ -35,18 +37,6 @@
 
 
 
-
-    /* Estilo para pantallas muy pequeñas (móviles en modo vertical) */
-    @media (max-width: 480px) {
-        
-    }
-  
-  /* Estilo para pantallas pequeñas (móviles en modo horizontal y tabletas en modo vertical) */
-  @media (min-width: 481px) and (max-width: 768px) {
-  
-  
-  }
-  
   
   @media (min-width: 1024px) and (max-width: 1999px) {
     .nav-link {
@@ -74,4 +64,3 @@
     }
     
   }
-  

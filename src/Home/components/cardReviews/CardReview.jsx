@@ -23,7 +23,7 @@ export const CardReview = () => {
                                 </div>
                                 <div
                                     className="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
-                                    <h4 className="mb-4">Estefania Fita</h4>
+                                    <h4 className="mb-4 userNameReview">Estefania Fita</h4>
                                     <p>
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
@@ -31,7 +31,7 @@ export const CardReview = () => {
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                     </p>
-                                    <p className="mb-0 pb-3">
+                                    <p className="mb-0 pb-3 bodyReview">
                                         Muy contenta con mis resultados en 5 semanas!! Con su programa personalizado, el seguimiento y la atención de Francisco que es un gran profesional. El centro y sus máquinas de 10!
                                     </p>
                                 </div>
@@ -50,7 +50,7 @@ export const CardReview = () => {
                                 </div>
                                 <div
                                     className="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
-                                    <h4 className="mb-4">Noelia Soldevilla</h4>
+                                    <h4 className="mb-4 userNameReview">Noelia Soldevilla</h4>
                                     <p>
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
@@ -58,7 +58,7 @@ export const CardReview = () => {
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                     </p>
-                                    <p className="mb-0 pb-3">
+                                    <p className="mb-0 pb-3 bodyReview">
                                         Se me hacía un mundo ir al gimnasio y siempre encontraba alguna excusa para no hacerlo pero desde que conozco Prieto Studio no he fallado ningún día. Me han enganchado sus clases, su atención personalizada, sus instalaciones y la facilidad con la que puedes elaborar tu horario semanal a través de su aplicación.
                                         Sin duda, digno de recomendación.
                                     </p>
@@ -79,7 +79,7 @@ export const CardReview = () => {
                                 </div>
                                 <div
                                     className="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
-                                    <h4 className="mb-4">Raul Megido</h4>
+                                    <h4 className="mb-4 userNameReview">Raul Megido</h4>
                                     <p>
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
@@ -87,7 +87,7 @@ export const CardReview = () => {
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                     </p>
-                                    <p className="mb-0 pb-3">
+                                    <p className="mb-0 pb-3 bodyReview">
                                         Entrenamientos personalizados, supervisados en todo momento y con un nivel de detalle impecable.
                                         Las mejoras se notan rapidamente.
                                         Gran centro de entrenamiento y Francisco Prieto es un excelente profesional y un 10 como persona
@@ -110,7 +110,7 @@ export const CardReview = () => {
                                 </div>
                                 <div
                                     className="col-9 col-md-9 col-lg-7 col-xl-8 text-center text-lg-start mx-auto mx-lg-0">
-                                    <h4 className="mb-4">Carmen Lázaro</h4>
+                                    <h4 className="mb-4 userNameReview">Carmen Lázaro</h4>
                                     <p>
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
@@ -118,7 +118,7 @@ export const CardReview = () => {
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                         <StarIcon style={{ fill: '#FFD700', filter: 'drop-shadow(2px 2px 2px gray)' }} />
                                     </p>
-                                    <p className="mb-0 pb-3">
+                                    <p className="mb-0 pb-3 bodyReview">
                                     Hay sitios que siempre tratan de sacar la mejor versión de ti mismo, y este gimnasio es, sin lugar a duda, uno de ellos. El mérito se debe , principalmente, a sus entrenadores, Francisco y Mar, grandes profesionales del Fitness. No sólo te estimulan a esforzarte ( con resultados visibles) sino que, además, aprendes el cómo y el porqué de las reacciones de tu cuerpo con sus claras explicaciones.
                                     </p>
                                 </div>

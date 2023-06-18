@@ -172,6 +172,24 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 }
 
 
+@keyframes slideInUp {
+  from {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slideInUp {
+  animation-name: slideInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+
 
 .play-icon-container {
   position: absolute;
@@ -360,6 +378,7 @@ a.join-now:hover {
 
   height: auto;
   background-color: #104e66;
+
 }
 
 .fact-icon{

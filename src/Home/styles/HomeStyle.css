@@ -23,19 +23,19 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   /*  background: rgb(31,146,209);
  background: radial-gradient(circle, rgba(31,146,209,1) 10%, rgba(41,99,129,1) 54%, rgba(40,99,129,1) 64%, rgba(16,78,102,1) 78%);
  */
-/*   background: rgb(88, 123, 143);
+  /*   background: rgb(88, 123, 143);
   background: radial-gradient(circle, rgba(88, 123, 143, 1) 2%, rgba(41, 99, 129, 1) 30%, rgba(34, 85, 111, 1) 64%, rgba(16, 78, 102, 1) 78%);
   
    */
-  
+
   /*     background: rgb(56,166,226);
     background: radial-gradient(circle, rgba(56,166,226,1) 7%, rgba(31,146,209,1) 18%, rgba(41,100,130,1) 37%, rgba(40,99,129,1) 58%); */
 
 
-    background: rgb(88,123,143);
-    background: linear-gradient(180deg, rgba(88,123,143,1) 2%, rgba(41,99,129,1) 30%, rgba(34,85,111,1) 64%, rgba(16,78,102,1) 78%);
+  background: rgb(88, 123, 143);
+  background: linear-gradient(180deg, rgba(88, 123, 143, 1) 2%, rgba(41, 99, 129, 1) 30%, rgba(34, 85, 111, 1) 64%, rgba(16, 78, 102, 1) 78%);
 
-  }
+}
 
 .backgroundradialconinue {
   /* background-color: #104e66 */
@@ -111,7 +111,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
   background-color: #104e66;
 
-  
+
 }
 
 .banner-container {
@@ -121,7 +121,8 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   width: 90%;
   height: 90%;
   margin-left: 3em;
-  border-top-right-radius: 90px; /* Esto afectará solo a la esquina superior derecha */
+  border-top-right-radius: 90px;
+  /* Esto afectará solo a la esquina superior derecha */
   background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 2%, rgba(184, 184, 184, 0.5) 39%, rgba(129, 129, 129, 0.3) 98%);
 
 }
@@ -146,7 +147,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   /* Ajusta a tu necesidad */
   width: 110%;
   margin-top: 13em;
-  
+
 }
 
 .texto-proximamente {
@@ -189,12 +190,15 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   left: 50%;
   transform: translate(-50%, -50%);
   /* Los siguientes estilos son opcionales, pero pueden ayudarte a hacer que el ícono sea más visible en el fondo */
-  border-radius: 50%; /* Esto hace que el fondo sea un círculo */
-  padding: 10px; /* Ajusta el espaciado alrededor del ícono */
+  border-radius: 50%;
+  /* Esto hace que el fondo sea un círculo */
+  padding: 10px;
+  /* Ajusta el espaciado alrededor del ícono */
 }
 
 .play-icon {
-  color: white; /* Cambia el color del ícono */
+  color: white;
+  /* Cambia el color del ícono */
 }
 
 
@@ -230,11 +234,11 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 
 
-.rezise:hover .h1Cardvertical h1::after, 
+.rezise:hover .h1Cardvertical h1::after,
 .rezise:hover .h1EncuentraTu h1::after {
   transform: scaleX(1);
-  
-} 
+
+}
 
 
 
@@ -253,7 +257,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 .footer-img-text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 21px;
   width: 70%;
   max-width: 70%;
   line-height: 1.;
@@ -261,24 +265,27 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 }
 
 .footer-img-text-encuentraT {
-  font-weight: 400;
   font-size: 21px;
   font-family: 'Poppins';
   width: 70%;
   max-width: 70%;
   line-height: 1.5;
   color: #E8EBED;
-  
+
 
 }
 
 a.join-now {
-  display: inline-flex; /* Cambiado de inline-block a inline-flex */
-  align-items: center; /* Añadido para alinear verticalmente los elementos */
-  justify-content: center; /* Para alinear horizontalmente los elementos */
-  width: 100%; /* Para pantallas pequeñas, el botón ocupará el 100% del ancho */
+  display: inline-flex;
+  /* Cambiado de inline-block a inline-flex */
+  align-items: center;
+  /* Añadido para alinear verticalmente los elementos */
+  justify-content: center;
+  /* Para alinear horizontalmente los elementos */
+  width: 100%;
+  /* Para pantallas pequeñas, el botón ocupará el 100% del ancho */
   height: 50px;
- /*  background: linear-gradient(180deg, #65bce8 0%, #306485 100%); */
+  /*  background: linear-gradient(180deg, #65bce8 0%, #306485 100%); */
   background: linear-gradient(90deg, #65bce8, #306485);
   transition: all .3s;
   border-bottom: 0px solid rgba(0, 0, 0, 0);
@@ -315,10 +322,22 @@ a.join-now {
   max-width: 100%;
   width: auto;
   margin: 5px 0px 25px 0px;
+
 }
 
-.container-button-motivation-text{
-  width: 100%; /* Para pantallas pequeñas, el contenedor ocupará el 100% del ancho */
+.motivation-text-encuentraTuEnt-body {
+  font-family: Poppins;
+  letter-spacing: -0.05em;
+  text-align: left;
+  line-height: 1.4;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+}
+
+.container-button-motivation-text {
+  width: 100%;
+  /* Para pantallas pequeñas, el contenedor ocupará el 100% del ancho */
 }
 
 
@@ -352,29 +371,29 @@ a.join-now:hover {
 }
 
 
-.facts-container{
+.facts-container {
 
   height: 800px;
   background-color: #104e66;
- padding-top: 7em;
-  
+  padding-top: 7em;
+
 }
 
-.cardFact-section{
+.cardFact-section {
 
   margin-top: 5em;
 }
 
 
-.fact-icon{
+.fact-icon {
   color: #1F92D1
-  }
-  
+}
 
 
 
 
-.hola-container{
+
+.hola-container {
 
   background-color: #021f2a;
   height: auto;
@@ -383,14 +402,14 @@ a.join-now:hover {
 }
 
 
-.hola-subcontainer{
+.hola-subcontainer {
 
   padding-top: 5%;
   text-align: center;
 
 }
 
-.hola-subcontainerBody{
+.hola-subcontainerBody {
 
   margin: 3em;
   margin-left: 5em;
@@ -398,14 +417,14 @@ a.join-now:hover {
 
 }
 
-.hola-img-info{
+.hola-img-info {
 
 
   width: 60%;
 
 }
 
-.sub-hola{
+.sub-hola {
   color: #c0c0c0;
   flex: none;
   font-family: Poppins;
@@ -417,7 +436,7 @@ a.join-now:hover {
 
 }
 
-.sub-hola-contacto{
+.sub-hola-contacto {
 
   color: #c0c0c0;
   flex: none;
@@ -427,43 +446,54 @@ a.join-now:hover {
   line-height: 1.5;
   text-align: center;
   justify-content: center;
-  display: block; /* Hace que el elemento span se comporte como un bloque, lo que permite agregar margen superior e inferior */
-  margin: 45px 0; /* Agrega un margen de 20px arriba y abajo */
+  display: block;
+  /* Hace que el elemento span se comporte como un bloque, lo que permite agregar margen superior e inferior */
+  margin: 45px 0;
+  /* Agrega un margen de 20px arriba y abajo */
 
 }
-.info-hola{
+
+.info-hola {
   padding-top: 10em;
 }
 
 .thick-white-line {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
-  width: 100%; /* Ajusta este valor para controlar la longitud de la línea */
-  margin: 0 auto; /* Centra la línea horizontalmente */
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  width: 100%;
+  /* Ajusta este valor para controlar la longitud de la línea */
+  margin: 0 auto;
+  /* Centra la línea horizontalmente */
 }
 
 
 .background-dicenDeMi {
-/*   background-image: linear-gradient(to right, rgba(0, 180, 219, 0.2), rgba(0, 131, 176, 0.2));
+  /*   background-image: linear-gradient(to right, rgba(0, 180, 219, 0.2), rgba(0, 131, 176, 0.2));
  */
 
- min-height: 500px;
+  min-height: 500px;
 
- background: rgb(88,123,143);
- background: radial-gradient(circle, rgba(88,123,143,1) 2%, rgba(41,99,129,1) 30%, rgba(34,85,111,1) 64%, rgba(16,78,102,1) 78%);
+  background: rgb(88, 123, 143);
+  background: radial-gradient(circle, rgba(88, 123, 143, 1) 2%, rgba(41, 99, 129, 1) 30%, rgba(34, 85, 111, 1) 64%, rgba(16, 78, 102, 1) 78%);
 }
 
 
 .hola-img-container {
   display: flex;
-  justify-content: center; /* Centra horizontalmente */
-  align-items: center; /* Centra verticalmente */
-  height: 100%; /* Asegúrate de que el contenedor tenga una altura establecida */
+  justify-content: center;
+  /* Centra horizontalmente */
+  align-items: center;
+  /* Centra verticalmente */
+  height: 100%;
+  /* Asegúrate de que el contenedor tenga una altura establecida */
 }
+
 .hola-img-info {
-  max-width: 100%; /* Asegúrate de que la imagen no exceda el ancho del contenedor */
-  height: auto; /* Mantén la proporción de la imagen */
+  max-width: 100%;
+  /* Asegúrate de que la imagen no exceda el ancho del contenedor */
+  height: auto;
+  /* Mantén la proporción de la imagen */
 }
 
 @media (max-width: 600px) {
@@ -481,13 +511,15 @@ a.join-now:hover {
 @media (max-width: 480px) {
 
   a.join-now {
-    width: 60%; 
+    width: 60%;
   }
+
   .card-section {
     padding: 5px 12% 0 5%;
   }
-  .container-button-motivation-text{
-    width: 100%; 
+
+  .container-button-motivation-text {
+    width: 100%;
   }
 
   .footer-img-text-encuentraT {
@@ -495,56 +527,62 @@ a.join-now:hover {
     font-size: 16px;
   }
 
-  .motivation-text-encuentraTuEnt{
+  .motivation-text-encuentraTuEnt {
 
     font-weight: 700;
-  
+
   }
 
   .homeImg-container {
     height: 50vh !important;
-    
-  } 
-  .img-text{
+
+  }
+
+  .img-text {
     padding-top: 2em;
     padding-left: 1em !important;
     padding-right: 5em !important;
   }
+
   .motivationSentence {
     font-size: 25px !important;
   }
-  
+
 
   .title-img-text {
     font-size: 15px !important;
   }
+
   /* Ajustwe de la barra de scroll */
   body::-webkit-scrollbar {
     width: 1px;
   }
 
   body::-webkit-scrollbar-track {
-      background: 888;
+    background: 888;
   }
 
   body::-webkit-scrollbar-thumb {
-      background: #888;
+    background: #888;
   }
 
   body::-webkit-scrollbar-thumb:hover {
-      background: #555;
+    background: #555;
   }
-  .find-work-out{
+
+  .find-work-out {
     padding: 0 10% 0 10%;
 
-    
+
   }
+
   .banner-container {
     width: 100%;
-    height:80%;
+    height: 80%;
     margin-left: 0;
-  
+
   }
+
   .container-proximamente {
 
     transform: rotate(-5deg);
@@ -556,32 +594,33 @@ a.join-now:hover {
     /* Ajusta a tu necesidad */
     width: 110%;
     margin-top: 13em;
-    
+
   }
 
   .motivation-text-encuentraTuEnt {
     box-sizing: border-box;
     padding-left: 2em;
-}
+  }
 
   .title-img-text {
     font-size: 15px !important;
-    margin-left: 15px; /* o el valor que funcione mejor en tu caso */
+    margin-left: 15px;
+    /* o el valor que funcione mejor en tu caso */
   }
 
 
-  
+
 }
 
-.lineStyle{
-    display: inline-block;
-    background: linear-gradient(90deg, #306485, #65bce8);
-    border-radius: 32px;
-    flex: none;
-    height: 5px;
-    margin: 0px 0px 3px 15px;
-    width: 40px;
-    max-width: calc(100% - 15px);
+.lineStyle {
+  display: inline-block;
+  background: linear-gradient(90deg, #306485, #65bce8);
+  border-radius: 32px;
+  flex: none;
+  height: 5px;
+  margin: 0px 0px 3px 15px;
+  width: 40px;
+  max-width: calc(100% - 15px);
 }
 
 
@@ -596,21 +635,21 @@ a.join-now:hover {
 
 
 
-  .rezise:hover .h1Cardvertical h1::after, 
+  .rezise:hover .h1Cardvertical h1::after,
   .rezise:hover .h1EncuentraTu h1::after {
     transform: scaleX(0.6);
-    
-  } 
+
+  }
 
 
-  .dicenDeMi-Title{
+  .dicenDeMi-Title {
 
     font-size: 16px;
     margin-top: 45px;
 
   }
 
-  .dicenDeMiSection{
+  .dicenDeMiSection {
 
     padding-top: 3em;
   }
@@ -618,34 +657,34 @@ a.join-now:hover {
 
   .background-dicenDeMi {
 
-    
-     min-height: 650px;
-    
-    }
+
+    min-height: 650px;
+
+  }
 
 
-    .sub-hola-contacto{
+  .sub-hola-contacto {
 
-      font-size: 16px;
-      
-
-    }
+    font-size: 16px;
 
 
+  }
 
-    .hola-img-info{
 
-      margin-left: 2em;
-      width: 80%;
-    }
 
-    .hola-subcontainerBody{
+  .hola-img-info {
 
-      margin: 2em;
+    margin-left: 2em;
+    width: 80%;
+  }
 
- 
-    
-    }
+  .hola-subcontainerBody {
+
+    margin: 2em;
+
+
+
+  }
 
 
 }
@@ -659,24 +698,29 @@ a.join-now:hover {
 /* Estilo para pantallas pequeñas (móviles en modo horizontal y tabletas en modo vertical) */
 @media (min-width: 481px) and (max-width: 768px) {
   a.join-now {
-    width: 200px; 
+    width: 200px;
   }
+
   .card-section {
     padding: 45px 12% 0 12%;
   }
 
-  .container-button-motivation-text{
-    width: 100%; 
+  .container-button-motivation-text {
+    width: 100%;
   }
+
   .homeImg-container {
-    height: 50vh !important; /* Ajusta la altura a tu necesidad */
-    
-  } 
-  .img-text{
+    height: 50vh !important;
+    /* Ajusta la altura a tu necesidad */
+
+  }
+
+  .img-text {
     padding-top: 2em;
     padding-left: 1em;
     padding-right: 5em;
   }
+
   .motivationSentence {
     font-size: 25px !important;
   }
@@ -685,7 +729,7 @@ a.join-now:hover {
     font-size: 15px !important;
   }
 
-  
+
 }
 
 
@@ -698,25 +742,30 @@ a.join-now:hover {
 /* Estilo para pantallas medianas (tabletas en modo horizontal, pequeños ordenadores) */
 @media (min-width: 769px) and (max-width: 1024px) {
   a.join-now {
-    width: 200px; 
+    width: 200px;
   }
 
- 
-  .container-button-motivation-text{
-    width: 100%; 
+
+  .container-button-motivation-text {
+    width: 100%;
   }
+
   .card-section {
     padding: 1% 12% 10% 10%;
   }
+
   .homeImg-container {
-    height: 60vh; /* Ajusta la altura a tu necesidad */
-    
-  } 
-  .img-text{
+    height: 60vh;
+    /* Ajusta la altura a tu necesidad */
+
+  }
+
+  .img-text {
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 5em;
   }
+
   .motivationSentence {
     font-size: 30px;
   }
@@ -736,24 +785,29 @@ a.join-now:hover {
 
 @media (min-width: 1024px) and (max-width: 1999px) {
   a.join-now {
-    width: 40%; 
+    width: 40%;
   }
 
-  .container-button-motivation-text{
-    width: 100%; 
+  .container-button-motivation-text {
+    width: 100%;
   }
+
   .card-section {
     padding: 15px 12% 0 5%;
   }
+
   .homeImg-container {
-    height: 80vh; /* Ajusta la altura a tu necesidad */
-    
-  } 
-  .img-text{
+    height: 80vh;
+    /* Ajusta la altura a tu necesidad */
+
+  }
+
+  .img-text {
     padding-top: 4.5em;
     padding-left: 2.5em;
     padding-right: 5em;
   }
+
   .motivationSentence {
     font-size: 40px;
   }
@@ -762,21 +816,28 @@ a.join-now:hover {
     font-size: 15px;
   }
 
+  .dicenDeMi-Title {
+
+    margin-top: 45px;
+
+  }
 }
 
-@media  (min-width: 2000px) and (max-width: 4000px) {
+@media (min-width: 2000px) and (max-width: 4000px) {
   a.join-now {
-    width: 35%; 
+    width: 35%;
   }
 
-  .container-button-motivation-text{
-    width: 20%; 
+  .container-button-motivation-text {
+    width: 20%;
   }
+
   .HomeLayout-main {
     margin-left: 20%;
     margin-right: 20%;
-    
+
   }
+
   .motivationSentence {
     font-size: 45px;
   }
@@ -784,29 +845,49 @@ a.join-now:hover {
   .card-section {
     padding: 15px 12% 0 5%;
   }
+
   .homeImg-container {
-    height: 70vh; /* Ajusta la altura a tu necesidad */
-    
-  } 
-  .img-text{
+    height: 70vh;
+    /* Ajusta la altura a tu necesidad */
+
+  }
+
+  .img-text {
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 5em;
   }
- 
+
 
   .title-img-text {
     font-size: 15px;
   }
-  .dicenDeMi-Title{
+
+  .dicenDeMi-Title {
 
     margin-top: 45px;
 
   }
-  
+
 }
+
+
+@media (min-width: 1400px) and (max-width: 1999px) {
+
+  .motivationSentence {
+    font-size: 54px;
+  }
+
+  .img-text {
+    padding-left: 2em;
+    padding-right: 5em;
+  }
+}
+
 @media (min-width: 100px) and (max-width: 767px) {
-  .navbar-horizontal, .navbar-toggler {
-      display: block;
+
+  .navbar-horizontal,
+  .navbar-toggler {
+    display: block;
   }
 }

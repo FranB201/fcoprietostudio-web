@@ -1,6 +1,11 @@
 import React from 'react'
 import "../../styles/CardReview.css"
 import StarIcon from '@mui/icons-material/Star';
+import carmenAvatar from '../../../../src/assets/reviewImages/CarmenReview.png';
+import EstefaniaReview from '../../../../src/assets/reviewImages/EstefaniaReview.png';
+import NoeliaReview from '../../../../src/assets/reviewImages/NoeliaReview.png';
+import RaulReview from '../../../../src/assets/reviewImages/RaulReview.png';
+
 
 
 
@@ -15,7 +20,7 @@ export const CardReview = () => {
                         <div className="col-lg-10 col-xl-8">
                             <div className="row">
                                 <div className="col-lg-4 d-flex justify-content-center">
-                                    <img src="src/assets/reviewImages/EstefaniaReview.png"
+                                    <img src={EstefaniaReview}
                                         className="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
                                         height="150" />
                                 </div>
@@ -42,7 +47,7 @@ export const CardReview = () => {
                         <div className="col-lg-10 col-xl-8">
                             <div className="row">
                                 <div className="col-lg-4 d-flex justify-content-center">
-                                    <img src="src/assets/reviewImages/NoeliaReview.png"
+                                    <img src={NoeliaReview}
                                         className="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
                                         height="150" />
                                 </div>
@@ -71,7 +76,7 @@ export const CardReview = () => {
                         <div className="col-lg-10 col-xl-8">
                             <div className="row">
                                 <div className="col-lg-4 d-flex justify-content-center">
-                                    <img src="src/assets/reviewImages/RaulReview.png"
+                                    <img src={RaulReview}
                                         className="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" width="150"
                                         height="150" />
                                 </div>
@@ -102,7 +107,7 @@ export const CardReview = () => {
                         <div className="col-lg-10 col-xl-8">
                             <div className="row">
                                 <div className="col-lg-4 d-flex justify-content-center">
-                                    <img src="src/assets/reviewImages/CarmenReview.png"
+                                    <img src={carmenAvatar}
                                         className="rounded-circle shadow-1 mb-4 mb-lg-0" alt="woman avatar" />
                                 </div>
                                 <div

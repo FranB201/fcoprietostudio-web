@@ -2,8 +2,8 @@
 import { HomeLayout } from "../layout/HomeLayout"
 import { CardVertical, CardReview, CardVerticalFact } from "../components"
 import studioCard from "../../../src/assets/cardImages/studioCard.png"
-import grupxpressCard from "../../../src/assets/cardImages/grupxpressCard.png"
-import personaltrainingCard from "../../../src/assets/cardImages/personaltrainingCard.png"
+import grupxpressCard from "../../../src/assets/cardImages/grupoXpresSala.jpg"
+import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP.jpg"
 import HomeImg3 from "../../../src/assets/HomeImage/HomeImg5.png"
 import WarningIcon from '@mui/icons-material/Warning';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
@@ -34,7 +34,7 @@ export const HomePage = () => {
             <div className="homeImg-container" style={{ backgroundImage: `url(${HomeImg3})` }}>
                 <div className="col-lg-6 col-md-12 col-sm-12 img-text">
                     <div className="motivation-text title-img-text">
-                        Ángel Di Maria dijo:
+                        Ángel Di Maria dijo...
                     </div>
                     <span className="motivationSentence motivation-text">  'El dolor pasa, el sudor se seca, el cansancio termina. Pero hay algo que nunca desaparecerá: la satisfacción de haberlo logrado.'  </span>
                     <div className="motivation-text footer-img-text">
@@ -64,10 +64,10 @@ export const HomePage = () => {
                                 imageUrl={studioCard}
                                 title="Studio"
                                 descriptionItems={[
-                                    "Instalaciones totalmente equipadas",
+                                    "Instalacion totalmente equipada",
                                     "Tecnología de última generación en fitness",
                                     "Ambiente motivador y enérgico",
-                                    "Métodos de entrenamiento innovadores"
+                                    "Métodos de entrenamiento eficaces"
                                 ]}
                             />
                         </div>
@@ -76,10 +76,10 @@ export const HomePage = () => {
                                 imageUrl={grupxpressCard}
                                 title="Grupo Xpress"
                                 descriptionItems={[
-                                    "Clases grupales divertidas y desafiantes",
+                                    "Clases divertidas y desafiantes",
+                                    "Aptas para todos los públicos",
                                     "Enfoque integral en salud y bienestar",
-                                    "Instructores profesionales",
-                                    "Programas de entrenamientos versátiles"
+                                    "Entrenamiento periodizado"
 
                                 ]}
                             />
@@ -89,10 +89,10 @@ export const HomePage = () => {
                                 imageUrl={personaltrainingCard}
                                 title="Entrenamiento personal"
                                 descriptionItems={[
-                                    "Entrenamiento personalizado a tu medida",
-                                    "Tecnología de última generación en fitness",
-                                    "Resultados garantizados",
-                                    "Controles de progresos periódicos",
+                                    "Entrenamiento personalizado 100%",
+                                    "Resultado garantizado",
+                                    "Revisiones constantes",
+                                    "Plan nutricional incluido",
                                 ]}
                             />
                         </div>
@@ -144,7 +144,7 @@ export const HomePage = () => {
                                 </div>
                                 <div className="row">
                                     <div className="col">
-                                        <div className="motivation-text-encuentraTuEnt footer-img-text-encuentraT">
+                                        <div className="motivation-text-encuentraTuEnt-body footer-img-text-encuentraT">
                                             <p style={{ fontWeight: 'bold' }}>Bienvenidos a nuestro <span style={{ color: '#EFF6E0' }}>portal de entrenamiento personal</span>.</p>
                                             <p>Descubre <span style={{ color: '#EFF6E0', fontWeight: 'bold' }}>rutinas de ejercicios personalizadas</span> para cualquier lugar: casa, gimnasio o al aire libre.</p>
                                             <p>No importa si buscas ganar fuerza, aumentar la resistencia, perder peso, o simplemente impulsar tu energía y bienestar.</p>

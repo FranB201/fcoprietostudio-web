@@ -18,7 +18,7 @@ export const HomeLayout = ({ children }) => {
 
                 {/* Botón para abrir el Sidebar en pantallas pequeñas */}
                 <button className="navbar-toggler" type="button" onClick={toggleSidebar}>
-                <MenuIcon />
+                <MenuIcon style={{ color: 'white' }} />
                 </button>
             
                 {/* Sidebar */}

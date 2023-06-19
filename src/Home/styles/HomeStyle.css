@@ -11,9 +11,6 @@
 }
 
 
-.interview-card .cardFact-wrapper {
-  height: 900px;
-}
 
 .startRadial {
 
@@ -373,10 +370,9 @@ a.join-now:hover {
 
 .facts-container {
 
-  height: 800px;
+  /* height: 800px; */
   background-color: #104e66;
   padding-top: 7em;
-
 }
 
 .cardFact-section {

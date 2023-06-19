@@ -4,7 +4,7 @@ import { CardVertical, CardReview, CardVerticalFact } from "../components"
 import studioCard from "../../../src/assets/cardImages/studioCard.png"
 import grupxpressCard from "../../../src/assets/cardImages/grupoXpresSala.jpg"
 import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP.jpg"
-import HomeImg3 from "../../../src/assets/HomeImage/HomeImg5.png"
+import HomeImg3 from "../../../src/assets/HomeImage/HomeImg2.png"
 import WarningIcon from '@mui/icons-material/Warning';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
@@ -32,13 +32,16 @@ export const HomePage = () => {
 
 
             <div className="homeImg-container" style={{ backgroundImage: `url(${HomeImg3})` }}>
-                <div className="col-lg-6 col-md-12 col-sm-12 img-text">
+                <div className="col-lg-12 col-md-12 col-sm-12 img-text">
                     <div className="motivation-text title-img-text">
                         Ángel Di Maria dijo...
                     </div>
                     <span className="motivationSentence motivation-text">  'El dolor pasa, el sudor se seca, el cansancio termina. Pero hay algo que nunca desaparecerá: la satisfacción de haberlo logrado.'  </span>
                     <div className="motivation-text footer-img-text">
                         Soy Francisco Prieto y entreno gente.
+                    </div>
+                    <div className="motivation-text footer-img-sub-text">
+                        Y si tú quieres te ayudaré a que tú también lo logres.
                     </div>
                     <div >
                         <a className="join-now text-button-motivation-text">

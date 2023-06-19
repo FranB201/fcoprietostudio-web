@@ -253,13 +253,26 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 }
 
 .footer-img-text {
-  font-weight: 400;
-  font-size: 21px;
+  font-weight: 700 !important;
+  color: black !important;
+  font-size: 42px;
   width: 70%;
   max-width: 70%;
   line-height: 1.;
   margin-top: 3em;
 }
+
+.footer-img-sub-text{
+
+  font-weight: 500 !important;
+  color: black !important;
+  font-size: 32px;
+  width: 70%;
+  max-width: 70%;
+  line-height: 1.;
+  margin-top: 3em;
+}
+
 
 .footer-img-text-encuentraT {
   font-size: 21px;
@@ -296,11 +309,11 @@ a.join-now {
 .motivation-text {
   color: #ffffff;
   font-family: Poppins;
-  font-weight: 700;
+  font-weight: 400;
   letter-spacing: -0.05em;
-  text-align: left;
+  text-align: center;
   line-height: 1;
-  justify-content: flex-start;
+  justify-content: flex-center;
   height: auto;
   max-width: 100%;
   width: auto;
@@ -372,7 +385,7 @@ a.join-now:hover {
 
   /* height: 800px; */
   background-color: #104e66;
-  padding-top: 7em;
+  padding: 7em 6em 0 6em;
 }
 
 .cardFact-section {
@@ -505,6 +518,15 @@ a.join-now:hover {
   .footer-img-text-encuentraT {
 
     font-size: 16px;
+    padding-left: 3em;
+    padding-right: 1em;
+
+  }
+
+
+  .facts-container{
+
+    padding: 1em 2em 0 2.5em;
   }
 
 
@@ -573,7 +595,7 @@ a.join-now:hover {
   }
 
   .title-img-text {
-    font-size: 15px !important;
+    font-size: 18px !important;
     margin-left: 15px;
     /* o el valor que funcione mejor en tu caso */
   }
@@ -712,8 +734,12 @@ a.join-now:hover {
 
     margin: 2em;
 
+  }
 
+  .footer-img-text-encuentraT{
 
+    font-size: 16px;
+    padding-right: 3em;
   }
 
 
@@ -815,7 +841,8 @@ a.join-now:hover {
 
 @media (min-width: 1024px) and (max-width: 1999px) {
   a.join-now {
-    width: 40%;
+    width: 20%;
+    
   }
 
   .container-button-motivation-text {
@@ -839,11 +866,11 @@ a.join-now:hover {
   }
 
   .motivationSentence {
-    font-size: 40px;
+    font-size: 34px;
   }
 
   .title-img-text {
-    font-size: 15px;
+    font-size: 22px;
   }
 
   .dicenDeMi-Title {
@@ -869,7 +896,7 @@ a.join-now:hover {
   }
 
   .motivationSentence {
-    font-size: 45px;
+    font-size: 34px;
   }
 
   .card-section {
@@ -905,12 +932,12 @@ a.join-now:hover {
 @media (min-width: 1400px) and (max-width: 1999px) {
 
   .motivationSentence {
-    font-size: 54px;
-  }
+    font-size: 34px;
 
   .img-text {
-    padding-left: 2em;
-    padding-right: 5em;
+    /* padding-left: 2em;
+    padding-right: 5em; */
+    
   }
 }
 
@@ -920,4 +947,5 @@ a.join-now:hover {
   .navbar-toggler {
     display: block;
   }
+}
 }

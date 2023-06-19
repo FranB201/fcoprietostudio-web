@@ -240,8 +240,9 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 
 .img-text {
-  padding-top: 2em;
-  padding-left: 4em
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 100px !important;
 }
 
 .title-img-text {
@@ -254,7 +255,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 .footer-img-text {
   font-weight: 700 !important;
-  color: black !important;
+  color: #1b314b !important;
   font-size: 42px;
   width: 70%;
   max-width: 70%;
@@ -262,10 +263,11 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   margin-top: 3em;
 }
 
+
 .footer-img-sub-text{
 
   font-weight: 500 !important;
-  color: black !important;
+  color:  #1b314b!important;
   font-size: 32px;
   width: 70%;
   max-width: 70%;
@@ -305,7 +307,7 @@ a.join-now {
   border-top: 0px solid rgba(0, 0, 0, 0);
 }
 
-
+/* 
 .motivation-text {
   color: #ffffff;
   font-family: Poppins;
@@ -314,6 +316,22 @@ a.join-now {
   text-align: center;
   line-height: 1;
   justify-content: flex-center;
+  height: auto;
+  max-width: 100%;
+  width: auto;
+  margin: 25px 0px 25px 0px;
+} */
+.motivation-text {
+  color: #306485;
+  font-family: Poppins;
+  font-weight: 400;
+  letter-spacing: -0.05em;
+  text-align: justify;
+  text-align-last: center;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: auto;
   max-width: 100%;
   width: auto;
@@ -369,13 +387,17 @@ a.join-now:hover {
   font-weight: 700;
   height: auto;
   line-height: 1.4;
-  margin: 0px 50px 0px 0px;
+  margin: 0px 0px 0px 0px;
   text-align: center;
   width: auto;
   max-width: calc(100% - 50px);
   justify-content: center;
 }
-
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .container-button-motivation-text {
   width: 20%;
 }
@@ -514,6 +536,9 @@ a.join-now:hover {
   .container-button-motivation-text {
     width: 100%;
   }
+  .footer-img-text{
+    font-size: 25px;
+  }               
 
   .footer-img-text-encuentraT {
 
@@ -522,27 +547,27 @@ a.join-now:hover {
     padding-right: 1em;
 
   }
-
+  .footer-img-sub-text{
+    font-size: 16px;
+  }
 
   .facts-container{
 
     padding: 1em 2em 0 2.5em;
   }
 
-
   .homeImg-container {
-    height: 65vh;
+    height: 50vh;
 
   }
 
   .img-text {
-    padding-top: 2em;
-    padding-left: 1em !important;
-    padding-right: 5em !important;
+    padding-top: 20px !important;
+
   }
 
   .motivationSentence {
-    font-size: 25px !important;
+    font-size: 14px;
   }
 
 
@@ -683,8 +708,11 @@ a.join-now:hover {
   }
 
   .homeImg-container {
-    height: 50vh;
+    height: 55vh;
 
+  }
+  .motivationSentence {
+    font-size: 15px !important;
   }
 
   .rezise:hover .h1Cardvertical h1::after,
@@ -692,7 +720,9 @@ a.join-now:hover {
     transform: scaleX(0.6);
 
   }
-
+  .footer-img-sub-text{
+    font-size: 16px;
+  }
 
   .dicenDeMi-Title {
 
@@ -736,10 +766,23 @@ a.join-now:hover {
 
   }
 
+  
+
   .footer-img-text-encuentraT{
 
     font-size: 16px;
     padding-right: 3em;
+  }
+  .footer-img-text{
+    font-size: 25px;
+  }               
+
+  .footer-img-text-encuentraT {
+
+    font-size: 16px;
+    padding-left: 3em;
+    padding-right: 1em;
+
   }
 
 
@@ -778,7 +821,7 @@ a.join-now:hover {
   }
 
   .motivationSentence {
-    font-size: 25px !important;
+    font-size: 15px !important;
   }
 
   .title-img-text {
@@ -910,9 +953,9 @@ a.join-now:hover {
   }
 
   .img-text {
-    padding-top: 2em;
-    padding-left: 2em;
-    padding-right: 5em;
+    width: 80%;
+  margin: 0 auto;
+  padding-top: 100px;
   }
 
 
@@ -934,11 +977,6 @@ a.join-now:hover {
   .motivationSentence {
     font-size: 34px;
 
-  .img-text {
-    /* padding-left: 2em;
-    padding-right: 5em; */
-    
-  }
 }
 
 @media (min-width: 100px) and (max-width: 767px) {

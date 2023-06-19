@@ -43,10 +43,9 @@ export const HomePage = () => {
                     <div className="motivation-text footer-img-sub-text">
                         Y si tú quieres te ayudaré a que tú también lo logres.
                     </div>
-                    <div >
+                    <div className="button-container">
                         <a className="join-now text-button-motivation-text">
                             <span className="text-button-join-now">unete ahora</span>
-
                             <ArrowRightAltIcon fontSize="large" />
                         </a>
                     </div>
@@ -127,7 +126,7 @@ export const HomePage = () => {
                                 </div>
                             </div>
 
-                            <div className="col-lg-6 col-md-12 col-sm-12 img-text img-text-find">
+                            <div className="col-lg-6 col-md-12 col-sm-12  img-text-find">
                                 <div className="row">
                                     <div className="col">
                                         <div className="motivation-text-encuentraTuEnt title-img-text">

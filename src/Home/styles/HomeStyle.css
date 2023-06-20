@@ -976,8 +976,14 @@ a.join-now:hover {
 
   .motivationSentence {
     font-size: 34px;
+}
+
+
+.img-text {
+  padding-top: 200px !important;
 
 }
+
 
 @media (min-width: 100px) and (max-width: 767px) {
 

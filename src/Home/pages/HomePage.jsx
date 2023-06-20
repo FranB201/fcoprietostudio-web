@@ -187,7 +187,7 @@ export const HomePage = () => {
                                     iconCard={<AssignmentIndIcon className="fact-icon" style={{ fontSize: 80 }} />}
                                     title="Entrevista inicial"
                                     descriptionItem={`Escuchamos a nuestros clientes, en una entrevista incial, evaluamos
-                                    su situación personal y hacemos lo que entendemos que necesitasn para ayudarles
+                                    su situación personal y hacemos lo que entendemos que necesitan para ayudarles
                                     a conseguir su objetivo.
                                         `}
                                 />

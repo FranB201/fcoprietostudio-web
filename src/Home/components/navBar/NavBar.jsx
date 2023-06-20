@@ -3,7 +3,7 @@ import { AppBar, Grid, IconButton, Toolbar, Typography, Box } from "@mui/materia
 import { styled } from "@mui/system";
 import MenuIcon from '@mui/icons-material/Menu';
 import "../../styles/NavBarStyle.css";
-import logo from "../../../../src/assets/logo/LogoSinFondo.png";
+import logo from "../../../../src/assets/logo/LogoNavBarNew.png";
 
 
 

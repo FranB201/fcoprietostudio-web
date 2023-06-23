@@ -54,8 +54,81 @@ export const HomePage = () => {
             </div>
 
             <div>
-                <div className="startRadial rezise">
-                    <div id="comoEmpezar" className="row pt-5">
+                <div className="startRadial">
+
+                    <div className="row">
+
+                        <div className="col-6 mt-lg-5  pt-5 background-sections">
+                            <h2>ENTRENAMIENTOS PRESENCIALES</h2>
+
+
+                        </div>
+
+
+                        <div className="col-6 mt-lg-5 pt-5 background-sections">
+                            <h2>ENCUENTRA TU ENTRENAMIENTO</h2>
+
+                        </div>
+
+
+                    </div>
+
+                    <div className="row">
+
+                        <div className="col-6 pt-5 background-sections">
+                            <h2>PROGRAMAS Y RETOS</h2>
+
+
+                        </div>
+
+
+                        <div className="col-6  pt-5 background-sections">
+                            <h2>NUTRICIÓN</h2>
+
+                        </div>
+
+
+                    </div>
+
+                    <div className="row">
+
+                        <div className="col-6  pt-5 background-sections">
+                            <h2>ARTICULOS</h2>
+
+
+                        </div>
+
+
+                        <div className="col-6 pt-5 background-sections">
+                            <h2>DICEN DE MI</h2>
+                            <div>
+                            <CardReview />
+
+                        </div>
+
+                        </div>
+
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    {/*         <div id="comoEmpezar" className="row pt-5">
                         <div className="col-12 mt-lg-5 h1Cardvertical">
                             <h1>PROGRAMAS PRESENCIALES</h1>
                         </div>
@@ -98,7 +171,7 @@ export const HomePage = () => {
                                 ]}
                             />
                         </div>
-                    </div>
+                    </div> */}
 
                 </div>
 
@@ -170,40 +243,40 @@ export const HomePage = () => {
                 <div className="facts-container rezise ">
 
                     {/*<Fade direction="up" triggerOnce={true} fraction={0.6} className="fade-element"> */}
-                        <div className="row cardFact-section " >
-                            <div id="experience" className="col-lg-4 col-md-6 col-sm-12">
-                                <CardVerticalFact
-                                    iconCard={<WorkspacePremiumIcon className="fact-icon" style={{ fontSize: 80 }} />}
+                    <div className="row cardFact-section " >
+                        <div id="experience" className="col-lg-4 col-md-6 col-sm-12">
+                            <CardVerticalFact
+                                iconCard={<WorkspacePremiumIcon className="fact-icon" style={{ fontSize: 80 }} />}
 
-                                    title="Experiencia"
-                                    descriptionItem={`No somos un gimnasio. Entrenadores, Nutricionista, Quiromasajista y Fisioterapeuta trabajamos unidos y en perfecta comunicación para garantizar siempre el mejor resultado.
+                                title="Experiencia"
+                                descriptionItem={`No somos un gimnasio. Entrenadores, Nutricionista, Quiromasajista y Fisioterapeuta trabajamos unidos y en perfecta comunicación para garantizar siempre el mejor resultado.
                 
                                     `}
 
-                                />
-                            </div>
-                            <div id="interview" className="col-lg-4 col-md-6 col-sm-12 interview-card">
-                                <CardVerticalFact
-                                    iconCard={<AssignmentIndIcon className="fact-icon" style={{ fontSize: 80 }} />}
-                                    title="Entrevista inicial"
-                                    descriptionItem={`Escuchamos a nuestros clientes, en una entrevista incial, evaluamos
+                            />
+                        </div>
+                        <div id="interview" className="col-lg-4 col-md-6 col-sm-12 interview-card">
+                            <CardVerticalFact
+                                iconCard={<AssignmentIndIcon className="fact-icon" style={{ fontSize: 80 }} />}
+                                title="Entrevista inicial"
+                                descriptionItem={`Escuchamos a nuestros clientes, en una entrevista incial, evaluamos
                                     su situación personal y hacemos lo que entendemos que necesitan para ayudarles
                                     a conseguir su objetivo.
                                         `}
-                                />
-                            </div>
-                            <div id="personaltraining" className="col-lg-4 col-md-6 col-sm-12">
-                                <CardVerticalFact
-                                    iconCard={<RestaurantIcon className="fact-icon" style={{ fontSize: 80 }} />}
+                            />
+                        </div>
+                        <div id="personaltraining" className="col-lg-4 col-md-6 col-sm-12">
+                            <CardVerticalFact
+                                iconCard={<RestaurantIcon className="fact-icon" style={{ fontSize: 80 }} />}
 
-                                    title="Plan nutricional"
-                                    descriptionItem={`Plan adaptado a tus necesidades y preferencias individuales ayudándote a maximizar el rendimiento físico, mejorar la recuperación post-entrenamiento y alcanzar tus metas de peso de forma saludable y sostenible.
+                                title="Plan nutricional"
+                                descriptionItem={`Plan adaptado a tus necesidades y preferencias individuales ayudándote a maximizar el rendimiento físico, mejorar la recuperación post-entrenamiento y alcanzar tus metas de peso de forma saludable y sostenible.
                                     `}
 
-                                />
-                            </div>
+                            />
                         </div>
-                {/*</Fade> */}
+                    </div>
+                    {/*</Fade> */}
                 </div>
             </div>
 
@@ -219,22 +292,22 @@ export const HomePage = () => {
                 <div id="contacto" className="row hola-subcontainerBody">
                     <div className="col-lg-12 hola-img-container">
 
-                        <Carousel/>
+                        <Carousel />
 
                     </div>
                     <div className="col-lg-12 info-hola">
-                    <hr className="thick-white-line"></hr>
-                    <span className="sub-hola-contacto">
-                        <MailOutlineIcon style={{ color: 'white', marginRight: '10px' }}/>
-                        ¿Necesitas más información? Escríbenos a <br /><strong>hola@franciscoprietostudio.es</strong>
-                    </span>
-                    <hr className="thick-white-line"></hr>
-                    <span className="sub-hola-contacto">
-                        <LocalPhoneIcon style={{ color: 'white', marginRight: '10px' }}/>
-                        ¿Prefieres una conversación directa? <br />Llámanos al  
-                        <strong> 693 02 32 21</strong>
-                    </span>
-                </div>
+                        <hr className="thick-white-line"></hr>
+                        <span className="sub-hola-contacto">
+                            <MailOutlineIcon style={{ color: 'white', marginRight: '10px' }} />
+                            ¿Necesitas más información? Escríbenos a <br /><strong>hola@franciscoprietostudio.es</strong>
+                        </span>
+                        <hr className="thick-white-line"></hr>
+                        <span className="sub-hola-contacto">
+                            <LocalPhoneIcon style={{ color: 'white', marginRight: '10px' }} />
+                            ¿Prefieres una conversación directa? <br />Llámanos al
+                            <strong> 693 02 32 21</strong>
+                        </span>
+                    </div>
 
 
 

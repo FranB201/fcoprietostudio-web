@@ -46,7 +46,9 @@
 
 .cardFact,
 .cardFact-body {
-    background-color: #07374a !important;
+/*     background-color: #07374a !important;
+ */
+    background-image: radial-gradient( circle farthest-corner at 22.4% 21.7%, rgba(4, 191, 228, 0.28) 0%, rgba(2, 84, 185, 0.144) 100.2% );
 }
 
 .content-cardFact {

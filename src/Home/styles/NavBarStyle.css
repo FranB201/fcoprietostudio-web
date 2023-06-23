@@ -13,6 +13,13 @@
         cursor: pointer;
     }
 
+    .nav-link1 {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+        padding-left: 5em;
+    }
+
     .nav-link:hover {
         color: #1F92D1;  
     }

@@ -14,15 +14,15 @@ export const NavBar = () => {
             position="fixed"
             className="navbar-horizontal"
             sx={{
-                backgroundColor: '#124559',
-                height: 100,
+                backgroundColor: '#2DAAE2',
+                height: 80,
                 fontFamily: 'Poppins',
                 fontSize: '18px'
             }}
         >
             <Toolbar sx={{ display: 'flex', justifyContent: 'space-between' }}>
-                <Box sx={{ flex: 0.5, display: { xs: 'none', md: 'block' } }}>
-                    <a className="nav-link" href="#contacto">Hola</a>
+                <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' } }}>
+                    <a className="nav-link1" href="#contacto">Hola</a>
                 </Box>
                 <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' } }}>
                     <a className="nav-link" href="#comoEmpezar">Como empezar</a>

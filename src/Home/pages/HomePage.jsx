@@ -1,10 +1,10 @@
 
 import { HomeLayout } from "../layout/HomeLayout"
-import { CardVertical, CardReview, CardVerticalFact } from "../components"
+import { CardVertical, CardReview, CardVerticalFact, Carousel } from "../components"
 import studioCard from "../../../src/assets/cardImages/studioCard.png"
 import grupxpressCard from "../../../src/assets/cardImages/grupoXpresSala.jpg"
 import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP.jpg"
-import HomeImg3 from "../../../src/assets/HomeImage/HomeImg2.png"
+import HomeImg3 from "../../../src/assets/HomeImage/HomeImg3.png"
 import WarningIcon from '@mui/icons-material/Warning';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
@@ -217,11 +217,12 @@ export const HomePage = () => {
                 </div>
 
                 <div id="contacto" className="row hola-subcontainerBody">
-                    <div className="col-lg-6 hola-img-container">
-                    <img className="hola-img-info" src={HolaImg} alt="imagen de holaSection"/>
+                    <div className="col-lg-12 hola-img-container">
+
+                        <Carousel/>
 
                     </div>
-                    <div className="col-lg-6 info-hola">
+                    <div className="col-lg-12 info-hola">
                     <hr className="thick-white-line"></hr>
                     <span className="sub-hola-contacto">
                         <MailOutlineIcon style={{ color: 'white', marginRight: '10px' }}/>

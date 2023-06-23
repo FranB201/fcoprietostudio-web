@@ -255,7 +255,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 .footer-img-text {
   font-weight: 700 !important;
-  color: #1b314b !important;
+  color: #ffffff !important;
   font-size: 42px;
   width: 70%;
   max-width: 70%;
@@ -267,7 +267,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 .footer-img-sub-text{
 
   font-weight: 500 !important;
-  color:  #1b314b!important;
+  color:  #ffffff!important;
   font-size: 32px;
   width: 70%;
   max-width: 70%;
@@ -312,7 +312,7 @@ a.join-now {
   color: #ffffff;
   font-family: Poppins;
   font-weight: 400;
-  letter-spacing: -0.05em;
+  letter-spacing: -0.05em;S
   text-align: center;
   line-height: 1;
   justify-content: flex-center;
@@ -322,7 +322,7 @@ a.join-now {
   margin: 25px 0px 25px 0px;
 } */
 .motivation-text {
-  color: #306485;
+  color: #53aae0;
   font-family: Poppins;
   font-weight: 400;
   letter-spacing: -0.05em;

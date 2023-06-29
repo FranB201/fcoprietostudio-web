@@ -1,0 +1,131 @@
+
+
+.homeImg-container-header {
+    width: 100%;
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0 3em 0 4em;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #ffffff; /* Para una mejor visibilidad del texto sobre la imagen de fondo */
+}
+
+.img-text-header {
+    width: 50%;
+    transition: all .3s; /* Para un cambio suave del tamaño del contenedor al redimensionar */
+}
+
+.title-img-text-header, .footer-img-text-header, .footer-img-sub-text {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left;
+    
+}
+
+.motivation-text {
+    color: #53aae0;
+    font-family: Poppins;
+    font-weight: 400;
+    letter-spacing: -0.05em;
+    text-align: left;
+    line-height: 1;
+    margin: 25px 0;
+}
+
+.footer-img-text-header {
+    font-size: 42px;
+    width: 70%;
+    line-height: 1.5;
+    margin-top: 0.5em;
+    font-weight: 700;
+    color: #ffff;
+}
+
+.footer-img-sub-text {
+    font-size: 32px;
+    width: 70%;
+    line-height: 1.5; /* Corregido desde 1. */
+    margin-top: 0.5em;
+    font-weight: 500;
+    color: #ffff;
+}
+
+.text-button-motivation-text {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    transition: all .3s; /* Para un cambio suave de tamaño y color al pasar el mouse */
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-start; /* Centrado a la izquierda */
+    margin-top: 20px; /* Añadido para dar un poco de espacio entre el texto y el botón */
+}
+
+a.join-now {
+    align-items: center;
+    justify-content: center;
+    width: auto;  
+    height: 50px;
+    padding: 9px 20px; /* Añadido para dar un poco de espacio en los lados del texto del botón */
+    background: linear-gradient(90deg, #65bce8, #306485);
+    transition: all .3s;
+    border-radius: 32px;
+    text-decoration: none; /* Para eliminar la línea debajo del texto del enlace */
+    margin-right: auto;
+}
+
+a.join-now:hover {
+    background: linear-gradient(90deg, #306485, #65bce8); /* Intercambia los colores al pasar el mouse */
+    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
+}
+.text-button-motivation-text {
+    color: #ffffff;
+}
+
+  @media (min-width: 200px) and (max-width: 410px) {
+  
+  }
+  
+  /* Estilo para pantallas moviles */
+  @media (min-width: 411px) and (max-width: 500px) {
+  
+  
+  }
+  
+  /* Estilo para pantallas medianas (tabletas en modo horizontal, pequeños ordenadores) */
+  @media (min-width: 501px) and (max-width: 1023px) {
+
+  
+  }
+  
+  /* Estilo para pantallas grandes (ordenadores de escritorio) */
+
+  
+  
+  @media (min-width: 1024px) and (max-width: 1999px) {
+    .homeImg-container-header {
+    
+        height: 75vh;
+
+
+      
+      }
+      .img-text-header {
+        width: 70%;
+      }
+      
+  }
+  
+  @media (min-width: 2000px) and (max-width: 4000px) {
+
+  
+  }
+  
+  

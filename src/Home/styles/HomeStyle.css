@@ -29,8 +29,12 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
     background: radial-gradient(circle, rgba(56,166,226,1) 7%, rgba(31,146,209,1) 18%, rgba(41,100,130,1) 37%, rgba(40,99,129,1) 58%); */
 
 
-  background: rgb(88, 123, 143);
+/*   background: rgb(88, 123, 143);
   background: linear-gradient(180deg, rgba(88, 123, 143, 0.489) 2%, rgba(41, 99, 129, 1) 30%, rgba(34, 85, 111, 1) 64%, rgba(16, 78, 102, 1) 78%);
+ */
+
+
+ background: linear-gradient(90deg, #dbe6eb, #b9d2e1);
 
 }
 
@@ -60,7 +64,38 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 .background-sections {
   border: 12px solid white;
+  height: 600px;
 
+}
+
+.centered-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.centered-content-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.button-section{
+  margin-top: 1em;
+}
+
+
+.background-sections img {
+  width: 90%; /* Ajusta este valor según tus necesidades */
+  height: auto;
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 30px;
 }
 
 
@@ -70,11 +105,10 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   }
 }
 
-
+/* 
 .homeImg-container {
   width: 100%;
   height: 65vh;
-  /* Ajusta la altura a tu necesidad */
 
   background-position: center;
   background-repeat: no-repeat;
@@ -86,10 +120,8 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 .homeImg-container img {
   width: 100%;
   height: 100%;
-  /* Asegúrate de que la altura sea automática para mantener las proporciones de la imagen */
   object-fit: cover;
-  /* Esto hará que la imagen se ajuste a su contenedor mientras mantiene sus proporciones */
-}
+} */
 
 
 .card-section {
@@ -104,18 +136,6 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 }
 
-.banner-container {
-
-  overflow: hidden;
-  position: relative;
-  width: 90%;
-  height: 90%;
-  margin-left: 3em;
-  border-top-right-radius: 90px;
-  /* Esto afectará solo a la esquina superior derecha */
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.3) 2%, rgba(184, 184, 184, 0.5) 39%, rgba(129, 129, 129, 0.3) 98%);
-
-}
 
 .fade-element {
   opacity: 0;
@@ -123,41 +143,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 }
 
 
-.container-proximamente {
 
-  transform: rotate(-5deg);
-  /* Ajusta el ángulo de inclinación */
-  background-color: black;
-  position: relative;
-  overflow: hidden;
-  height: 80px;
-  /* Ajusta a tu necesidad */
-  width: 110%;
-  margin-top: 13em;
-
-}
-
-.texto-proximamente {
-  color: yellow;
-  position: absolute;
-  white-space: nowrap;
-  font-size: 4em;
-  /* Ajusta el tamaño del texto */
-  animation: mover 50s linear infinite;
-  /* Ajusta la velocidad de la animación */
-  font-weight: 800;
-  word-spacing: 40px;
-  /* Ajusta el espacio entre las palabras */
-  font-family: Anton;
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.texto-proximamente div {
-  margin: 0 20px;
-  /* Ajusta este valor a tu preferencia */
-}
 
 @keyframes mover {
   0% {
@@ -171,22 +157,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 
 
-.play-icon-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  /* Los siguientes estilos son opcionales, pero pueden ayudarte a hacer que el ícono sea más visible en el fondo */
-  border-radius: 50%;
-  /* Esto hace que el fondo sea un círculo */
-  padding: 10px;
-  /* Ajusta el espaciado alrededor del ícono */
-}
 
-.play-icon {
-  color: white;
-  /* Cambia el color del ícono */
-}
 
 
 
@@ -224,7 +195,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 }
 
 
-
+/* 
 .img-text {
   width: 80%;
   margin: 0 auto;
@@ -260,7 +231,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   line-height: 1.;
   margin-top: 3em;
 }
-
+ */
 
 .footer-img-text-encuentraT {
   font-size: 21px;
@@ -273,25 +244,6 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 }
 
-a.join-now {
-  display: inline-flex;
-  /* Cambiado de inline-block a inline-flex */
-  align-items: center;
-  /* Añadido para alinear verticalmente los elementos */
-  justify-content: center;
-  /* Para alinear horizontalmente los elementos */
-  width: 100%;
-  /* Para pantallas pequeñas, el botón ocupará el 100% del ancho */
-  height: 50px;
-  /*  background: linear-gradient(180deg, #65bce8 0%, #306485 100%); */
-  background: linear-gradient(90deg, #65bce8, #306485);
-  transition: all .3s;
-  border-bottom: 0px solid rgba(0, 0, 0, 0);
-  border-left: 0px solid rgba(0, 0, 0, 0);
-  border-radius: 32px;
-  border-right: 0px solid rgba(0, 0, 0, 0);
-  border-top: 0px solid rgba(0, 0, 0, 0);
-}
 
 /* 
 .motivation-text {
@@ -307,7 +259,7 @@ a.join-now {
   width: auto;
   margin: 25px 0px 25px 0px;
 } */
-.motivation-text {
+/* .motivation-text {
   color: #53aae0;
   font-family: Poppins;
   font-weight: 400;
@@ -323,7 +275,7 @@ a.join-now {
   width: auto;
   margin: 25px 0px 25px 0px;
 }
-
+ */
 
 .motivation-text-encuentraTuEnt {
   color: #ffffff;
@@ -355,18 +307,13 @@ a.join-now {
 }
 
 
-a.join-now:hover {
-  /* background: linear-gradient(180deg, #306485 0%, #124559 100%); */
-  background: linear-gradient(90deg, #306485, #124559);
-  transition: all .3s;
-  color: #ffffff;
-}
+
 
 .text-button-join-now {
   padding-right: 10px;
 
 }
-
+/* 
 .text-button-motivation-text {
   color: #ffffff;
   font-size: 17px;
@@ -389,7 +336,7 @@ a.join-now:hover {
 .container-button-motivation-text {
   width: 20%;
 }
-
+ */
 
 .facts-container {
 
@@ -513,18 +460,13 @@ a.join-now:hover {
 }
 
 @media (min-width: 200px) and (max-width: 410px) {
-
-  a.join-now {
-    width: 60%;
-  }
-
   .container-button-motivation-text {
     width: 100%;
   }
-
+/* 
   .footer-img-text {
     font-size: 25px;
-  }
+  } */
 
   .footer-img-text-encuentraT {
 
@@ -533,25 +475,22 @@ a.join-now:hover {
     padding-right: 1em;
 
   }
-
+/* 
   .footer-img-sub-text {
     font-size: 16px;
-  }
+  } */
 
   .facts-container {
 
     padding: 1em 2em 0 2.5em;
   }
 
-  .homeImg-container {
-    height: 50vh;
 
-  }
-
+/* 
   .img-text {
     padding-top: 20px !important;
 
-  }
+  } */
 
   .motivationSentence {
     font-size: 14px;
@@ -575,18 +514,9 @@ a.join-now:hover {
     background: #555;
   }
 
-  .find-work-out {
-    padding: 0 10% 0 10%;
 
 
-  }
 
-  .banner-container {
-    width: 100%;
-    height: 80%;
-    margin-left: 0;
-
-  }
 
   .container-proximamente {
 
@@ -692,10 +622,6 @@ a.join-now:hover {
     padding: 0px 12% 0 12%;
   }
 
-  .homeImg-container {
-    height: 55vh;
-
-  }
 
   .motivationSentence {
     font-size: 15px !important;
@@ -761,9 +687,9 @@ a.join-now:hover {
     padding-right: 3em;
   }
 
-  .footer-img-text {
+/*   .footer-img-text {
     font-size: 25px;
-  }
+  } */
 
   .footer-img-text-encuentraT {
 
@@ -779,9 +705,6 @@ a.join-now:hover {
 
 /* Estilo para pantallas pequeñas (móviles en modo horizontal y tabletas en modo vertical) */
 @media (min-width: 481px) and (max-width: 768px) {
-  a.join-now {
-    width: 200px;
-  }
 
   .card-section {
     padding: 45px 12% 0 12%;
@@ -791,17 +714,13 @@ a.join-now:hover {
     width: 100%;
   }
 
-  .homeImg-container {
-    height: 50vh !important;
-    /* Ajusta la altura a tu necesidad */
 
-  }
 
-  .img-text {
+/*   .img-text {
     padding-top: 2em;
     padding-left: 1em;
     padding-right: 5em;
-  }
+  } */
 
   .motivationSentence {
     font-size: 15px !important;
@@ -817,9 +736,7 @@ a.join-now:hover {
 
 /* Estilo para pantallas medianas (tabletas en modo horizontal, pequeños ordenadores) */
 @media (min-width: 769px) and (max-width: 1024px) {
-  a.join-now {
-    width: 200px;
-  }
+
 
 
   .container-button-motivation-text {
@@ -830,18 +747,14 @@ a.join-now:hover {
     padding: 1% 12% 10% 10%;
   }
 
-  .homeImg-container {
-    height: 60vh;
-    /* Ajusta la altura a tu necesidad */
 
-  }
 
-  .img-text {
+/*   .img-text {
     padding-top: 2em;
     padding-left: 2em;
     padding-right: 5em;
   }
-
+ */
   .motivationSentence {
     font-size: 30px;
   }
@@ -873,13 +786,9 @@ a.join-now:hover {
     padding: 15px 12% 0 5%;
   }
 
-  .homeImg-container {
-    height: 80vh;
-    /* Ajusta la altura a tu necesidad */
 
-  }
 
-  .img-text {
+/*   .img-text {
     padding-top: 4.5em;
     padding-left: 2.5em;
     padding-right: 5em;
@@ -891,7 +800,7 @@ a.join-now:hover {
 
   .title-img-text {
     font-size: 22px;
-  }
+  } */
 
   .dicenDeMi-Title {
 
@@ -901,9 +810,6 @@ a.join-now:hover {
 }
 
 @media (min-width: 2000px) and (max-width: 4000px) {
-  a.join-now {
-    width: 35%;
-  }
 
   .container-button-motivation-text {
     width: 20%;
@@ -923,17 +829,13 @@ a.join-now:hover {
     padding: 15px 12% 0 5%;
   }
 
-  .homeImg-container {
-    height: 70vh;
-    /* Ajusta la altura a tu necesidad */
 
-  }
 
-  .img-text {
+/*   .img-text {
     width: 80%;
     margin: 0 auto;
     padding-top: 100px;
-  }
+  } */
 
 
   .title-img-text {
@@ -955,12 +857,12 @@ a.join-now:hover {
     font-size: 34px;
   }
 
-
+/* 
   .img-text {
     padding-top: 200px !important;
 
   }
-
+ */
 
   @media (min-width: 100px) and (max-width: 767px) {
 

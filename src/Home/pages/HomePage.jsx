@@ -1,12 +1,10 @@
 
 import { HomeLayout } from "../layout/HomeLayout"
-import { CardVertical, CardReview, CardVerticalFact, Carousel } from "../components"
+import { CardVertical, CardReview, CardVerticalFact, Carousel, ComingSoonVideos, HeaderImage } from "../components"
 import studioCard from "../../../src/assets/cardImages/studioCard.png"
 import grupxpressCard from "../../../src/assets/cardImages/grupoXpresSala.jpg"
 import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP.jpg"
-import HomeImg3 from "../../../src/assets/HomeImage/HomeImg3.png"
 import WarningIcon from '@mui/icons-material/Warning';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import AssignmentIndIcon from '@mui/icons-material/AssignmentInd';
@@ -14,7 +12,7 @@ import RestaurantIcon from '@mui/icons-material/Restaurant';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Fade } from "react-awesome-reveal";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
-import HolaImg from "../../../src/assets/infoImage/fisicocultirismo-francisco-prieto-studio.jpg"
+import cambioFisico1 from "../../../src/assets/physicChange/cambioFisico1.png"
 
 
 
@@ -25,48 +23,39 @@ export const HomePage = () => {
 
         <HomeLayout>
 
-            {/*  <div className="homeImg-container" style={{ 
-                    backgroundImage: `linear-gradient(180deg, rgba(0,0,0,0) 28%, rgba(16,78,102,0.2) 40%, rgba(34,85,111,0.2) 40%, rgba(41,99,129,0.3) 50%, rgba(88,123,143,1)
-                    80%), url(${HomeImg3})`}}> */}
-
-
-
-            <div className="homeImg-container" style={{ backgroundImage: `url(${HomeImg3})` }}>
-                <div className="col-lg-12 col-md-12 col-sm-12 img-text">
-                    <div className="motivation-text title-img-text">
-                        Ángel Di Maria dijo...
-                    </div>
-                    <span className="motivationSentence motivation-text">  'El dolor pasa, el sudor se seca, el cansancio termina. Pero hay algo que nunca desaparecerá: la satisfacción de haberlo logrado.'  </span>
-                    <div className="motivation-text footer-img-text">
-                        Soy Francisco Prieto y entreno gente.
-                    </div>
-                    <div className="motivation-text footer-img-sub-text">
-                        Y si tú quieres te ayudaré a que tú también lo logres.
-                    </div>
-                    <div className="button-container">
-                        <a className="join-now text-button-motivation-text">
-                            <span className="text-button-join-now">unete ahora</span>
-                            <ArrowRightAltIcon fontSize="large" />
-                        </a>
-                    </div>
-                </div>
-
-            </div>
+          
+            <HeaderImage title="Ángel Di Maria dijo..." motivationText="El dolor pasa, el sudor se seca, el cansancio termina. Pero hay algo que nunca desaparecerá: la satisfacción de haberlo logrado." presentation1="Soy Francisco Prieto y entreno gente." presentation2="Y si tú quieres te ayudaré a que tú también lo logres." buttonText="Unete ahora"></HeaderImage>
 
             <div>
                 <div className="startRadial">
 
                     <div className="row">
 
-                        <div className="col-6 mt-lg-5  pt-5 background-sections">
-                            <h2>ENTRENAMIENTOS PRESENCIALES</h2>
+                        <div className="col-6 pt-5 background-sections">
+                            <h2>Entrenamientos Presenciales</h2>
+                            <div className="centered-content">
+                                <span>Descubre cómo puedes transformar tu cuerpo y tu salud.</span>
+                                <button className="button-section">Descubrir</button>
+                            </div>
+
+
+                            <img src={cambioFisico1} alt="" />
+
 
 
                         </div>
 
 
-                        <div className="col-6 mt-lg-5 pt-5 background-sections">
-                            <h2>ENCUENTRA TU ENTRENAMIENTO</h2>
+                        <div className="col-6 pt-5 background-sections">
+                            <h2>Encuentra tu Entrenamiento</h2>
+                            <div className="centered-content">
+                                <span>Rutinas de ejercicios personalizados para cualquier entorno: casa, gimnasio o al aire libre</span>
+                                <button className="button-section">Descubrir</button>
+                            </div>
+
+                            <div className="centered-content-body">
+                                <ComingSoonVideos />
+                            </div>
 
                         </div>
 
@@ -76,15 +65,24 @@ export const HomePage = () => {
                     <div className="row">
 
                         <div className="col-6 pt-5 background-sections">
-                            <h2>PROGRAMAS Y RETOS</h2>
+                            <h2>Programas y Retos</h2>
+                            <div className="centered-content">
+
+                                <span>¡Únete a nosotros y acepta el desafío de llevar tu forma física al siguiente nivel!</span>
+                                <button className="button-section">Descubrir</button>
+                            </div>
+
 
 
                         </div>
 
-
                         <div className="col-6  pt-5 background-sections">
-                            <h2>NUTRICIÓN</h2>
+                            <h2>Nutrición</h2>
+                            <div className="centered-content">
 
+                                <span>Complementa tu rutina de entrenamiento con nuestro enfoque integral de nutrición. </span>
+                                <button className="button-section">Descubrir</button>
+                            </div>
                         </div>
 
 
@@ -94,6 +92,11 @@ export const HomePage = () => {
 
                         <div className="col-6  pt-5 background-sections">
                             <h2>ARTICULOS</h2>
+                            <div className="centered-content">
+
+                                <span>Recursos diseñados para proporcionarte un apoyo constante en tu viaje hacia la salud y la forma física</span>
+                                <button className="button-section">Descubrir</button>
+                            </div>
 
 
                         </div>
@@ -101,10 +104,16 @@ export const HomePage = () => {
 
                         <div className="col-6 pt-5 background-sections">
                             <h2>DICEN DE MI</h2>
-                            <div>
-                            <CardReview />
+                            <div className="centered-content">
 
-                        </div>
+                                <span>Porque nos encantan los comentarios de nuestros clientes</span>
+
+                                <div>
+                                    <CardReview />
+
+                                </div>
+                            
+                            </div>
 
                         </div>
 
@@ -176,7 +185,7 @@ export const HomePage = () => {
                 </div>
 
             </div>
-            <div className="encuentraTuEntrenamiento-container">
+            {/*           <div className="encuentraTuEntrenamiento-container">
                 <div id="entrenamientos" className="row gx-1">
                     <div className="col-12  h1EncuentraTu">
                         <div className="row">
@@ -237,7 +246,7 @@ export const HomePage = () => {
                 </div>
 
 
-            </div>
+            </div> */}
             <div>
 
                 <div className="facts-container rezise ">

@@ -1,12 +1,14 @@
 import React from 'react'
 import "../../styles/CardVertical.css"
 import CheckIcon from '@mui/icons-material/Check';
-import  "../../styles/HeaderImage.css"
+import "../../styles/HeaderImage.css"
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import HomeImg3 from "../../../assets/HomeImage/HomeImg3.png";
-export const HeaderImage = ({  title, motivationText, presentation1,presentation2,buttonText }) => {
+import HomeImg3 from "../../../assets/HomeImage/HomeImg5.jpg";
+export const HeaderImage = ({ title, motivationText, presentation1, presentation2, buttonText }) => {
     return (
-        <div className="homeImg-container-header" style={{ backgroundImage: `url(${HomeImg3})` }}>
+        <div className="homeImg-container-header" style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.7)), url(${HomeImg3})`
+        }}>
             <div className="col-lg-12 col-md-12 col-sm-12 img-text-header">
                 <div className="motivation-text title-img-text-header">
                     {title}

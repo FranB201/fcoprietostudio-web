@@ -4,6 +4,8 @@ import { styled } from "@mui/system";
 import MenuIcon from '@mui/icons-material/Menu';
 import "../../styles/NavBarStyle.css";
 import logo from "../../../../src/assets/logo/LogoNavBarNew.png";
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -31,9 +33,13 @@ export const NavBar = () => {
                     <a className="nav-link" href="#entrenamientos">Entrenamientos</a>
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'center', flex: 1 }}>
-                    <a href="#">
+                <Link to="/">
+
+                    <a href="#top">
                         <img src={logo} alt="logo" className="NavBar-logo" />
-                    </a>                </Box>
+                    </a>
+                </Link>               
+                </Box>
                 <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' } }}>
                     <a className="nav-link" href="#dicenDeMiSection">Dicen de mi</a>
                 </Box>

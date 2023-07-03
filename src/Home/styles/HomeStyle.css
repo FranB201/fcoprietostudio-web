@@ -63,8 +63,12 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 }
 
 .background-sections {
-  border: 12px solid white;
-  height: 600px;
+
+  border-top: 12px solid white;
+  border-right: 0px solid white;
+  border-bottom: 0px solid white;
+  border-left: 12px solid white;
+  height: 650px;
 
 }
 
@@ -74,6 +78,8 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   align-items: center;
   justify-content: center;
   padding-top: 20px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .centered-content-body {
@@ -88,9 +94,24 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   margin-top: 1em;
 }
 
+.button-section-Descubrir{
+  margin-top: 1em;
+}
 
-.background-sections img {
-  width: 90%; /* Ajusta este valor según tus necesidades */
+.retos-img{
+  margin-top: -35px;
+
+}
+
+
+.cambio-img{
+  margin-top: 45px;
+  width: 100%;
+}
+
+
+.background-sections-img {
+  width: 90%;
   height: auto;
   display: block;
   margin: auto;
@@ -141,7 +162,6 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
-
 
 
 

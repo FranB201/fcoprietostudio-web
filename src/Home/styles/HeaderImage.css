@@ -37,7 +37,7 @@
 }
 
 .footer-img-text-header {
-    font-size: 42px;
+    font-size: 36px;
     width: 70%;
     line-height: 1.5;
     margin-top: 0.5em;
@@ -46,8 +46,8 @@
 }
 
 .footer-img-sub-text {
-    font-size: 32px;
-    width: 70%;
+    font-size: 26px;
+    width: 50%;
     line-height: 1.5; /* Corregido desde 1. */
     margin-top: 0.5em;
     font-weight: 500;

@@ -2,8 +2,8 @@
 import { HomeLayout } from "../layout/HomeLayout"
 import { CardVertical, CardReview, CardVerticalFact, Carousel, ComingSoonVideos, HeaderImage } from "../components"
 import studioCard from "../../../src/assets/cardImages/studioCard.png"
-import grupxpressCard from "../../../src/assets/cardImages/grupoXpresSala.jpg"
-import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP.jpg"
+import manzanaabs from "../../../src/assets/cardImages/manzanaabs.png"
+import PASTILLARETO from "../../../src/assets/cardImages/PASTILLARETOsinfondo.png"
 import WarningIcon from '@mui/icons-material/Warning';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
@@ -13,6 +13,9 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Fade } from "react-awesome-reveal";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import cambioFisico1 from "../../../src/assets/physicChange/cambioFisico1.png"
+import videoPresentation from "../../../src/assets/video/presentationStudio.mp4"
+import { Link } from 'react-router-dom';
+
 
 
 
@@ -23,11 +26,15 @@ export const HomePage = () => {
 
         <HomeLayout>
 
-          
-            <HeaderImage title="Ángel Di Maria dijo..." motivationText="El dolor pasa, el sudor se seca, el cansancio termina. Pero hay algo que nunca desaparecerá: la satisfacción de haberlo logrado." presentation1="Soy Francisco Prieto y entreno gente." presentation2="Y si tú quieres te ayudaré a que tú también lo logres." buttonText="Unete ahora"></HeaderImage>
+
+            <HeaderImage title="Ángel Di Maria dijo..." motivationText="El dolor pasa, el sudor se seca, el cansancio termina. 
+            Pero hay algo que nunca desaparecerá: la satisfacción de haberlo logrado."
+                presentation1="Soy Francisco Prieto y entreno gente."
+                presentation2="Y si tú quieres te ayudaré a que tú también lo logres."
+                buttonText="Unete ahora"></HeaderImage>
 
             <div>
-                <div className="startRadial">
+                <div  id="top" className="startRadial">
 
                     <div className="row">
 
@@ -37,12 +44,7 @@ export const HomePage = () => {
                                 <span>Descubre cómo puedes transformar tu cuerpo y tu salud.</span>
                                 <button className="button-section">Descubrir</button>
                             </div>
-
-
-                            <img src={cambioFisico1} alt="" />
-
-
-
+                            <img className="cambio-img" src={cambioFisico1} alt="" />
                         </div>
 
 
@@ -51,11 +53,24 @@ export const HomePage = () => {
                             <div className="centered-content">
                                 <span>Rutinas de ejercicios personalizados para cualquier entorno: casa, gimnasio o al aire libre</span>
                                 <button className="button-section">Descubrir</button>
+
+                            </div>
+                            <div className="centered-content">
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    style={{
+                                        width: "90%",
+                                        borderRadius: "20px"
+                                    }} // Asegúrate de establecer el ancho y el alto como lo desees
+                                >
+                                    <source src={videoPresentation} type="video/mp4" />
+                                    Tu navegador no soporta el elemento de video.
+                                </video>
+
                             </div>
 
-                            <div className="centered-content-body">
-                                <ComingSoonVideos />
-                            </div>
 
                         </div>
 
@@ -67,21 +82,22 @@ export const HomePage = () => {
                         <div className="col-6 pt-5 background-sections">
                             <h2>Programas y Retos</h2>
                             <div className="centered-content">
-
                                 <span>¡Únete a nosotros y acepta el desafío de llevar tu forma física al siguiente nivel!</span>
                                 <button className="button-section">Descubrir</button>
+                                <img className="retos-img" src={PASTILLARETO} alt="" style={{ width: 450 }} />
                             </div>
-
-
-
                         </div>
 
                         <div className="col-6  pt-5 background-sections">
                             <h2>Nutrición</h2>
                             <div className="centered-content">
-
                                 <span>Complementa tu rutina de entrenamiento con nuestro enfoque integral de nutrición. </span>
-                                <button className="button-section">Descubrir</button>
+                                <Link to="/nutricion">
+
+                                    <button className="button-section">Descubrir</button>
+                                </Link>
+                                <img className="nutritionImg background-sections-img" src={manzanaabs} alt="" style={{ width: 300 }} />
+
                             </div>
                         </div>
 
@@ -112,7 +128,7 @@ export const HomePage = () => {
                                     <CardReview />
 
                                 </div>
-                            
+
                             </div>
 
                         </div>
@@ -247,11 +263,10 @@ export const HomePage = () => {
 
 
             </div> */}
-            <div>
+            {/*   <div>
 
                 <div className="facts-container rezise ">
 
-                    {/*<Fade direction="up" triggerOnce={true} fraction={0.6} className="fade-element"> */}
                     <div className="row cardFact-section " >
                         <div id="experience" className="col-lg-4 col-md-6 col-sm-12">
                             <CardVerticalFact
@@ -285,12 +300,11 @@ export const HomePage = () => {
                             />
                         </div>
                     </div>
-                    {/*</Fade> */}
                 </div>
             </div>
+ */}
 
-
-            <div className="hola-container">
+            {/*   <div className="hola-container">
                 <div id="contacto" className="row hola-subcontainer">
                     <div className="col-12">
                         <h1>HOLA</h1>
@@ -325,10 +339,10 @@ export const HomePage = () => {
 
 
                 </div>
-            </div>
+            </div> */}
 
 
-
+            {/* 
             <div className="row holaNdReview-Section">
 
                 <div className="col-lg-12 col-sm-10 background-dicenDeMi">
@@ -347,7 +361,7 @@ export const HomePage = () => {
 
 
             </div>
-
+ */}
 
 
 

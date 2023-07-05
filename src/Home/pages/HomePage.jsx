@@ -29,9 +29,9 @@ export const HomePage = () => {
 
             <HeaderImage title="Ángel Di Maria dijo..." motivationText="El dolor pasa, el sudor se seca, el cansancio termina. 
             Pero hay algo que nunca desaparecerá: la satisfacción de haberlo logrado."
-                presentation1="SOY FRANCISCO PRIETO Y ENTRENO GENTE."
-                presentation2="Y si tú quieres te ayudaré a que tú también lo logres."
-                buttonText="Unete ahora"></HeaderImage>
+                presentation1="SOY FRANCISCO PRIETO Y VAMOS A LOGRARLO JUNTOS."
+/*                 presentation2="Y si tú quieres te ayudaré a que tú también lo logres."
+ */                buttonText="Unete ahora"></HeaderImage>
 
             <div>
                 <div  id="top" className="startRadial">

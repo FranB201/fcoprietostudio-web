@@ -16,8 +16,9 @@ export const NavBar = () => {
             position="fixed"
             className="navbar-horizontal"
             sx={{
-                backgroundColor: '#2DAAE2',
-                height: 80,
+                //backgroundColor: '#2DAAE2',
+                backgroundColor: '#01161E',
+                height: 60,
                 fontFamily: 'Poppins',
                 fontSize: '18px'
             }}

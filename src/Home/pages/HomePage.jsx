@@ -42,7 +42,9 @@ export const HomePage = () => {
                             <h2>Entrenamientos Presenciales</h2>
                             <div className="centered-content">
                                 <span>Descubre cómo puedes transformar tu cuerpo y tu salud.</span>
-                                <button className="button-section">Descubrir</button>
+                                <Link to="/studiotrainings">
+                                <button className="button-section">Saber más</button>
+                                </Link>
                             </div>
                             <img className="cambio-img" src={cambioFisico1} alt="" />
                         </div>
@@ -111,6 +113,7 @@ export const HomePage = () => {
                             <div className="centered-content">
 
                                 <span>Recursos diseñados para proporcionarte un apoyo constante en tu viaje hacia la salud y la forma física</span>
+                                
                                 <button className="button-section">Descubrir</button>
                             </div>
 
@@ -154,9 +157,9 @@ export const HomePage = () => {
 
 
                     {/*         <div id="comoEmpezar" className="row pt-5">
-                        <div className="col-12 mt-lg-5 h1Cardvertical">
-                            <h1>PROGRAMAS PRESENCIALES</h1>
-                        </div>
+                    <div className="col-12 mt-lg-5 h1Cardvertical">
+                        <h1>PROGRAMAS PRESENCIALES</h1>
+                    </div>
                     </div>
                     <div className="row gx-1 mt-lg-5 card-section" >
                         <div id="studio" className="col-lg-4 col-md-6 col-sm-12">

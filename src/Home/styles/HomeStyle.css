@@ -92,7 +92,13 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 .button-section{
   margin-top: 1em;
+
+
+  background-color: #2DAAE2;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
 }
+
 
 .button-section-Descubrir{
   margin-top: 1em;

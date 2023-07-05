@@ -6,13 +6,115 @@
     border-right: 0px solid white;
     border-bottom: 0px solid white;
     border-left: 12px solid white;
-    height: 300px;
+    height: 330px;
 }
 
+
+.button-section-nutrition{
+
+    background-color: #2DAAE2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+
+}
 
 
 .background-sections-nutrition-borderless{
 
+    height: 800px;
 
-    height: 300px;
+}
+
+
+
+
+
+.icons-line-nutrition{
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.background-sections-nutrition-borderless h2 {
+    position: relative;
+}
+
+.background-sections-nutrition-borderless h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -10px; /* Ajusta este valor para cambiar la distancia entre el texto y la línea */
+    transform: translateX(-50%) scaleX(0);
+    height: 3px;
+    width: 60%;
+    background-color: #2DAAE2;
+    border-radius: 50px;
+    transition: transform 0.3s ease;
+}
+
+.background-sections-nutrition-borderless:hover h2::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
+
+.steps-container {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.steps-nutrition-card{
+
+/*     background-color: #2DAAE2;
+ */    width: 100%;
+
+}
+
+
+.steps-nutrition-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.step-card {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    display: flex;
+    align-items: center;
+    background-color: rgba(158, 175, 181, 0.7);
+    height: 150px;
+    min-width: 700px; /* Asegúrate de que las tarjetas tengan un ancho mínimo */
+
+
+}
+
+.step-number {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #2DAAE2;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.step-text {
+    flex: 1;
+    font-size: 20px;
+    color: white;
 }

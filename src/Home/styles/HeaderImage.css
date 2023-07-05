@@ -6,7 +6,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0 3em 0 4em;
+    padding: 0 20em 0 4em;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -27,29 +27,29 @@
 }
 
 .motivation-text {
-    color: #53aae0;
+    color: WHITE;
     font-family: Poppins;
     font-weight: 400;
     letter-spacing: -0.05em;
     text-align: left;
     line-height: 1;
     margin: 25px 0;
+
 }
+
 
 .footer-img-text-header {
     font-size: 36px;
-    width: 70%;
+    width: 100%;
     line-height: 1.5;
-    margin-top: 0.5em;
     font-weight: 700;
     color: #ffff;
 }
 
 .footer-img-sub-text {
     font-size: 26px;
-    width: 50%;
+    width: 100%;
     line-height: 1.5; /* Corregido desde 1. */
-    margin-top: 0.5em;
     font-weight: 500;
     color: #ffff;
 }
@@ -66,6 +66,7 @@
     display: flex;
     justify-content: flex-start; /* Centrado a la izquierda */
     margin-top: 20px; /* Añadido para dar un poco de espacio entre el texto y el botón */
+    width: 120%;
 }
 
 a.join-now {
@@ -73,7 +74,7 @@ a.join-now {
     justify-content: center;
     width: auto;  
     height: 50px;
-    padding: 9px 20px; /* Añadido para dar un poco de espacio en los lados del texto del botón */
+    padding: 10px 5px; /* Añadido para dar un poco de espacio en los lados del texto del botón */
     background: linear-gradient(90deg, #65bce8, #306485);
     transition: all .3s;
     border-radius: 32px;

@@ -29,7 +29,7 @@ export const HomePage = () => {
 
             <HeaderImage title="Ángel Di Maria dijo..." motivationText="El dolor pasa, el sudor se seca, el cansancio termina. 
             Pero hay algo que nunca desaparecerá: la satisfacción de haberlo logrado."
-                presentation1="Soy Francisco Prieto y entreno gente."
+                presentation1="SOY FRANCISCO PRIETO Y ENTRENO GENTE."
                 presentation2="Y si tú quieres te ayudaré a que tú también lo logres."
                 buttonText="Unete ahora"></HeaderImage>
 
@@ -52,7 +52,7 @@ export const HomePage = () => {
                             <h2>Encuentra tu Entrenamiento</h2>
                             <div className="centered-content">
                                 <span>Rutinas de ejercicios personalizados para cualquier entorno: casa, gimnasio o al aire libre</span>
-                                <button className="button-section">Descubrir</button>
+                                <button className="button-section">Ver Videos</button>
 
                             </div>
                             <div className="centered-content">
@@ -83,7 +83,7 @@ export const HomePage = () => {
                             <h2>Programas y Retos</h2>
                             <div className="centered-content">
                                 <span>¡Únete a nosotros y acepta el desafío de llevar tu forma física al siguiente nivel!</span>
-                                <button className="button-section">Descubrir</button>
+                                <button className="button-section">¡Me apunto!</button>
                                 <img className="retos-img" src={PASTILLARETO} alt="" style={{ width: 450 }} />
                             </div>
                         </div>
@@ -94,7 +94,7 @@ export const HomePage = () => {
                                 <span>Complementa tu rutina de entrenamiento con nuestro enfoque integral de nutrición. </span>
                                 <Link to="/nutricion">
 
-                                    <button className="button-section">Descubrir</button>
+                                    <button className="button-section">Saber más</button>
                                 </Link>
                                 <img className="nutritionImg background-sections-img" src={manzanaabs} alt="" style={{ width: 300 }} />
 

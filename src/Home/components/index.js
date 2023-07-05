@@ -7,3 +7,4 @@ export * from './sideBar/SideBar';
 export * from './carousel/Carousel';
 export * from './comingSoon/ComingSoonVideos';
 export * from './headerImage/Headerimage';
+export * from './nutritionForm/NutritionForm';

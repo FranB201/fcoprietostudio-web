@@ -3,7 +3,7 @@ import { AppBar, Grid, IconButton, Toolbar, Typography, Box } from "@mui/materia
 import { styled } from "@mui/system";
 import MenuIcon from '@mui/icons-material/Menu';
 import "../../styles/NavBarStyle.css";
-import logo from "../../../../src/assets/logo/LogoNavBarNew.png";
+import logo from "../../../../src/assets/logo/LogoApp.png";
 import { Link } from 'react-router-dom';
 
 
@@ -17,7 +17,7 @@ export const NavBar = () => {
             className="navbar-horizontal"
             sx={{
                 //backgroundColor: '#2DAAE2',
-                backgroundColor: '#01161E',
+                backgroundColor: 'black',
                 height: 60,
                 fontFamily: 'Poppins',
                 fontSize: '18px'

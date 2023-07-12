@@ -17,8 +17,8 @@ export const StudiosTrainings = () => {
             <div className="startRadial">
 
                 <div className="container ">
-                    <div id="comoEmpezar" className="row pt-5">
-                        <div className="col-12 mt-lg-5 h1Cardvertical">
+                    <div id="comoEmpezar" className="row">
+                        <div className="col-12 mt-lg-5 h1CardverticalS">
                             <h1>PROGRAMAS PRESENCIALES</h1>
                         </div>
                     </div>
@@ -84,10 +84,7 @@ export const StudiosTrainings = () => {
                     </div>
                 </div>
 
-
-
-
-
+                
             </div>
 
         </HomeLayout>

@@ -13,7 +13,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Fade } from "react-awesome-reveal";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import cambioFisico1 from "../../../src/assets/physicChange/cambioFisico1.png"
-import collageStudio from "../../../src/assets/studioImages/collageStudio.png"
+import collageStudio from "../../../src/assets/studioImages/videosCollage.png"
 import videoPresentation from "../../../src/assets/video/presentationStudio.mp4"
 import { Link } from 'react-router-dom';
 

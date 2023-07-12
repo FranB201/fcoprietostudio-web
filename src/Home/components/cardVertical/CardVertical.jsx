@@ -10,7 +10,7 @@ export const CardVertical = ({ imageUrl, title, descriptionItems }) => {
             </div>
             <div className="card">
                 <div className="card-body content-Card">
-                    <h3 className="card-title">{title}</h3>
+                    <h3 className="card-title-programas">{title}</h3>
                     <ul className="description-list">
                         {descriptionItems.map((item, index) => (
                             <li key={index}>

@@ -34,7 +34,10 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
  */
 
 
- background: linear-gradient(90deg, #dbe6eb, #b9d2e1);
+/*  background: linear-gradient(90deg, #dbe6eb, #b9d2e1);
+ */
+
+  background-color: #01161E;
 
 }
 
@@ -77,9 +80,11 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 20px;
+  padding: 20px;
+
   text-align: center;
   font-size: 18px;
+  color: white;
 }
 
 .centered-content-body {
@@ -93,7 +98,8 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 .button-section{
   margin-top: 1em;
 
-
+  border-radius: 50px;
+  border-radius: 50px;
   background-color: #2DAAE2;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 
@@ -104,15 +110,12 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   margin-top: 1em;
 }
 
-.retos-img{
-  margin-top: -35px;
 
-}
 
 
 .cambio-img{
-  margin-top: 45px;
   width: 100%;
+  margin-top: 50px;
 }
 
 
@@ -183,7 +186,13 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 
 
+.collage-img{
 
+  margin-top: 10px;
+  width: 550px;
+  height: 350px;
+  border-radius: 20px;
+}
 
 
 

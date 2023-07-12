@@ -7,7 +7,7 @@ import HomeImg3 from "../../../assets/HomeImage/HomeImg5.jpg";
 export const HeaderImage = ({ title, motivationText, presentation1, presentation2, buttonText }) => {
     return (
         <div className="homeImg-container-header" style={{
-            backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.4)), url(${HomeImg3})`
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.6)), url(${HomeImg3})`
         }}>
             <div className="col-lg-12 col-md-12 col-sm-12 img-text-header">
                 <div className="motivation-text title-img-text-header">

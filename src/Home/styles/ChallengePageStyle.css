@@ -1,0 +1,84 @@
+
+
+.container{
+
+    height: 100%;
+}
+
+.background-sections-challenges{
+
+    border-top: 12px solid white;
+    border-right: 0px solid white;
+    border-bottom: 0px solid white;
+    border-left: 12px solid white;
+    height: 330px;
+}
+
+
+.button-section-challenge{
+
+    background-color: #2DAAE2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 50px;
+
+}
+
+
+
+.button-section-card{
+
+    background-color: #2DAAE2;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    color: white;
+    border-radius: 50px;
+    width: 150px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: -50px;
+
+
+}
+
+.card{
+
+    border-color: white;
+    border-width: 2px;
+
+font-size: 18px;
+    color: white;
+
+    background-color: rgb(57, 63, 66, 0.7) !important;
+
+
+}
+
+
+
+.CardChallengeImg {
+
+}
+
+
+.background-sections-img {
+
+
+
+
+}
+
+.card-title {
+
+    font-size: 42px;
+    margin-left: -20px;
+
+}
+
+.card-text {
+
+    font-size: 20px;
+}
+
+.text-body-secondary {
+    /* Estilos para .text-body-secondary */
+}

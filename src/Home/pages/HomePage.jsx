@@ -13,6 +13,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Fade } from "react-awesome-reveal";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import cambioFisico1 from "../../../src/assets/physicChange/cambioFisico1.png"
+import collageStudio from "../../../src/assets/studioImages/collageStudio.png"
 import videoPresentation from "../../../src/assets/video/presentationStudio.mp4"
 import { Link } from 'react-router-dom';
 
@@ -34,7 +35,7 @@ export const HomePage = () => {
  */                buttonText="Unete ahora"></HeaderImage>
 
             <div>
-                <div  id="top" className="startRadial">
+                <div id="top" className="startRadial">
 
                     <div className="row">
 
@@ -43,26 +44,15 @@ export const HomePage = () => {
                             <div className="centered-content">
                                 <span>Descubre cómo puedes transformar tu cuerpo y tu salud.</span>
                                 <Link to="/studiotrainings">
-                                <button className="button-section">Saber más</button>
+                                    <button className="button-section">Saber más</button>
                                 </Link>
                             </div>
-                            <img className="cambio-img" src={cambioFisico1} alt="" />
-                        </div>
-
-
-                        <div className="col-6 pt-5 background-sections">
-                            <h2>Encuentra tu Entrenamiento</h2>
-                            <div className="centered-content">
-                                <span>Rutinas de ejercicios personalizados para cualquier entorno: casa, gimnasio o al aire libre</span>
-                                <button className="button-section">Ver Videos</button>
-
-                            </div>
-                            <div className="centered-content">
-                                <video
+                            <video
                                     autoPlay
                                     loop
                                     muted
                                     style={{
+                                        marginLeft:"30px",
                                         width: "90%",
                                         borderRadius: "20px"
                                     }} // Asegúrate de establecer el ancho y el alto como lo desees
@@ -71,8 +61,18 @@ export const HomePage = () => {
                                     Tu navegador no soporta el elemento de video.
                                 </video>
 
-                            </div>
+                        </div>
 
+
+                        <div className="col-6 pt-5 background-sections">
+                            <h2>Encuentra tu Entrenamiento</h2>
+                            <div className="centered-content">
+                                <span>Rutinas de ejercicios personalizados para casa, gimnasio o al aire libre</span>
+                                <button className="button-section">Ver Videos</button>
+
+                                <img className="collage-img" src={collageStudio} alt="" />
+
+                            </div>
 
                         </div>
 
@@ -85,8 +85,13 @@ export const HomePage = () => {
                             <h2>Programas y Retos</h2>
                             <div className="centered-content">
                                 <span>¡Únete a nosotros y acepta el desafío de llevar tu forma física al siguiente nivel!</span>
-                                <button className="button-section">¡Me apunto!</button>
-                                <img className="retos-img" src={PASTILLARETO} alt="" style={{ width: 450 }} />
+                                <Link to="/challengesPage">
+
+                                    <button className="button-section">¡Me apunto!</button>
+                                </Link>
+{/*                                 <img className="retos-img" src={PASTILLARETO} alt="" style={{ width: 400, marginTop:1}} />
+ */}                                <img className="cambio-img" src={cambioFisico1} alt="" />
+
                             </div>
                         </div>
 
@@ -113,7 +118,7 @@ export const HomePage = () => {
                             <div className="centered-content">
 
                                 <span>Recursos diseñados para proporcionarte un apoyo constante en tu viaje hacia la salud y la forma física</span>
-                                
+
                                 <button className="button-section">Descubrir</button>
                             </div>
 

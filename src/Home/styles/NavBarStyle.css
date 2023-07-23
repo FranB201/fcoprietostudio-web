@@ -25,6 +25,10 @@
         color: #1F92D1;  
     }
 
+    .nav-link1:hover {
+        color: #1F92D1;  
+    }
+
     @media (max-width: 768px) {
         .navbar-horizontal, .navbar-toggler {
             display: block;
@@ -54,7 +58,7 @@
     }
 
     .NavBar-logo {
-        height: 55px; /* Aumenta el tamaño del logo */
+        height: 100px; /* Aumenta el tamaño del logo */
     }
   
   }

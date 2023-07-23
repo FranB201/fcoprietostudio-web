@@ -3,7 +3,7 @@ import { HomeLayout } from "../layout/HomeLayout";
 import { CardVertical } from "../components";
 import studioCard from "../../../src/assets/cardImages/studioCard.png";
 import grupxpressCard from "../../../src/assets/cardImages/grupoXpresSala.jpg";
-import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP.jpg";
+import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP2.jpg";
 import studio1 from "../../../src/assets/backgrounds/studio1.jpg";
 import appStudio from "../../../src/assets/nutritionImages/appStudio.png";
 import '../../../src/Home/styles/StudiosTrainingStyle.css';
@@ -26,7 +26,7 @@ export const StudiosTrainings = () => {
                         <div id="studio" className="col-lg-4 col-md-6 col-sm-12">
                             <CardVertical
                                 imageUrl={studioCard}
-                                title="Studio"
+                                title="Studio 3XL"
                                 descriptionItems={[
                                     "Instalacion totalmente equipada",
                                     "Tecnología de última generación en fitness",

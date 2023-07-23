@@ -13,7 +13,8 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Fade } from "react-awesome-reveal";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import cambioFisico1 from "../../../src/assets/physicChange/cambioFisico1.png"
-import collageStudio from "../../../src/assets/studioImages/videosCollage.png"
+import collageStudio from "../../../src/assets/studioImages/collageStudio2.png"
+import Newsletter from "../../../src/assets/articlesImages/Newsletters.png"
 import videoPresentation from "../../../src/assets/video/presentationStudio.mp4"
 import { Link } from 'react-router-dom';
 
@@ -113,7 +114,7 @@ export const HomePage = () => {
 
                     <div className="row">
 
-                        <div className="col-6  pt-5 background-sections">
+                        <div className="col-6  pt-5 background-sections-articles">
                             <h2>ARTICULOS</h2>
                             <div className="centered-content">
 
@@ -122,17 +123,19 @@ export const HomePage = () => {
                                 <button className="button-section">Descubrir</button>
                             </div>
 
+                            <img className="background-sections-img" src={Newsletter} alt="" style={{ width: 500 }} />
+
 
                         </div>
 
 
-                        <div className="col-6 pt-5 background-sections">
+                        <div className="col-6 pt-5 background-sections-articles">
                             <h2>DICEN DE MI</h2>
                             <div className="centered-content">
 
                                 <span>Porque nos encantan los comentarios de nuestros clientes</span>
 
-                                <div>
+                                <div className="reviews">
                                     <CardReview />
 
                                 </div>

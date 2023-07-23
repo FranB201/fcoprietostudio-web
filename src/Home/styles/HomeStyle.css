@@ -33,7 +33,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 /*  background: linear-gradient(90deg, #dbe6eb, #b9d2e1);
  */
 
-  background-color: #01161E;
+  background-color: #020a0d;
 
 }
 
@@ -70,6 +70,22 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   border-left: 12px solid white;
   height: 650px;
 
+}
+
+
+.background-sections-articles {
+
+  border-top: 12px solid white;
+  border-right: 0px solid white;
+  border-bottom: 0px solid white;
+  border-left: 12px solid white;
+  height: 800px;
+
+}
+
+.reviews{
+
+  margin-top: 120px;
 }
 
 .centered-content {
@@ -195,6 +211,11 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 
 .background-sections {
   position: relative;
+}
+
+.articles-section{
+
+  height: 800px;
 }
 
 

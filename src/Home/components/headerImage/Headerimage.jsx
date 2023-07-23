@@ -4,6 +4,7 @@ import CheckIcon from '@mui/icons-material/Check';
 import "../../styles/HeaderImage.css"
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import HomeImg3 from "../../../assets/HomeImage/HomeImg5.jpg";
+import { ModalForm } from '../ModalForm/ModalForm';
 export const HeaderImage = ({ title, motivationText, presentation1, presentation2, buttonText }) => {
     return (
         <div className="homeImg-container-header" style={{
@@ -20,12 +21,8 @@ export const HeaderImage = ({ title, motivationText, presentation1, presentation
                 <div className="motivation-text footer-img-sub-text ">
                     {presentation2}
                 </div>
-                <div className="button-container">
-                    <a className="join-now text-button-motivation-text">
-                        <span className="text-button-join-now">unete ahora</span>
-                        <ArrowRightAltIcon fontSize="large" />
-                    </a>
-                </div>
+                <ModalForm></ModalForm>
+
             </div>
         </div>
     );

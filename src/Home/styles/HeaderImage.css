@@ -62,30 +62,7 @@
     transition: all .3s; /* Para un cambio suave de tamaño y color al pasar el mouse */
 }
 
-.button-container {
-    display: flex;
-    justify-content: flex-start; /* Centrado a la izquierda */
-    margin-top: 20px; /* Añadido para dar un poco de espacio entre el texto y el botón */
-    width: 120%;
-}
 
-a.join-now {
-    align-items: center;
-    justify-content: center;
-    width: auto;  
-    height: 50px;
-    padding: 10px 5px; /* Añadido para dar un poco de espacio en los lados del texto del botón */
-    background: linear-gradient(90deg, #65bce8, #306485);
-    transition: all .3s;
-    border-radius: 32px;
-    text-decoration: none; /* Para eliminar la línea debajo del texto del enlace */
-    margin-right: auto;
-}
-
-a.join-now:hover {
-    background: linear-gradient(90deg, #306485, #65bce8); /* Intercambia los colores al pasar el mouse */
-    color: #ffffff; /* Cambia el color del texto al pasar el mouse */
-}
 .text-button-motivation-text {
     color: #ffffff;
 }

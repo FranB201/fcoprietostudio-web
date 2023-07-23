@@ -16,12 +16,17 @@ export const ModalForm = () => {
     const [name, setName] = React.useState('');
     const [phone, setPhone] = React.useState('');
     const [surname, setSurname] = React.useState('');
+    const [submitted, setSubmitted] = React.useState(false);
     const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
+    const handleClose = () => {
+        setOpen(false);
+        setSubmitted(false);
+    }
     const handleSubmit = (e) => {
         e.preventDefault();
         // Aquí puedes manejar el envío del formulario
         console.log({email, name, phone});
+        setSubmitted(true);
       }
   
     // Este efecto se ejecutará cuando se monte el componente
@@ -99,6 +104,7 @@ export const ModalForm = () => {
                 </span>
               </div>
             </form>
+            {submitted && <p style={{ color: 'green' }}>¡Solicitud enviada correctamente!</p>}
           </Box>
         </Modal>
       </div>

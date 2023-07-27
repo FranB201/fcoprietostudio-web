@@ -51,7 +51,7 @@ export const StudiosTrainings = () => {
                         <div id="personaltraining" className="col-lg-4 col-md-6 col-sm-12">
                             <CardVertical
                                 imageUrl={personaltrainingCard}
-                                title="Entrenamiento personal"
+                                title="Entrenamiento Personal"
                                 descriptionItems={[
                                     "Entrenamiento personalizado 100%",
                                     "Resultado garantizado",
@@ -83,6 +83,9 @@ export const StudiosTrainings = () => {
                         <img src={appStudio} alt="Descripción de la imagen" className="img-fluid" />
                     </div>
                 </div>
+
+
+                
 
                 
             </div>

@@ -33,7 +33,7 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 /*  background: linear-gradient(90deg, #dbe6eb, #b9d2e1);
  */
 
-  background-color: #020a0d;
+  background-color: #000101;
 
 }
 
@@ -109,7 +109,6 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
 }
 
 .button-section{
-  margin-top: 1em;
 
   border-radius: 50px;
   border-radius: 50px;

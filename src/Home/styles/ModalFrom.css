@@ -1,10 +1,11 @@
 
-.button-container {
+/*.button-container {
     display: flex;
-    justify-content: flex-start; /* Centrado a la izquierda */
-    margin-top: 20px; /* Añadido para dar un poco de espacio entre el texto y el botón */
+    justify-content: flex-start; 
+    margin-top: 20px; 
     width: 120%;
-}
+
+}*/
 
 a.join-now {
     align-items: center;
@@ -31,5 +32,10 @@ a.join-now:hover {
     color: white;
     border-radius: 50px;
 
+
+    position: absolute;
+    top: 50%;  /* Centra el botón verticalmente */
+    left: 50%; /* Centra el botón horizontalmente */
+    transform: translate(-50%, -50%); 
 
 }

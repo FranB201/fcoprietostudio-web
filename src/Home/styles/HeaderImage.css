@@ -66,7 +66,11 @@
 .text-button-motivation-text {
     color: #ffffff;
 }
+.carousel-image{
+    height: 500px !important;
+    object-fit: cover !important; 
 
+}
   @media (min-width: 200px) and (max-width: 410px) {
   
   }

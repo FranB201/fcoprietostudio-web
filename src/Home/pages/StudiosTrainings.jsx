@@ -7,6 +7,8 @@ import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP2
 import studio1 from "../../../src/assets/backgrounds/studio1.jpg";
 import appStudio from "../../../src/assets/nutritionImages/appStudio.png";
 import '../../../src/Home/styles/StudiosTrainingStyle.css';
+import { FormOnly } from "../components/ModalForm/FormOnly";
+
 
 
 export const StudiosTrainings = () => {
@@ -83,9 +85,11 @@ export const StudiosTrainings = () => {
                         <img src={appStudio} alt="Descripción de la imagen" className="img-fluid" />
                     </div>
                 </div>
+                <div className="mt-5">
+                     <FormOnly />
 
 
-                
+                </div>
 
                 
             </div>

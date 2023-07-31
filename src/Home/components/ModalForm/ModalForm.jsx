@@ -100,15 +100,15 @@ export const ModalForm = () => {
           color: 'white',
           boxShadow: 24,
           p: 4,
-          width: '100%',
-          position: 'relative', // Añadimos esta propiedad para poder posicionar absolutamente el ícono de cierre
+/*           width: '100%',
+ */          position: 'relative', // Añadimos esta propiedad para poder posicionar absolutamente el ícono de cierre
         }}>
           <CloseIcon onClick={handleClose} sx={{ position: 'absolute', right: 20, top: 20, cursor: 'pointer', color: 'white' }} />
           <Typography id="modal-modal-title" variant="h4" component="h2" gutterBottom sx={{ color: 'white', fontWeight:'bold' }}>
             ¿AÚN NO ERES MIEMBRO?
           </Typography>
           <Typography id="modal-modal-description" variant="h5" component="p" gutterBottom sx={{ color: 'white' }}>
-            Consigue ya, tu semana gratis de entrenamiento.
+            Consigue ya tu semana gratis de entrenamiento.
           </Typography>
 
           <form className="form" onSubmit={handleSubmit} style={{

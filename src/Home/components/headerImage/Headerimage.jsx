@@ -17,19 +17,19 @@ export const HeaderImage = ({ title, motivationText, presentation1, presentation
 <div  className="carousel slide position-relative" data-bs-ride="carousel">
     <div className="carousel-inner">
     
-        <div className="carousel-item active" data-bs-interval="2000">
+        <div className="carousel-item active" data-bs-interval="5000">
             <img src={AITORFIN} className='w-100 carousel-image'/>
         </div>
 
-        <div className="carousel-item" data-bs-interval="2000">
+        <div className="carousel-item" data-bs-interval="5000">
             <img src={JOSEFIN} className='w-100 carousel-image'/>
         </div>
 
-        <div className="carousel-item" data-bs-interval="2000">
+        <div className="carousel-item" data-bs-interval="5000">
             <img src={OLGAFIN} className='w-100 carousel-image'/>
         </div>
 
-        <div className="carousel-item" data-bs-interval="2000">
+        <div className="carousel-item" data-bs-interval="5000">
             <img src={STUDIO2} className='w-100 carousel-image'/>
         </div>
     </div>

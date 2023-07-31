@@ -3,7 +3,7 @@ import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import prietoStudioDB from '../../../api/prietoStudioDB';
 
-export const Formulario = () => {
+export const FormOnly = () => {
   const [email, setEmail] = React.useState('');
   const [name, setName] = React.useState('');
   const [phone, setPhone] = React.useState('');
@@ -31,13 +31,13 @@ export const Formulario = () => {
     });
   }
 
-  return (
-    <div>
+   return (
+    <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <Typography id="modal-modal-title" variant="h4" component="h2" gutterBottom>
         ¿AÚN NO ERES MIEMBRO?
       </Typography>
-      <Typography id="modal-modal-description" variant="h5" component="p" gutterBottom>
-        Consigue ya, tu semana gratis de entrenamiento.
+      <Typography id="modal-modal-description" variant="h5" component="p" gutterBottom  color="primary">
+        Consigue ya tu semana gratis de entrenamiento.
       </Typography>
 
       <form className="form" onSubmit={handleSubmit} style={{
@@ -46,12 +46,12 @@ export const Formulario = () => {
         alignItems: 'stretch',
         gap: '1em',
         marginTop: '1em',
-        width: '80%',
+        width: '60%',
       }}>
-        <TextField label="Correo" variant="filled" color="secondary" value={email} onChange={e => setEmail(e.target.value)} required />
-        <TextField label="Nombre" variant="filled" color="secondary" value={name} onChange={e => setName(e.target.value)} required />
-        <TextField label="Apellido" variant="filled" color="secondary" value={surname} onChange={e => setSurname(e.target.value)} required />
-        <TextField label="Teléfono" variant="filled" color="secondary" value={phone} onChange={e => setPhone(e.target.value)} required />
+        <TextField label="Correo" variant="filled" color="secondary" value={email} onChange={e => setEmail(e.target.value)} required InputLabelProps={{ style: { color: 'white' } }} InputProps={{ style: { color: 'white' } }} fullWidth />
+        <TextField label="Nombre" variant="filled" color="secondary" value={name} onChange={e => setName(e.target.value)} required InputLabelProps={{ style: { color: 'white' } }} InputProps={{ style: { color: 'white' } }} fullWidth />
+        <TextField label="Apellido" variant="filled" color="secondary" value={surname} onChange={e => setSurname(e.target.value)} required InputLabelProps={{ style: { color: 'white' } }} InputProps={{ style: { color: 'white' } }} fullWidth />
+        <TextField label="Teléfono" variant="filled" color="secondary" value={phone} onChange={e => setPhone(e.target.value)} required InputLabelProps={{ style: { color: 'white' } }} InputProps={{ style: { color: 'white' } }} fullWidth />
         <div style={{ display: 'flex', justifyContent: 'center', marginTop: '0.5em' }}>
           <span style={{ marginRight: '10px' }}>
             <button type="submit" className="buttonSend" variant="contained" >Enviar</button>
@@ -61,7 +61,7 @@ export const Formulario = () => {
           </span>
         </div>
       </form>
-      {submitted && <p style={{ color: 'green' }}>¡Solicitud enviada correctamente!</p>}
+      {submitted && <p style={{ color: 'green', textAlign: 'center' }}>¡Solicitud enviada correctamente!</p>}
     </div>
   );
 }

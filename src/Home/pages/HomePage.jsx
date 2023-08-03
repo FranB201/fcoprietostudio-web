@@ -4,7 +4,7 @@ import { CardVertical, CardReview, CardVerticalFact, Carousel } from "../compone
 import studioCard from "../../../src/assets/cardImages/studioCard.png"
 import grupxpressCard from "../../../src/assets/cardImages/grupoXpresSala.jpg"
 import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP.jpg"
-import HomeImg3 from "../../../src/assets/HomeImage/HomeImg3.png"
+import HomeImg3 from "../../../src/assets/HomeImage/HomeImg31.png"
 import WarningIcon from '@mui/icons-material/Warning';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
@@ -31,14 +31,14 @@ export const HomePage = () => {
 
 
 
-            <div className="homeImg-container" style={{ backgroundImage: `url(${HomeImg3})` }}>
+<div className="homeImg-container" style={{ '--imagen-de-fondo': `url(${HomeImg3})` }}>
                 <div className="col-lg-12 col-md-12 col-sm-12 img-text">
                     <div className="motivation-text title-img-text">
                         Ángel Di Maria dijo...
                     </div>
                     <span className="motivationSentence motivation-text">  'El dolor pasa, el sudor se seca, el cansancio termina. Pero hay algo que nunca desaparecerá: la satisfacción de haberlo logrado.'  </span>
                     <div className="motivation-text footer-img-text">
-                        Soy Francisco Prieto y entreno gente.
+                        Soy Francisco Prieto,
                     </div>
                     <div className="motivation-text footer-img-sub-text">
                         Y si tú quieres te ayudaré a que tú también lo logres.
@@ -64,7 +64,7 @@ export const HomePage = () => {
                         <div id="studio" className="col-lg-4 col-md-6 col-sm-12">
                             <CardVertical
                                 imageUrl={studioCard}
-                                title="Studio"
+                                title="Studio 3XL"
                                 descriptionItems={[
                                     "Instalacion totalmente equipada",
                                     "Tecnología de última generación en fitness",
@@ -89,7 +89,7 @@ export const HomePage = () => {
                         <div id="personaltraining" className="col-lg-4 col-md-6 col-sm-12">
                             <CardVertical
                                 imageUrl={personaltrainingCard}
-                                title="Entrenamiento personal"
+                                title="Entrenamiento Personal"
                                 descriptionItems={[
                                     "Entrenamiento personalizado 100%",
                                     "Resultado garantizado",
@@ -214,19 +214,16 @@ export const HomePage = () => {
                         <h1>HOLA</h1>
                         <span className="sub-hola">¡Contacta conmigo hoy para comenzar tu transformación!</span>
                     </div>
+                    
                 </div>
 
+
                 <div id="contacto" className="row hola-subcontainerBody">
-                    <div className="col-lg-12 hola-img-container">
 
-                        <Carousel/>
-
-                    </div>
-                    <div className="col-lg-12 info-hola">
-                    <hr className="thick-white-line"></hr>
+                <hr className="thick-white-line"></hr>
                     <span className="sub-hola-contacto">
                         <MailOutlineIcon style={{ color: 'white', marginRight: '10px' }}/>
-                        ¿Necesitas más información? Escríbenos a <br /><strong>hola@franciscoprietostudio.es</strong>
+                        Escríbenos a <br /><strong>hola@franciscoprietostudio.es</strong>
                     </span>
                     <hr className="thick-white-line"></hr>
                     <span className="sub-hola-contacto">
@@ -234,6 +231,9 @@ export const HomePage = () => {
                         ¿Prefieres una conversación directa? <br />Llámanos al  
                         <strong> 693 02 32 21</strong>
                     </span>
+                 
+                    <div className="col-lg-12 info-hola">
+                   
                 </div>
 
 

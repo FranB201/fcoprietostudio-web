@@ -73,17 +73,30 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   }
 }
 
-
 .homeImg-container {
+  position: relative;
   width: 100%;
   height: 65vh;
-  /* Ajusta la altura a tu necesidad */
+}
 
+.homeImg-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: var(--imagen-de-fondo);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-
+  opacity: 0.7;  /* Ajusta este valor a tu preferencia */
 }
+
+.homeImg-container .img-text {
+  position: relative;
+}
+
 
 
 
@@ -93,6 +106,8 @@ background: radial-gradient(circle, rgba(56,166,226,1) 10%, rgba(31,146,209,1) 2
   /* Asegúrate de que la altura sea automática para mantener las proporciones de la imagen */
   object-fit: cover;
   /* Esto hará que la imagen se ajuste a su contenedor mientras mantiene sus proporciones */
+
+
 }
 
 

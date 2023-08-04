@@ -21,7 +21,7 @@ export const StudiosTrainings = () => {
                 <div className="container ">
                     <div id="comoEmpezar" className="row">
                         <div className="col-12 mt-lg-5 h1CardverticalS">
-                            <h1>PROGRAMAS PRESENCIALES</h1>
+                            <h2>Programas Presenciales</h2>
                         </div>
                     </div>
                     <div className="row gx-5 mt-lg-5 card-section" >

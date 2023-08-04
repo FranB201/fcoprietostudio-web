@@ -13,7 +13,7 @@ import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Fade } from "react-awesome-reveal";
 import LocalPhoneIcon from '@mui/icons-material/LocalPhone';
 import cambioFisico1 from "../../../src/assets/physicChange/cambioFisico1.png"
-import collageStudio from "../../../src/assets/studioImages/collage.png"
+import collageStudio from "../../../src/assets/studioImages/collage2.png"
 import Newsletter from "../../../src/assets/articlesImages/Newsletters.png"
 import videoPresentation from "../../../src/assets/video/presentationStudio.mp4"
 import { Link } from 'react-router-dom';
@@ -64,9 +64,11 @@ export const HomePage = () => {
 
 
                         <div className="col-6 pt-5 background-sections">
-                            <h2>Encuentra tu Entrenamiento</h2>
+                            <h2>Encuentra Tu Entrenamiento</h2>
                             <div className="centered-content">
-                                <button className="button-section">Ver Videos</button>
+                                <Link to="/videostrainings">
+                                    <button className="button-section">Ver Videos</button>
+                                </Link>
 
                                 <img className="collage-img" src={collageStudio} alt="" />
 
@@ -80,7 +82,7 @@ export const HomePage = () => {
                     <div className="row">
 
                         <div className="col-6 pt-5 background-sections">
-                            <h2>Progamas</h2>
+                            <h2>Programas</h2>
                             <div className="centered-content">
                                 <Link to="/challengesPage">
 

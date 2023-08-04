@@ -3,6 +3,7 @@ import { HomePage } from "../pages/HomePage"
 import { NutritionPage } from "../pages/NutritionPage";
 import { StudiosTrainings } from "../pages/StudiosTrainings";
 import { ChallengesPage } from "../pages/ChallengesPage";
+import { VideosTrainingPage } from "../pages/VideosTrainingPage";
 
 
 export const HomeRoutes = () => {
@@ -15,6 +16,8 @@ export const HomeRoutes = () => {
             <Route path="/nutricion" element={ <NutritionPage/> } />
 
             <Route path="/studiotrainings" element={ <StudiosTrainings/> } />
+
+            <Route path="/videostrainings" element={ <VideosTrainingPage/> } />
 
             <Route path="/challengesPage" element={ <ChallengesPage/> } />
             

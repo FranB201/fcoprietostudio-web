@@ -17,7 +17,7 @@ export const NutritionPage = () => {
                     <div className="row pb-5">
 
                         <div className=" pt-5 background-sections-nutrition">
-                            <h1>NUTRICIÓN</h1>
+                            <h2>Nutrición</h2>
                             <div className="centered-content">
                                 <h3>Descubre el valor nutricional de los alimentos y como sacar ventaja de ello.</h3>
                                 <button className="button-section-nutrition mt-5">¡Empezar mi plan hoy!</button>

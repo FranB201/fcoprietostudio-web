@@ -17,7 +17,7 @@ export const ChallengesPage = () => {
                 <div className="startRadial">
                     <div id="title" className="row pt-2">
                         <div className="col-12 mt-lg-5 .background-sections-challenges">
-                            <h1>PROGRAMAS Y RETOS</h1>
+                            <h2>Programas</h2>
                             <div className="centered-content">
                                 <h3>Retos que te motivan a superarte.</h3>
                                 <button className="button-section-challenge mt-5">¡Empezar mi plan hoy!</button>

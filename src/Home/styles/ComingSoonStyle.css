@@ -21,13 +21,15 @@ margin-top: 20px;
 
 
 .container-proximamente {
-
-    transform: rotate(-5deg);
-    background-color: black;
-    position: relative;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-5deg);
+  z-index: 1;
+    background-color: rgb(92, 90, 90);
     overflow: hidden;
     height: 100px;
-    width: 110%;
+    width: 120%;
     margin-top: 6em;
   
   }

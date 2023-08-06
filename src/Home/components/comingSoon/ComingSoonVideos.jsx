@@ -8,8 +8,8 @@ import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 export const ComingSoonVideos = () => {
     return (
 
-        <div className="col-lg-6 find-work-out">
-            <div className="banner-container">
+        <div className="col-lg-12 find-work-out">
+            <div>
 
                 <div className="container-proximamente">
                     <span className="texto-proximamente">
@@ -20,9 +20,6 @@ export const ComingSoonVideos = () => {
                         <div><span>PRÓXIMAMENTE</span> <WarningIcon className="warningIconBanner" style={{ fontSize: 70 }} /></div>
                         <div><span>PRÓXIMAMENTE</span></div>
                     </span>
-                </div>
-                <div className="play-icon-container">
-                    <PlayArrowIcon className="play-icon" style={{ fontSize: 200 }} />
                 </div>
             </div>
         </div>

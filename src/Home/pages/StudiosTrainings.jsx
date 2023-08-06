@@ -85,7 +85,7 @@ export const StudiosTrainings = () => {
                         <img src={appStudio} alt="Descripción de la imagen" className="img-fluid" />
                     </div>
                 </div>
-                <div className="mt-5">
+                <div className="mt-5" id="form-contact">
                      <FormOnly />
 
 

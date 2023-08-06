@@ -25,10 +25,10 @@ export const NavBar = () => {
                     <a className="nav-link1" href="#contacto">Hola</a>
                 </Box>
                 <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' }, justifyContent: 'center' }}>
-                    <a className="nav-link como-empezar" href="#comoEmpezar">Como empezar</a>
+                    <a className="nav-link como-empezar" href="/studiotrainings">Como empezar</a>
                 </Box>
                 <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' }, justifyContent: 'center' }}>
-                    <a className="nav-link" href="#entrenamientos">Entrenamientos</a>
+                    <a className="nav-link" href="/videostrainings">Entrenamientos</a>
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'center', flex: 1 }}>
                 <Link to="/">
@@ -38,10 +38,10 @@ export const NavBar = () => {
                 </Link>               
                 </Box>
                 <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' }, justifyContent: 'center' }}>
-                    <a className="nav-link dicen-de-mi" href="#dicenDeMiSection">Dicen de mi</a>
+                    <a className="nav-link dicen-de-mi" href="#Dicen-De-Mi">Dicen de mi</a>
                 </Box>
                 <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' }, justifyContent: 'center' }}>
-                    <a className="nav-link" href="#contacto">Contacto</a>
+                    <a className="nav-link" href="/studiotrainings#form-contact">Contacto</a>
                 </Box>
                 <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' }, justifyContent: 'flex-end' }}>
                     <a className="nav-link" href="#acceso">Acceso</a>

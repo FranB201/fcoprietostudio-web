@@ -4,6 +4,7 @@ import '../../../src/Home/styles/NutritionPageStyle.css';
 import healthyFood from "../../../src/assets/nutritionImages/healthyFood.jpeg";
 import { Fade } from "react-awesome-reveal";
 
+import { ModalForm } from '../components/ModalForm/ModalForm';
 
 
 
@@ -20,7 +21,7 @@ export const NutritionPage = () => {
                             <h2>Nutrición</h2>
                             <div className="centered-content">
                                 <h3>Descubre el valor nutricional de los alimentos y como sacar ventaja de ello.</h3>
-                                <button className="button-section-nutrition mt-5">¡Empezar mi plan hoy!</button>
+                                <ModalForm></ModalForm>
 
 
 

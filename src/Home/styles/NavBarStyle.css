@@ -1,4 +1,12 @@
-    .navbar-horizontal, .navbar-toggler {
+    
+    .Same-line{
+
+        margin-top: 1.5em; /* Ajusta este valor según tu necesidad */
+
+    }   
+   
+   
+   .navbar-horizontal, .navbar-toggler {
         display: none;
     }
 
@@ -22,12 +30,14 @@
         text-decoration: none;
         cursor: pointer;
         padding-left: 5em;
+
     }
 
     .dicen-de-mi {
         margin-left: 1em; /* Ajusta este valor según tu necesidad */
+
     }
-    
+
     
 
     .nav-link:hover {

@@ -4,10 +4,11 @@ import "../../styles/HeaderImage.css"
 import { ModalForm } from '../ModalForm/ModalForm';
 
 
-import AITORFIN from '../../../../src/assets/HomeImage/homeimg5.jpg';
-import JOSEFIN from '../../../../src/assets/studioImages/studio2.jpg';
-import OLGAFIN from '../../../../src/assets/HomeImage/homeimg5.jpg';
+import homeImg from '../../../../src/assets/HomeImage/homeimg5.jpg';
 import STUDIO2 from '../../../../src/assets/studioImages/studio2.jpg';
+import entradaImg from '../../../../src/assets/HomeImage/entradaCentro.jpg';
+
+
 export const HeaderImage = ({ title, motivationText, presentation1, presentation2, buttonText }) => {
     return (
 <div className="carousel-container" style={{ position: 'relative' }}>     
@@ -16,15 +17,15 @@ export const HeaderImage = ({ title, motivationText, presentation1, presentation
     {title}
     
         <div className="carousel-item active" data-bs-interval="5000">
-            <img src={AITORFIN} className='w-100 carousel-image'/>
+            <img src={homeImg} className='w-100 carousel-image'/>
         </div>
 
         <div className="carousel-item" data-bs-interval="5000">
-            <img src={JOSEFIN} className='w-100 carousel-image'/>
+            <img src={STUDIO2} className='w-100 carousel-image'/>
         </div>
 
         <div className="carousel-item" data-bs-interval="5000">
-            <img src={OLGAFIN} className='w-100 carousel-image'/>
+            <img src={entradaImg} className='w-100 carousel-image'/>
         </div>
 
         <div className="carousel-item" data-bs-interval="5000">

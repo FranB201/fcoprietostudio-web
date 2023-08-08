@@ -10,26 +10,26 @@ import { ComingSoonVideos } from "../components";
 export const VideosTrainingPage = () => {
 
     const videos = [
-        { title: "Video 1", description: "Descripción breve del video 1.", thumbnail: VideoImg1 },
-        { title: "Video 2", description: "Descripción breve del video 2.", thumbnail: VideoImg2 },
-        { title: "Video 3", description: "Descripción breve del video 3.", thumbnail: VideoImg3 },
-        { title: "Video 4", description: "Descripción breve del video 3.", thumbnail: VideoImg4 },
-        { title: "Video 5", description: "Descripción breve del video 3.", thumbnail: VideoImg5 },
-        { title: "Video 6", description: "Descripción breve del video 3.", thumbnail: VideoImg1 },
+        { title: "Video 1", description: "Descripción breve del video 1.", category: "Categoría 1", thumbnail: VideoImg1 },
+        { title: "Video 2", description: "Descripción breve del video 2.", category: "Categoría 1", thumbnail: VideoImg2 },
+        { title: "Video 3", description: "Descripción breve del video 3.", category: "Categoría 1", thumbnail: VideoImg3 },
+        { title: "Video 4", description: "Descripción breve del video 3.", category: "Categoría 1", thumbnail: VideoImg4 },
+        { title: "Video 5", description: "Descripción breve del video 3.", category: "Categoría 1", thumbnail: VideoImg5 },
+        { title: "Video 6", description: "Descripción breve del video 3.", category: "Categoría 1", thumbnail: VideoImg1 },
     ];
 
     return (
         <HomeLayout>
             <div className="startRadial">
-                <div className="row pb-5">
+                <div className="row">
                     <div className="pt-5 background-sections-nutrition">
                         <h2>Entrenamientos</h2>
                         <div className="centered-content">
-                            <h3>Eleva Tu Entrenamiento con Nuestras Guías en Video</h3>
+                            <h3>Eleva tu entrenamiento con nuestras guías en video</h3>
                         </div>
                     </div>
                 </div>
-                <div className="p-5"  style={{ position: 'relative' }}>
+                <div className="px-5 pb-4" style={{ position: 'relative' }}>
                     <Grid container spacing={5}>
                         {videos.map((video, index) => (
                             <Grid item xs={12} sm={6} md={4} key={index}>
@@ -48,13 +48,16 @@ export const VideosTrainingPage = () => {
                                             <Typography variant="body2" color="text.secondary">
                                                 {video.description}
                                             </Typography>
+                                            <Typography variant="body2" color="text.secondary">
+                                                {video.category}
+                                            </Typography>
                                         </CardContent>
                                     </CardActionArea>
                                 </Card>
                             </Grid>
                         ))}
                     </Grid>
-                    <ComingSoonVideos/>
+                    <ComingSoonVideos />
                 </div>
             </div>
         </HomeLayout>

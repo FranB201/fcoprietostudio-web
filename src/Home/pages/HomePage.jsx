@@ -126,7 +126,7 @@ export const HomePage = () => {
 
 
                         <div className="col-6 pt-5 background-sections-articles" id="Dicen-De-Mi">
-                            <h2>Dicen de mi</h2>
+                            <h2>Dicen De Mi</h2>
                             <div className="centered-content">
 
 

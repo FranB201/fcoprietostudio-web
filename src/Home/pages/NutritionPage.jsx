@@ -1,7 +1,7 @@
 import React from 'react'
 import { HomeLayout } from "../layout/HomeLayout"
 import '../../../src/Home/styles/NutritionPageStyle.css';
-import healthyFood from "../../../src/assets/nutritionImages/healthyFood.jpeg";
+import healthyFood from "../../../src/assets/nutritionImages/healthyFood.jpg";
 import { Fade } from "react-awesome-reveal";
 
 import { ModalForm } from '../components/ModalForm/ModalForm';

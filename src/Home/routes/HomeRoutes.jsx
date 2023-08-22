@@ -5,6 +5,7 @@ import { StudiosTrainings } from "../pages/StudiosTrainings";
 import { ChallengesPage } from "../pages/ChallengesPage";
 import { VideosTrainingPage } from "../pages/VideosTrainingPage";
 import { InfoContactPage } from "../pages/InfoContactPage";
+import { LoginPage } from "../pages/LoginPage";
 
 
 export const HomeRoutes = () => {
@@ -23,6 +24,8 @@ export const HomeRoutes = () => {
             <Route path="/challengesPage" element={ <ChallengesPage/> } />
 
             <Route path="/InfoContact" element={ <InfoContactPage/> } />
+
+            <Route path="/login" element={ <LoginPage/> } />
             
             <Route path="/*" element={ <Navigate to="/" /> } />
 

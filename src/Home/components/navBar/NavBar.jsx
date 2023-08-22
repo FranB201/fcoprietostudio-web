@@ -71,7 +71,7 @@ export const NavBar = () => {
 
                 </Box>
                 <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' }, justifyContent: 'flex-end' }}>
-                    <a className="nav-link Same-line" href="#acceso">Acceso</a>
+                <Link className="nav-link Same-line" to="/login">Acceso</Link>
                 </Box>
             </Toolbar>
         </AppBar>

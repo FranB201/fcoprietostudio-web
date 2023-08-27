@@ -1,7 +1,6 @@
-import { MenuOutlined } from "@mui/icons-material"
-import { AppBar, Grid, IconButton, Toolbar, Typography, Box } from "@mui/material"
-import { styled } from "@mui/system";
-import MenuIcon from '@mui/icons-material/Menu';
+
+import { AppBar, Toolbar, Box } from "@mui/material"
+
 import "../../styles/NavBarStyle.css";
 import logo from "../../../../src/assets/logo/logoClasico.png";
 import { Link } from 'react-router-dom';
@@ -60,8 +59,8 @@ export const NavBar = () => {
                     <Link className="nav-link Same-line" to="/videostrainings">Entrenamientos</Link>
                 </Box>
                 <Link to="/" className="NavBar-logo-link" onClick={scrollToTop}>
-        <img src={logo} alt="logo" className="NavBar-logo" />
-    </Link>
+                <img src={logo} alt="logo" className="NavBar-logo" />
+                </Link>
                 <Box sx={{ flex: 1, display: { xs: 'none', md: 'block' }, justifyContent: 'center' }}>
                     
                 <a className="nav-link dicen-de-mi Same-line" href="#Dicen-De-Mi" onClick={() => handleSectionClick('Dicen-De-Mi')}>Dicen de mi</a>

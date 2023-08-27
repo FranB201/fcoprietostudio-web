@@ -99,6 +99,18 @@
 
 }
   @media (min-width: 200px) and (max-width: 410px) {
+
+    .sentence{
+        font-size: 25px;
+    
+    }
+    .title-img-text-header{
+        margin-top: 9px;
+    }
+    .footer-img-text-header{
+        font-size: 17px;
+
+    }
   
   }
   

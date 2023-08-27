@@ -1,97 +1,86 @@
-    
-    .Same-line{
+.Same-line {
+  margin-top: 1.5em; /* Ajusta este valor según tu necesidad */
+}
 
-        margin-top: 1.5em; /* Ajusta este valor según tu necesidad */
+.navbar-horizontal,
+.navbar-toggler {
+  display: none;
+}
+.navbar-horizontal,
+.navbar-toggler {
+  display: none;
+}
+.nav-link {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 1em;
+  padding-right: 1em; 
+}
 
-    }   
-   
-   
-   .navbar-horizontal, .navbar-toggler {
-        display: none;
-    }
+.nav-link1 {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  padding-left: 5em;
+}
 
-    
-    
+.dicen-de-mi {
+  margin-left: 1em; /* Ajusta este valor según tu necesidad */
+}
 
-    .navbar-horizontal, .navbar-toggler {
-        display: none;
-    }
-    .nav-link {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-        padding-left: 1em; /* Ajusta este valor según tu necesidad */
-        padding-right: 1em; /* Ajusta este valor según tu necesidad */
-    
-    }
+.nav-link:hover {
+  color: #1f92d1;
+}
 
-    .nav-link1 {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-        padding-left: 5em;
+.nav-link1:hover {
+  color: #1f92d1;
+}
 
-    }
-
-    .dicen-de-mi {
-        margin-left: 1em; /* Ajusta este valor según tu necesidad */
-
-    }
-
-    
-
-    .nav-link:hover {
-        color: #1F92D1;  
-    }
-
-    .nav-link1:hover {
-        color: #1F92D1;  
-    }
-
-    @media (max-width: 768px) {
-        .navbar-horizontal, .navbar-toggler {
-            display: block;
-        }
-    }
-
-/*     @media (max-width: 768px) {
-        .navbar-toggler {
-            display: block;
-        }
-    } */
-
-    @media (min-width: 768px) {
-        .navbar-horizontal {
-            display: block;
-        }
-    }
-
-
-
-  
-  @media (min-width: 1024px) and (max-width: 1999px) {
-    .nav-link {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .NavBar-logo {
-        height: 60px; /* Aumenta el tamaño del logo */
-    }
-  
+@media (min-width: 390px) and (max-width: 500px) {
+  .navbar-horizontal {
+    display: block;
   }
-  
-  @media  (min-width: 2000px) and (max-width: 4000px) {
-    .nav-link {
-        color: white;
-        text-decoration: none;
-        cursor: pointer;
-        padding: 1.5rem 5rem
-    }
-
-    .NavBar-logo {
-        height: 55px; /* Aumenta el tamaño del logo */
-    }
-    
+  .NavBar-logo {
+    height: 65px;
+    padding-left: 50px;
   }
+
+}
+
+/* Estilo para pantallas pequeñas (móviles en modo horizontal y tabletas en modo vertical) */
+@media (min-width: 501px) and (max-width: 768px) {
+  .navbar-horizontal,
+  .navbar-toggler {
+    display: block;
+  }
+}
+
+/* Estilo para pantallas medianas (tabletas en modo horizontal, pequeños ordenadores) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .NavBar-logo {
+    height: 60px;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1999px) {
+    .NavBar-logo {
+      height: 60px;
+    }
+  }
+
+@media (min-width: 2000px) and (max-width: 4000px) {
+  .nav-link {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    padding: 1.5rem 5rem;
+  }
+}
+
+

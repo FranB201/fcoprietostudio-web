@@ -10,3 +10,5 @@ export * from './headerImage/Headerimage';
 export * from './nutritionForm/NutritionForm';
 export * from './scrollToTop/ScrollToTop';
 export * from './ModalForm/ModalForm';
+export * from './login/Login';
+export * from './login/SingUp';

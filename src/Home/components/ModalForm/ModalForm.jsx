@@ -2,12 +2,10 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
-import Button from '@mui/material/Button';
 import CloseIcon from '@mui/icons-material/Close';
 import TextField from '@mui/material/TextField'; // Importa el componente TextField de Material UI
 import prietoStudioDB from '../../../api/prietoStudioDB';
-
+import "../../styles/ModalFormStyle.css"
 
 
 
@@ -75,14 +73,11 @@ export const ModalForm = () => {
 
   return (
     <div>
-      <button className="button-section-nutrition mt-5" onClick={handleOpen}>¡Empezar mi plan hoy!</button>
+      <div>
+        <button className="button-section-nutrition " onClick={handleOpen}>¡Empezar mi plan hoy!</button>
+      </div>
 
-      {/*<div className="button-container">
-          <a onClick={handleOpen} className="join-now text-button-motivation-text">
-            <span className="text-button-join-now">unete ahora</span>
-            <ArrowRightAltIcon fontSize="large" />
-          </a>
-        </div>*/}
+
 
       <Modal
         open={open}

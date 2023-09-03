@@ -6,10 +6,6 @@ import EstefaniaReview from '../../../../src/assets/reviewImages/EstefaniaReview
 import NoeliaReview from '../../../../src/assets/reviewImages/NoeliaReview.png';
 import RaulReview from '../../../../src/assets/reviewImages/RaulReview.png';
 
-
-
-
-
 export const CardReview = () => {
     return (
 

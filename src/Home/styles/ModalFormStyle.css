@@ -1,0 +1,12 @@
+.button-section-nutrition{
+    margin-top: 5%;
+
+}
+
+@media (min-width: 200px) and (max-width: 410px) {
+    .button-section-nutrition{
+        margin-top: -10;
+    }
+
+}
+  

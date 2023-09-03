@@ -2,6 +2,9 @@
   color: white;
 }
 
+.startRadial{
+  background-color: #000101;
+}
 .home-layout-background {
   background-color: #000101;
 }
@@ -98,10 +101,10 @@
   object-fit: cover;
 }
 
-.card-section {
+/* .card-section {
   padding: 0 15% 0 15%;
 }
-
+ */
 .encuentraTuEntrenamiento-container {
   background-color: #104e66;
 }
@@ -327,9 +330,9 @@
 
 /* Estilo para pantallas moviles */
 @media (min-width: 411px) and (max-width: 500px) {
-  .card-section {
+/*   .card-section {
     padding: 0px 12% 0 12%;
-  }
+  } */
 
   .motivationSentence {
     font-size: 15px !important;
@@ -384,9 +387,9 @@
 
 /* Estilo para pantallas pequeñas (móviles en modo horizontal y tabletas en modo vertical) */
 @media (min-width: 481px) and (max-width: 768px) {
-  .card-section {
+/*   .card-section {
     padding: 45px 12% 0 12%;
-  }
+  } */
 
   .container-button-motivation-text {
     width: 100%;
@@ -409,7 +412,7 @@
 
   .card-section {
     padding: 1% 12% 10% 10%;
-  }
+  } 
 
   .motivationSentence {
     font-size: 30px;
@@ -417,6 +420,10 @@
 
   .title-img-text {
     font-size: 15px;
+  }
+
+  .startRadial{
+    padding-top: 45px;
   }
 }
 
@@ -429,9 +436,7 @@
     width: 100%;
   }
 
-  .card-section {
-    padding: 15px 12% 0 5%;
-  }
+
 
   .dicenDeMi-Title {
     margin-top: 45px;
@@ -452,9 +457,7 @@
     font-size: 34px;
   }
 
-  .card-section {
-    padding: 15px 12% 0 5%;
-  }
+
 
   .title-img-text {
     font-size: 15px;
@@ -463,21 +466,29 @@
   .dicenDeMi-Title {
     margin-top: 45px;
   }
+  .collage-img{
+    width: 70%;
+  }
 }
 
 @media (min-width: 1400px) and (max-width: 1999px) {
   .motivationSentence {
     font-size: 34px;
   }
-
-  @media (min-width: 100px) and (max-width: 767px) {
-    .navbar-horizontal,
-    .navbar-toggler {
-      display: block;
-    }
+  .collage-img{
+    width: 70%;
   }
+
+
 }
 
+
+@media (min-width: 100px) and (max-width: 767px) {
+  .navbar-horizontal,
+  .navbar-toggler {
+    display: block;
+  }
+}
 @media (min-width: 200px) and (max-width: 410px) {
   .container-button-motivation-text {
     width: 100%;
@@ -533,9 +544,7 @@
     margin-left: 15px;
   }
 
-  .card-section {
-    padding: 0px 12% 0 12%;
-  }
+/* å */
 
   .rezise:hover .h1Cardvertical h1::after,
   .rezise:hover .h1EncuentraTu h1::after {

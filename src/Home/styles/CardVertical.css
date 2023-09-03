@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 
 .card-wrapper {
   position: relative;
@@ -8,7 +8,6 @@
   /* Ajusta según sea necesario */
   margin: auto;
   transition: transform 0.3s;
-
 }
 
 .card-wrapper:hover {
@@ -21,12 +20,9 @@
   transform: scale(1.05);
 }
 
-
 .image-Card {
   width: "30%";
   height: "auto";
-
-
 }
 
 .div-image {
@@ -35,17 +31,16 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
-
 }
 
-
-.card, .card-body {
+.card,
+.card-body {
   background-color: transparent !important;
 }
 
 .content-Card {
   text-align: left;
-  background-color: transparent; /* Cambiado de black a transparent */
+  background-color: transparent;
   padding-top: 1em;
   padding-bottom: 3em;
   color: #ffffff;
@@ -53,8 +48,6 @@
   border: 1px solid #fff;
   height: 340px;
 }
-
-
 
 .card-title-programas {
   text-align: center;
@@ -68,8 +61,6 @@
   max-width: 100%;
   width: auto;
   margin: 25px 0px 25px 0px;
-
-
 }
 
 .h1Cardvertical {
@@ -80,7 +71,6 @@
   margin-bottom: 5%;
   letter-spacing: -0.05em;
   color: #ffffff;
-
 }
 
 .card {
@@ -89,7 +79,6 @@
 }
 
 .h1EncuentraTu {
-
   text-align: center;
   margin-top: 5%;
 }
@@ -103,11 +92,10 @@
 }
 
 .image-container {
-  background-color: #DCE0E4;
+  background-color: #dce0e4;
   border-radius: 25px;
   overflow: hidden;
   margin-bottom: 10%;
-
 }
 
 .image-container img {
@@ -115,18 +103,17 @@
   height: auto;
 }
 
-
 .card-title {
-  color: #EFF6E0; /* verde claro */
+  color: #eff6e0; /* verde claro */
 }
 
 .card-wrapper:hover {
   border-radius: 25px;
-  background-color: #85B8CB; /* azul medio */
+  background-color: #85b8cb; /* azul medio */
 }
 
 .card:hover .card-title {
-  color: #EFF6E0; /* oscuro negro */
+  color: #eff6e0; /* oscuro negro */
 }
 
 .description-list {
@@ -153,9 +140,7 @@
 @media (max-width: 575.98px) {
   .card-wrapper {
     margin-top: 4em;
-    /* Ajusta este valor según lo que necesites */
     margin-bottom: 4em;
-    /* Ajusta este valor según lo que necesites */
   }
 
   .card-title {
@@ -179,9 +164,12 @@
     margin-bottom: 10%;
     letter-spacing: -0.05em;
     color: #ffffff;
-
   }
 
+  @media (min-width: 1024px) and (max-width: 1999px) {
+   
+  }
 
-  
+  @media (min-width: 2000px) and (max-width: 4000px) {
+  }
 }

@@ -111,12 +111,28 @@
         font-size: 17px;
 
     }
+    .motivation-text {
+
+        margin: 15px 0;
+        
+    
+    }
   
   }
   
   /* Estilo para pantallas moviles */
   @media (min-width: 411px) and (max-width: 500px) {
-  
+    .sentence{
+        font-size: 25px;
+    
+    }
+    .title-img-text-header{
+        margin-top: 9px;
+    }
+    .footer-img-text-header{
+        font-size: 17px;
+
+    }
   
   }
   

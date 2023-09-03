@@ -1,7 +1,7 @@
 import React from 'react'
 import { HomeLayout } from '../layout/HomeLayout'
 import entradaCentro from '../../../src/assets/HomeImage/entradaCentro.jpg'
-
+import "../styles/InfoContactPageStyle.css"
 export const InfoContactPage = () => {
   return (
     <HomeLayout>
@@ -10,7 +10,7 @@ export const InfoContactPage = () => {
 
           <div className="row pb-5">
 
-            <div className=" pt-5 background-sections-nutrition">
+            <div className=" pt-5 ">
               <h2>Contacto</h2>
               <div className="centered-content">
                 <h3>¿Aún con dudas?</h3>
@@ -31,46 +31,26 @@ export const InfoContactPage = () => {
           <div className='row'>
 
 
-            <div className=" pt-5 background-sections-nutrition-borderless" style={{
-              backgroundImage: `linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.5)), url(${entradaCentro})`,
-              backgroundSize: '100%',
+          <div className="background-sections-nutrition-borderless" style={{
+              backgroundImage: `linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.9)), url(${entradaCentro})`,
+              backgroundSize: 'cover',  // Cambiado a 'cover' para que la imagen cubra el espacio disponible sin distorsionar
               backgroundRepeat: 'no-repeat',
               backgroundPosition: 'center'
             }}>
 
-              <h2>Horario del centro</h2>
-              <table>
-                <tbody>
-                  <tr>
-                    <td>Lunes</td>
-                    <td>8:00 - 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Martes</td>
-                    <td>8:00 - 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Miércoles</td>
-                    <td>8:00 - 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Jueves</td>
-                    <td>8:00 - 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Viernes</td>
-                    <td>8:00 - 18:00</td>
-                  </tr>
-                  <tr>
-                    <td>Sábado</td>
-                    <td>9:00 - 14:00</td>
-                  </tr>
-                  <tr>
-                    <td>Domingo</td>
-                    <td>Cerrado</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="container d-flex justify-content-center">
+                  <div class="list-group mx-auto custom-width">
+                      <a href="#" class="list-group-item list-group-item-action active">Horario del centro</a>
+                      <a href="#" class="list-group-item list-group-item-action">Lunes: 8:00 - 18:00</a>
+                      <a href="#" class="list-group-item list-group-item-action">Martes: 8:00 - 18:00</a>
+                      <a href="#" class="list-group-item list-group-item-action">Miércoles: 8:00 - 18:00</a>
+                      <a href="#" class="list-group-item list-group-item-action">Jueves: 8:00 - 18:00</a>
+                      <a href="#" class="list-group-item list-group-item-action">Viernes: 8:00 - 18:00</a>
+                      <a href="#" class="list-group-item list-group-item-action">Sábado: 9:00 - 14:00</a>
+                      <a href="#" class="list-group-item list-group-item-action disabled">Domingo: Cerrado</a>
+                  </div>
+              </div>
+
 
             </div>
 

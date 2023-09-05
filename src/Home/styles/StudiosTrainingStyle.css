@@ -60,8 +60,10 @@
   @media (min-width: 1024px) and (max-width: 1999px) {
 
     .card-section {
-        padding: 15px 12% 0 5%;
+        padding: 5em 12% 0 5%;
       } 
+
+   
       
   }
   

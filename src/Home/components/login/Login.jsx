@@ -38,7 +38,7 @@ export const Login = ({ onClickCreateAccount }) => {
                 </div>
 
                 <div onClick={onClickCreateAccount} className="form-check d-flex justify-content-center mb-4">
-                  <label className="form-check-label" for="form2Example33">
+                  <label className="form-check-label" >
                     Crear cuenta
                   </label>
                 </div>
@@ -47,7 +47,7 @@ export const Login = ({ onClickCreateAccount }) => {
                   type="submit"
                   className="btn btn-primary btn-block mb-4"
                 >
-                  Sign up
+                  Registraste
                 </button>
 
               </form>

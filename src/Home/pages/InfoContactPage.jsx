@@ -38,16 +38,16 @@ export const InfoContactPage = () => {
               backgroundPosition: 'center'
             }}>
 
-              <div class="container d-flex justify-content-center">
-                  <div class="list-group mx-auto custom-width">
-                      <a href="#" class="list-group-item list-group-item-action active">Horario del centro</a>
-                      <a href="#" class="list-group-item list-group-item-action">Lunes: 8:00 - 18:00</a>
-                      <a href="#" class="list-group-item list-group-item-action">Martes: 8:00 - 18:00</a>
-                      <a href="#" class="list-group-item list-group-item-action">Miércoles: 8:00 - 18:00</a>
-                      <a href="#" class="list-group-item list-group-item-action">Jueves: 8:00 - 18:00</a>
-                      <a href="#" class="list-group-item list-group-item-action">Viernes: 8:00 - 18:00</a>
-                      <a href="#" class="list-group-item list-group-item-action">Sábado: 9:00 - 14:00</a>
-                      <a href="#" class="list-group-item list-group-item-action disabled">Domingo: Cerrado</a>
+              <div className="container d-flex justify-content-center">
+                  <div className="list-group mx-auto custom-width">
+                      <a href="#" className="list-group-item list-group-item-action active">Horario del centro</a>
+                      <a href="#" className="list-group-item list-group-item-action">Lunes: 8:00 - 18:00</a>
+                      <a href="#" className="list-group-item list-group-item-action">Martes: 8:00 - 18:00</a>
+                      <a href="#" className="list-group-item list-group-item-action">Miércoles: 8:00 - 18:00</a>
+                      <a href="#" className="list-group-item list-group-item-action">Jueves: 8:00 - 18:00</a>
+                      <a href="#" className="list-group-item list-group-item-action">Viernes: 8:00 - 18:00</a>
+                      <a href="#" className="list-group-item list-group-item-action">Sábado: 9:00 - 14:00</a>
+                      <a href="#" className="list-group-item list-group-item-action disabled">Domingo: Cerrado</a>
                   </div>
               </div>
 

@@ -3,7 +3,7 @@ import { CardReview, HeaderImage } from "../components";
 import manzanaabs from "../../../src/assets/cardImages/manzanaabs.png";
 import cambioFisico1 from "../../../src/assets/physicChange/cambioFisico1.png";
 import collageStudio from "../../../src/assets/studioImages/collage2.png";
-import Newsletter from "../../../src/assets/articlesImages/Newsletters.png";
+import Newsletter from "../../../src/assets/articlesImages/newsletter.png";
 import videoPresentation from "../../../src/assets/video/presentationStudio.mp4";
 import { Link } from "react-router-dom";
 

@@ -38,15 +38,15 @@ export const InfoContactPage = () => {
               backgroundPosition: 'center'
             }}>
 
-              <div className="container d-flex justify-content-center">
-                  <div className="list-group mx-auto custom-width">
+              <div className="container d-flex justify-content-center mt-5">
+                  <div className="list-group mx-auto custom-width mt-5">
                       <a href="#" className="list-group-item list-group-item-action active">Horario del centro</a>
-                      <a href="#" className="list-group-item list-group-item-action">Lunes: 8:00 - 18:00</a>
-                      <a href="#" className="list-group-item list-group-item-action">Martes: 8:00 - 18:00</a>
-                      <a href="#" className="list-group-item list-group-item-action">Miércoles: 8:00 - 18:00</a>
-                      <a href="#" className="list-group-item list-group-item-action">Jueves: 8:00 - 18:00</a>
-                      <a href="#" className="list-group-item list-group-item-action">Viernes: 8:00 - 18:00</a>
-                      <a href="#" className="list-group-item list-group-item-action">Sábado: 9:00 - 14:00</a>
+                      <a href="#" className="list-group-item list-group-item-action">Lunes: 06:00am - 13:00pm | 17:00pm - 21:00pm</a>
+                      <a href="#" className="list-group-item list-group-item-action">Martes: 06:00am - 13:00pm | 17:00pm - 21:00pm</a>
+                      <a href="#" className="list-group-item list-group-item-action">Miércoles: 06:00am - 13:00pm | 17:00pm - 21:00pm</a>
+                      <a href="#" className="list-group-item list-group-item-action">Jueves: 06:00am - 13:00pm | 17:00pm - 21:00pm</a>
+                      <a href="#" className="list-group-item list-group-item-action">Viernes: 06:00am - 13:00pm | 17:00pm - 21:00pm</a>
+                      <a href="#" className="list-group-item list-group-item-action">Sábado: Cerrado</a>
                       <a href="#" className="list-group-item list-group-item-action disabled">Domingo: Cerrado</a>
                   </div>
               </div>

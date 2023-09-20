@@ -89,13 +89,11 @@ export const HomePage = () => {
                         </button>
                         <h2>Gracias por visitar nuestra página web,</h2>
 
+                        <br></br>
+                      
+
                         <h4>
-                            Nos encontramos de vacaciones de verano desde el 14 de agosto hasta el 3 de septiembre.
-                        </h4>
-                        <h4>Estaremos encantados de atenderte a la vuelta.
-                        </h4>
-                        <h4>
-                            ¡Estar atentos!, Estamos trabajando en una nueva web con muchas novedades.
+                            ¡Estad atentos!, Estamos trabajando en una nueva web con muchas novedades.
                         </h4>
 
                     </div>

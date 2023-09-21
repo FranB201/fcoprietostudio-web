@@ -4,8 +4,8 @@ import "../../styles/CardVertical.css";
 import "../../styles/HeaderImage.css";
 import { ModalForm } from '../ModalForm/ModalForm';
 
-import homeImg from '../../../../src/assets/HomeImage/homeImg5.jpg';
-import STUDIO2 from '../../../../src/assets/HomeImage/entradaCentro.jpg';
+import homeImg from '../../../../src/assets/HomeImage/homeImg5_.jpg';
+import STUDIO2 from '../../../../src/assets/HomeImage/entradaCentro_.jpg';
 import entradaImg from '../../../../src/assets/studioImages/studio2.jpg';
 
 export const HeaderImage = ({ title, motivationText, presentation1, presentation2, buttonText }) => {
@@ -30,7 +30,10 @@ export const HeaderImage = ({ title, motivationText, presentation1, presentation
                 <h3 className="motivation-text title-img-text-header">{title}</h3>
                 <p className="motivation-text sentence">{motivationText}</p>
                 <p className="motivation-text footer-img-text-header">{presentation1}</p>
+            
+            <ModalForm></ModalForm>
             </div>
+
         </div>
     );
 };

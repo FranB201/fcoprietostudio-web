@@ -38,7 +38,7 @@
   /* Responsive para tablets (tamaños de pantalla de entre 768px y 1024px) */
 @media screen and (min-width: 768px) and (max-width: 2500px) {
     .icons-line-nutrition {
-      flex-direction: column;
+      flex-direction: row;
       gap: 20px;
     }
     .custom-width {

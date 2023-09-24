@@ -47,8 +47,10 @@
 }
 
 .reviews {
-  margin-top: 120px;
+  margin-top: 20px;
 }
+
+
 
 .centered-content {
   display: flex;
@@ -127,7 +129,7 @@
 .collage-img {
   margin-top: 10px;
   width: 100%;
-  height: 380px;
+  height: 365px;
   border-radius: 20px;
 }
 
@@ -383,6 +385,9 @@
     padding-left: 3em;
     padding-right: 1em;
   }
+
+ 
+
 }
 
 /* Estilo para pantallas pequeñas (móviles en modo horizontal y tabletas en modo vertical) */
@@ -402,6 +407,7 @@
   .title-img-text {
     font-size: 15px !important;
   }
+
 }
 
 /* Estilo para pantallas medianas (tabletas en modo horizontal, pequeños ordenadores) */
@@ -425,6 +431,8 @@
   .startRadial{
     padding-top: 45px;
   }
+
+
 }
 
 @media (min-width: 1024px) and (max-width: 1999px) {
@@ -440,6 +448,11 @@
 
   .dicenDeMi-Title {
     margin-top: 45px;
+  }
+
+
+  .nutritionImg{
+    width: 50%;
   }
 }
 
@@ -479,6 +492,10 @@
     width: 90%;
   }
 
+  .videoStudio{
+    margin-Left: 35px
+  }
+
 
 }
 
@@ -488,7 +505,35 @@
   .navbar-toggler {
     display: block;
   }
+  .background-sections {
+    border-top: 12px solid white;
+    border-right: 0px solid white;
+    border-bottom: 0px solid white;
+    border-left: 0px solid white;
+    height: 550px;
+  }
+
+  .background-sections-articles {
+    border-top: 12px solid white;
+    border-right: 0px solid white;
+    border-bottom: 0px solid white;
+    border-left: 0px solid white;
+    height: 800px;
+  }
+
+  .videoStudio{
+    margin-Left: 20px
+  }
+
+  .nutritionImg{
+    width: 60%;
+  }
 }
+
+
+
+
+
 @media (min-width: 200px) and (max-width: 410px) {
   .container-button-motivation-text {
     width: 100%;
@@ -496,7 +541,7 @@
 
   .collage-img {
     width: 100%;
-    height: 280px;
+    height: 250px;
   }
   .footer-img-text-encuentraT {
     font-size: 16px;
@@ -513,20 +558,10 @@
   }
 
   body::-webkit-scrollbar {
-    width: 1px;
+    width: 0px;
   }
 
-  body::-webkit-scrollbar-track {
-    background: 888;
-  }
 
-  body::-webkit-scrollbar-thumb {
-    background: #888;
-  }
-
-  body::-webkit-scrollbar-thumb:hover {
-    background: #555;
-  }
 
   .container-proximamente {
     transform: rotate(-5deg);

@@ -9,7 +9,7 @@ import STUDIO2 from '../../../../src/assets/HomeImage/entradaCentro_.jpg';
 import entradaImg from '../../../../src/assets/studioImages/studio2.jpg';
 
 export const HeaderImage = ({ title, motivationText, presentation1, presentation2, buttonText }) => {
-    const images = [STUDIO2, homeImg,entradaImg];
+    const images = [homeImg,entradaImg,STUDIO2];
     const [currentIndex, setCurrentIndex] = useState(0);
     
     useEffect(() => {
@@ -17,7 +17,7 @@ export const HeaderImage = ({ title, motivationText, presentation1, presentation
         const intervalId = setInterval(() => {
             console.log('Changing Image'); // Este se imprimirá cada vez que se cambie la imagen
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-        }, 3000);
+        }, 8000);
         return () => clearInterval(intervalId);
     }, [images.length]);
 

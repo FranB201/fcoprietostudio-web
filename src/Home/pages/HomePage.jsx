@@ -29,11 +29,12 @@ export const HomePage = () => {
                 </Link>
               </div>
               <video
+                className="videoStudio"
                 autoPlay
                 loop
                 muted
                 style={{
-                  marginLeft: "30px",
+                 
                   width: "90%",
                   borderRadius: "20px"
                 }} // Asegúrate de establecer el ancho y el alto como lo desees
@@ -74,7 +75,6 @@ export const HomePage = () => {
                   className="nutritionImg background-sections-img"
                   src={manzanaabs}
                   alt=""
-                  style={{ width: 300 }}
                 />
               </div>
             </div>

@@ -386,7 +386,12 @@
     padding-right: 1em;
   }
 
- 
+ .collage-img{
+
+  width: 90%;
+  height: auto; 
+
+}
 
 }
 

@@ -21,11 +21,11 @@ export const Footer = () => {
                   <li><a href="#studio">Studio</a></li>
                   <li><a href="#grupoxpress">Grupo Xpress</a></li>
                   <li><a href="#personaltraining">Entrenamiento personal</a></li>
-                  <li><a href="#entrenamientos">Entrenamientos</a></li>
+                  <li><a href="#entrenamientos">Entrenamiento Online</a></li>
                 </ul>
               </div>
               <div className="col-sm-6 col-md-3 item">
-                <h3>Sobre Nosotros</h3>
+                <h3>Sobre mi</h3>
                 <ul>
                   <li><a href="#">Company</a></li>
                   <li><a href="#">Team</a></li>

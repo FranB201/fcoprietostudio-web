@@ -53,6 +53,14 @@
     height: 65px;
     padding-left: 80px;
   }
+}
+
+@media (min-width: 411px) and (max-width: 500px) {
+
+  .NavBar-logo {
+    height: 65px;
+    padding-left: 90px;
+  }
 
 }
 

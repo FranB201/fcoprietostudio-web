@@ -57,7 +57,7 @@ export const HomePage = () => {
           </div>
           <div className="row">
             <div className="col-12 col-md-6 pt-5 background-sections">
-              <h2>Programas</h2>
+              <h2>Online</h2>
               <div className="centered-content">
                 <Link to="/challengesPage">
                   <button className="button-section">Descubrir</button>

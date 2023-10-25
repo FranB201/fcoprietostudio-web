@@ -24,9 +24,9 @@ export const VideosTrainingPage = () => {
                 <div className="row">
                     <div className="pt-5 background-sections-nutrition">
                         <h2>Entrenamientos</h2>
-                        <div className="centered-content">
+             {/*            <div className="centered-content">
                             <h3>Eleva tu entrenamiento con nuestras guías en video</h3>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
                 <div className="px-5 pb-4" style={{ position: 'relative' }}>

@@ -11,20 +11,20 @@ export const InfoContactPage = () => {
           <div className="row pb-5">
 
             <div className=" pt-5 ">
-              <h2>Contacto</h2>
+              <h2>Hola</h2>
               <div className="centered-content">
-                <h3>¿Aún con dudas?</h3>
-
+{/*                 <h3>¿Aún con dudas?</h3>
+ */}
 
               </div>
             </div>
 
-            <div className="icons-line-nutrition">
+      {/*       <div className="icons-line-nutrition">
           <span className="material-symbols-outlined" style={{ fontSize: 60, color: 'white' }}>call</span>
-          <span style={{ color: 'white', fontSize: '24px', marginLeft: '10px' }}>+34 693 02 32 21</span> {/* Número de teléfono */}
+          <span style={{ color: 'white', fontSize: '24px', marginLeft: '10px' }}>+34 693 02 32 21</span> 
           <span className="material-symbols-outlined" style={{ fontSize: 60, color: 'white', marginLeft: '30px' }}>email</span>
-          <span style={{ color: 'white', fontSize: '24px', marginLeft: '10px' }}>hola@franciscoprietostudio.es</span> {/* Correo electrónico */}
-        </div>
+          <span style={{ color: 'white', fontSize: '24px', marginLeft: '10px' }}>hola@franciscoprietostudio.es</span>
+        </div> */}
 
 
           </div>

@@ -9,7 +9,7 @@ import STUDIO2 from '../../../../src/assets/HomeImage/entradaCentro_.jpg';
 import entradaImg from '../../../../src/assets/studioImages/studio2.jpg';
 
 export const HeaderImage = ({ title, motivationText, presentation1, presentation2, buttonText }) => {
-    const images = [homeImg,entradaImg,STUDIO2];
+    const images = [homeImg,entradaImg];
     const [currentIndex, setCurrentIndex] = useState(0);
     
     useEffect(() => {

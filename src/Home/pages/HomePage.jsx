@@ -80,7 +80,7 @@ export const HomePage = () => {
             </div>
           </div>
           <div className="row">
-            <div className="col-12 col-md-6  pt-5 background-sections-articles">
+{/*             <div className="col-12 col-md-6  pt-5 background-sections-articles">
               <h2>Artículos</h2>
               <div className="centered-content">
                 <button className="button-section">Descubrir</button>
@@ -91,10 +91,10 @@ export const HomePage = () => {
                 src={Newsletter}
                 alt=""
               />
-            </div>
+            </div> */}
 
             <div
-              className="col-12 col-md-6 pt-5 background-sections-articles"
+              className="col-12 col-md-12 pt-5 background-sections-articles"
               id="Dicen-De-Mi"
             >
               <h2>Dicen De Mi</h2>

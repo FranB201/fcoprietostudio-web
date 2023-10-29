@@ -3,65 +3,72 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
 import CloseIcon from '@mui/icons-material/Close';
-import TextField from '@mui/material/TextField'; // Importa el componente TextField de Material UI
+import TextField from '@mui/material/TextField';
 import prietoStudioDB from '../../../api/prietoStudioDB';
-import "../../styles/ModalFormStyle.css"
+import '../../styles/ModalFormStyle.css';
 
+import Swal from 'sweetalert2';
+import withReactContent from 'sweetalert2-react-content';
 
+const initialState = {
+  open: false,
+  email: '',
+  name: '',
+  phone: '',
+  surname: '',
+  submitted: false,
+};
 
 export const ModalForm = () => {
-  const [open, setOpen] = React.useState(false);
-  const [email, setEmail] = React.useState('');
-  const [name, setName] = React.useState('');
-  const [phone, setPhone] = React.useState('');
-  const [surname, setSurname] = React.useState('');
-  const [submitted, setSubmitted] = React.useState(false);
-  const handleOpen = () => setOpen(true);
-  const handleClose = () => {
-    setOpen(false);
-    setSubmitted(false);
-  }
+  const [formData, setFormData] = React.useState(initialState);
+
+  const handleOpen = () => setFormData({ ...formData, open: true });
+  const handleClose = () => setFormData(initialState);
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes manejar el envío del formulario
-
-
-    // Definimos los datos que queremos enviar
     const data = {
-      email: email,
-      name: name,
-      phone: phone,
-      surname: surname
+      email: formData.email,
+      name: formData.name,
+      phone: formData.phone,
+      surname: formData.surname,
     };
+    const MySwal = withReactContent(Swal);
 
-    console.log(data);
-    // Enviamos la petición POST
-    prietoStudioDB.post('/submitForm', data, {
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }).then(response => {
-      console.log('Formulario enviado con éxito');
-      setSubmitted(true);
-    }).catch(error => {
-      console.error('Hubo un error al enviar el formulario: ', error);
-    });
-    
+    prietoStudioDB
+      .post('/submitForm', data, {
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      })
+      .then((response) => {
+        MySwal.fire({
+          position: 'center',
+          icon: 'success',
+          title: '¡Gracias! Pronto nos pondremos en contacto contigo',
+          showConfirmButton: false,
+          timer: 1500,
+        });
+        setFormData(initialState);
+        setFormData({ ...formData, submitted: true });
+      })
+      .catch((error) => {
+        MySwal.fire({
+          icon: 'error',
+          title: 'Oops...',
+          text: 'Algo ha ido mal!',
+          footer: 'Pongase en contacto con nostros: 693 02 32 21 ',
+        });
+        console.error('Hubo un error al enviar el formulario: ', error);
+        handleClose();
+      });
+  };
 
-
-
-
-    console.log({ email, name, phone, surname });
-    
-  }
-
-  // Este efecto se ejecutará cuando se monte el componente
   React.useEffect(() => {
     const timer = setTimeout(() => {
       handleOpen();
-    }, 20000); // Abre el modal después de 12 segundos (12000 milisegundos)
+    }, 20000);
 
-    // Limpieza en caso de que el componente se desmonte antes de que pase el tiempo
     return () => clearTimeout(timer);
   }, []);
 
@@ -71,16 +78,26 @@ export const ModalForm = () => {
     justifyContent: 'center',
   };
 
+  const commonInputProps = {
+    style: {
+      color: 'lightblue',
+      background: 'rgba(0, 0, 0, 0.4)',
+      borderRadius: '10px',
+      border: 'none',
+      paddingLeft: '10px',
+    },
+  };
+
   return (
     <div>
       <div>
-        <button className="button-section-nutrition " onClick={handleOpen}>¡Empezar mi plan hoy!</button>
+        <button className="button-section-nutrition " onClick={handleOpen}>
+          ¡Empezar mi plan hoy!
+        </button>
       </div>
 
-
-
       <Modal
-        open={open}
+        open={formData.open}
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
@@ -91,12 +108,11 @@ export const ModalForm = () => {
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          backgroundColor: 'rgba(0, 0, 0, 0.8)',
+          backgroundColor: 'rgba(0, 0, 0, 0.6)',
           color: 'white',
           boxShadow: 24,
           p: 4,
-/*           width: '100%',
- */          position: 'relative', // Añadimos esta propiedad para poder posicionar absolutamente el ícono de cierre
+          position: 'relative',
         }}>
           <CloseIcon onClick={handleClose} sx={{ position: 'absolute', right: 20, top: 20, cursor: 'pointer', color: 'white' }} />
           <Typography id="modal-modal-title" variant="h4" component="h2" gutterBottom sx={{ color: 'white', fontWeight:'bold' }}>
@@ -114,10 +130,69 @@ export const ModalForm = () => {
             marginTop: '1em',
             width: '80%',
           }}>
-            <TextField label="Correo" variant="filled" color="secondary" value={email} onChange={e => setEmail(e.target.value)} required InputLabelProps={{ style: { color: 'lightblue' } }} InputProps={{ style: { color: 'lightblue' } }} />
-            <TextField label="Nombre" variant="filled" color="secondary" value={name} onChange={e => setName(e.target.value)} required InputLabelProps={{ style: { color: 'lightblue' } }} InputProps={{ style: { color: 'lightblue' } }} />
-            <TextField label="Apellido" variant="filled" color="secondary" value={surname} onChange={e => setSurname(e.target.value)} required InputLabelProps={{ style: { color: 'lightblue' } }} InputProps={{ style: { color: 'lightblue', autoComplete: 'off' } }} />
-            <TextField label="Teléfono" variant="filled" color="secondary" value={phone} onChange={e => setPhone(e.target.value)} required InputLabelProps={{ style: { color: 'lightblue' } }} InputProps={{ style: { color: 'lightblue' } }} />
+            <TextField
+              label="Correo"
+              variant="filled"
+              color="secondary"
+              value={formData.email}
+              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              required
+              InputLabelProps={{
+                style: {
+                  color: 'lightblue',
+                },
+              }}
+              InputProps={commonInputProps}
+            />
+
+            <TextField
+              label="Nombre"
+              variant="filled"
+              color="secondary"
+              value={formData.name}
+              onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+              required
+              InputLabelProps={{
+                style: {
+                  color: 'lightblue',
+                },
+              }}
+              InputProps={commonInputProps}
+            />
+
+            <TextField
+              label="Apellido"
+              variant="filled"
+              color="secondary"
+              value={formData.surname}
+              onChange={(e) => setFormData({ ...formData, surname: e.target.value })}
+              required
+              InputLabelProps={{
+                style: {
+                  color: 'lightblue',
+                },
+              }}
+              InputProps={{
+                ...commonInputProps,
+                autoComplete: 'off',
+              }}
+            />
+
+            <TextField
+              label="Teléfono"
+              variant="filled"
+              color="secondary"
+              value={formData.phone}
+              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+              required
+              InputLabelProps={{
+                style: {
+                  color: 'lightblue',
+                },
+              }}
+              InputProps={commonInputProps}
+            />
+
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '0.5em' }}>
               <span style={{ marginRight: '10px' }}>
                 <button type="submit" className="buttonSend" variant="contained" >Enviar</button>
@@ -127,9 +202,9 @@ export const ModalForm = () => {
               </span>
             </div>
           </form>
-          {submitted && <p style={{ color: 'green' }}>¡Solicitud enviada correctamente!</p>}
+          {formData.submitted && <p style={{ color: 'green' }}>¡Solicitud enviada correctamente!</p>}
         </Box>
       </Modal>
     </div>
   );
-}
+};

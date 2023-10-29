@@ -45,9 +45,9 @@ export const InfoContactPage = () => {
                       <a href="#" className="list-group-item list-group-item-action">Martes: 06:00am - 13:00pm | 17:00pm - 21:00pm</a>
                       <a href="#" className="list-group-item list-group-item-action">Miércoles: 06:00am - 13:00pm | 17:00pm - 21:00pm</a>
                       <a href="#" className="list-group-item list-group-item-action">Jueves: 06:00am - 13:00pm | 17:00pm - 21:00pm</a>
-                      <a href="#" className="list-group-item list-group-item-action">Viernes: 06:00am - 13:00pm | 17:00pm - 21:00pm</a>
+                      <a href="#" className="list-group-item list-group-item-action">Viernes: 06:00am - 13:00pm | 17:00pm - 20:00pm</a>
                       <a href="#" className="list-group-item list-group-item-action">Sábado: Cerrado</a>
-                      <a href="#" className="list-group-item list-group-item-action disabled">Domingo: Cerrado</a>
+                      <a href="#" className="list-group-item list-group-item-action">Domingo: Cerrado</a>
                   </div>
               </div>
 

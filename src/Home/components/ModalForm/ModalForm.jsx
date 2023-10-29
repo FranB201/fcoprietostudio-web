@@ -67,7 +67,7 @@ export const ModalForm = () => {
   React.useEffect(() => {
     const timer = setTimeout(() => {
       handleOpen();
-    }, 20000);
+    }, 25000);
 
     return () => clearTimeout(timer);
   }, []);

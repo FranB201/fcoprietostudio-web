@@ -21,7 +21,6 @@ export const HeaderImage = ({ title, motivationText, presentation1, presentation
         return () => clearInterval(intervalId);
     }, [images.length]);
 
-    console.log('Rendering with currentIndex:', currentIndex); // Este se imprimirá cada vez que se renderice el componente
 
     return (
         <div className="carousel-container" style={{ position: 'relative' }}>

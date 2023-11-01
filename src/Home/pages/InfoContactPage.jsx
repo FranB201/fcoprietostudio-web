@@ -8,16 +8,24 @@ export const InfoContactPage = () => {
       <div>
         <div id="top" className="startRadial">
 
-          <div className="row pb-5">
+          <div className="row">
 
-            <div className=" pt-5 ">
+            <div className=" p-5">
               <h2>Hola</h2>
               <div className="centered-content">
-{/*                 <h3>¿Aún con dudas?</h3>
- */}
 
-              </div>
-            </div>
+            <h4>Tu Salud y Condición Física es Nuestra Prioridad</h4>
+              <p>
+                  En nuestro centro, no somos simplemente un gimnasio. Somos un equipo integrado por Entrenadores, Nutricionistas, Quiromasajistas y Fisioterapeutas, comprometidos en ofrecer un entrenamiento personalizado que atiende tus necesidades individuales.
+              </p>
+              <p>
+                  Nuestro enfoque no se basa en las tendencias pasajeras. En lugar de eso, nos tomamos el tiempo para escuchar y evaluar a cada cliente, garantizando así un plan adaptado a tus objetivos, todo ello en un entorno profesional y responsable.
+              </p>
+              <p>
+                  Este compromiso se ve respaldado por más de 30 años de experiencia en el entrenamiento personal bajo la dirección de Francisco Prieto y nuestra constante búsqueda de formación y mejoramiento.
+              </p>
+          </div>
+      </div>
 
       {/*       <div className="icons-line-nutrition">
           <span className="material-symbols-outlined" style={{ fontSize: 60, color: 'white' }}>call</span>

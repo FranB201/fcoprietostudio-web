@@ -40,7 +40,6 @@ export const Footer = () => {
               <div className="col item social">
                 <a href="https://www.instagram.com/franciscoprietostudio/"><InstagramIcon /></a>
                 <a href="https://www.facebook.com/franciscoprietostudio/?locale=es_ES"><FacebookIcon /></a>
-           
               </div>
             </div>
             <p className="copyright">Francisco Prieto Studio © 2023</p>

@@ -5,6 +5,7 @@ import grupxpressCard from "../../../src/assets/cardImages/grupoXpresSala.jpg";
 import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP2.jpg";
 import studio1 from "../../../src/assets/backgrounds/studio1.jpg";
 import appStudio from "../../../src/assets/nutritionImages/appStudio.png";
+import sixtyDays from "../../../src/assets/cardImages/PASTILLARETOsinfondo.png";
 import "../../../src/Home/styles/StudiosTrainingStyle.css";
 import { FormOnly } from "../components/ModalForm/FormOnly";
 
@@ -12,14 +13,14 @@ export const StudiosTrainings = () => {
   return (
     <HomeLayout>
       <div className="startRadial">
-        <div className="container ">
+        
           <div id="comoEmpezar" className="row">
             <div className="col-12 mt-lg-5 h1CardverticalS">
               <h2>Entrenamientos Presenciales</h2>
             </div>
           </div>
           <div className="row  mt-lg-5 card-section">
-            <div id="studio" className="col-lg-4 col-md-6 col-sm-12">
+            <div id="studio" className="col-lg-3 col-md-6 col-sm-12">
               <CardVertical
                 imageUrl={studioCard}
                 title="Studio 3XL"
@@ -33,7 +34,7 @@ export const StudiosTrainings = () => {
             </div>
             <div
               id="grupoxpress"
-              className="col-lg-4 col-md-6  col-sm-12 cardVertical-Container"
+              className="col-lg-3 col-md-6  col-sm-12 cardVertical-Container"
             >
               <CardVertical
                 imageUrl={grupxpressCard}
@@ -46,7 +47,7 @@ export const StudiosTrainings = () => {
                 ]}
               />
             </div>
-            <div id="personaltraining" className="col-lg-4 col-md-6 col-sm-12">
+            <div id="personaltraining" className="col-lg-3 col-md-6 col-sm-12">
               <CardVertical
                 imageUrl={personaltrainingCard}
                 title="Entrenamiento Personal"
@@ -58,8 +59,20 @@ export const StudiosTrainings = () => {
                 ]}
               />
             </div>
+            <div id="personaltraining" className="col-lg-3 col-md-6 col-sm-12">
+              <CardVertical
+                imageUrl={sixtyDays}
+                title="Entrenamiento Personal"
+                descriptionItems={[
+                  "Entrenamiento personalizado 100%",
+                  "Resultado garantizado",
+                  "Revisiones constantes",
+                  "Plan nutricional incluido"
+                ]}
+              />
+            </div>
           </div>
-        </div>
+        
 
         <div
           className="row"

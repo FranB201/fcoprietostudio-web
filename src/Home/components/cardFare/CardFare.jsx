@@ -1,8 +1,5 @@
 import React from 'react';
-import { HomeLayout } from "../../layout/HomeLayout";
 import './cardFare.css';
-import { calendarOutline } from 'ionicons/icons'; // Importa el ícono que necesitas
-
 
 
 function CardFare() {

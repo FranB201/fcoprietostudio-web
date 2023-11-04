@@ -38,7 +38,7 @@ export const NavBar = () => {
       className="navbar-horizontal"
       sx={{
         backgroundColor: "black",
-        height: 60,
+        height: 75,
         fontFamily: "Poppins",
         fontSize: "18px"
       }}

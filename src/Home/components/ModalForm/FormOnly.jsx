@@ -24,7 +24,6 @@ export const FormOnly = () => {
         'Content-Type': 'application/json'
       }
     }).then(response => {
-      console.log('Formulario enviado con éxito');
       setSubmitted(true);
     }).catch(error => {
       console.error('Hubo un error al enviar el formulario: ', error);
@@ -61,7 +60,7 @@ export const FormOnly = () => {
           </span>
         </div>
       </form>
-      {submitted && <p style={{ color: 'green', textAlign: 'center' }}>¡Solicitud enviada correctamente!</p>}
+    
     </div>
   );
 }

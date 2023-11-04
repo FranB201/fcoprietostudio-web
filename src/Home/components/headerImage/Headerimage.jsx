@@ -3,9 +3,7 @@ import React, { useState, useEffect } from 'react';
 import "../../styles/CardVertical.css";
 import "../../styles/HeaderImage.css";
 import { ModalForm } from '../ModalForm/ModalForm';
-
 import homeImg from '../../../../src/assets/HomeImage/homeImg5_.jpg';
-import STUDIO2 from '../../../../src/assets/HomeImage/entradaCentro_.jpg';
 import entradaImg from '../../../../src/assets/studioImages/studio2.jpg';
 
 export const HeaderImage = ({ title, motivationText, presentation1, presentation2, buttonText }) => {
@@ -13,9 +11,7 @@ export const HeaderImage = ({ title, motivationText, presentation1, presentation
     const [currentIndex, setCurrentIndex] = useState(0);
     
     useEffect(() => {
-        console.log('images.length:', images.length); // Verifica la longitud de tu array de imágenes
         const intervalId = setInterval(() => {
-            console.log('Changing Image'); // Este se imprimirá cada vez que se cambie la imagen
             setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
         }, 8000);
         return () => clearInterval(intervalId);

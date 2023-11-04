@@ -18,12 +18,46 @@ const initialState = {
   surname: '',
   submitted: false,
 };
-
+const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
+const phoneRegex = /^\d{7,14}$/;
 export const ModalForm = () => {
   const [formData, setFormData] = React.useState(initialState);
-
-  const handleOpen = () => setFormData({ ...formData, open: true });
-  const handleClose = () => setFormData(initialState);
+  const handleClose = () => {
+    setFormData(initialState);
+    setAutoOpened(false); // Restablecer el estado de autoOpened
+  };
+  const [autoOpened, setAutoOpened] = React.useState(false); // Nuevo estado para controlar si se abrió automáticamente
+  const [errors, setErrors] = React.useState({});
+  const handleOpen = () => {
+    // Solo establecer como abierto automáticamente si aún no está abierto
+    if (!formData.open) {
+      setAutoOpened(true);
+    }
+    setFormData({ ...formData, open: true });
+  };
+  const validateField = (name, value) => {
+    switch (name) {
+      case 'email':
+        if (!emailRegex.test(value)) {
+          return 'Correo electrónico inválido.';
+        }
+        break;
+      case 'phone':
+        if (!phoneRegex.test(value)) {
+          return 'Número de teléfono inválido.';
+        }
+        break;
+      default:
+        break;
+    }
+    return '';
+  };
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+    const error = validateField(name, value);
+    setErrors({ ...errors, [name]: error });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -35,7 +69,10 @@ export const ModalForm = () => {
     };
     const MySwal = withReactContent(Swal);
 
-    prietoStudioDB
+    if (Object.values(errors).some(error => error)) {
+      return;
+    } else {
+      prietoStudioDB
       .post('/submitForm', data, {
         headers: {
           'Content-Type': 'application/json',
@@ -62,15 +99,23 @@ export const ModalForm = () => {
         console.error('Hubo un error al enviar el formulario: ', error);
         handleClose();
       });
+
+    }
+
+
+    
   };
 
   React.useEffect(() => {
     const timer = setTimeout(() => {
-      handleOpen();
+      // Solo abrir automáticamente si no se ha abierto manualmente
+      if (!autoOpened) {
+        handleOpen();
+      }
     }, 25000);
 
     return () => clearTimeout(timer);
-  }, []);
+  }, [autoOpened]); // Asegúrate de añadir autoOpened como dependencia
 
   const modalStyle = {
     display: 'flex',
@@ -132,15 +177,16 @@ export const ModalForm = () => {
           }}>
             <TextField
               label="Correo"
+              name="email"
               variant="filled"
               color="secondary"
               value={formData.email}
-              onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+              onChange={handleChange}
+              error={!!errors.email}
+              helperText={errors.email || ' '}
               required
               InputLabelProps={{
-                style: {
-                  color: 'lightblue',
-                },
+                style: { color: 'lightblue' },
               }}
               InputProps={commonInputProps}
             />
@@ -180,15 +226,16 @@ export const ModalForm = () => {
 
             <TextField
               label="Teléfono"
+              name="phone"
               variant="filled"
               color="secondary"
               value={formData.phone}
-              onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+              onChange={handleChange}
+              error={!!errors.phone}
+              helperText={errors.phone || ' '}
               required
               InputLabelProps={{
-                style: {
-                  color: 'lightblue',
-                },
+                style: { color: 'lightblue' },
               }}
               InputProps={commonInputProps}
             />

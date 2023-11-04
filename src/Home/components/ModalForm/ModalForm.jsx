@@ -47,10 +47,11 @@ export const ModalForm = () => {
           icon: 'success',
           title: '¡Gracias! Pronto nos pondremos en contacto contigo',
           showConfirmButton: false,
-          timer: 1500,
+          timer: 2500,
         });
         setFormData(initialState);
         setFormData({ ...formData, submitted: true });
+        handleClose();
       })
       .catch((error) => {
         MySwal.fire({

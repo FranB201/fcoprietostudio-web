@@ -3,7 +3,9 @@ import { AppBar, Toolbar, Typography, IconButton, Box } from "@mui/material";
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import { styled } from "@mui/system";
-import "../../styles/FooterStyles.css"
+import "../../styles/FooterStyles.css";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTiktok } from '@fortawesome/free-brands-svg-icons/faTiktok';
 
 
 
@@ -40,6 +42,8 @@ export const Footer = () => {
               <div className="col item social">
                 <a href="https://www.instagram.com/franciscoprietostudio/"><InstagramIcon /></a>
                 <a href="https://www.facebook.com/franciscoprietostudio/?locale=es_ES"><FacebookIcon /></a>
+                <a href="https://www.tiktok.com/"> <FontAwesomeIcon icon={faTiktok} style={{ color: '#ffffff' }} /></a>
+    
               </div>
             </div>
             <p className="copyright">Francisco Prieto Studio © 2023</p>

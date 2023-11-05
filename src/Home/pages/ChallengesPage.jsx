@@ -5,8 +5,7 @@ import reto1 from "../../../src/assets/cardImages/PASTILLARETOsinfondo.png"
 import ropesBg from "../../../src/assets/challengeImages/ropesbackground.jpg"
 import { Height } from '@mui/icons-material';
 import { fontWeight, height } from '@mui/system';
-import CardFare from '../components/cardFare/CardFare';
-
+import CardFare from '../components/cardFare/cardFare';
 
 
 

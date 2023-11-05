@@ -6,7 +6,8 @@ import CloseIcon from '@mui/icons-material/Close';
 import TextField from '@mui/material/TextField';
 import prietoStudioDB from '../../../api/prietoStudioDB';
 import '../../styles/ModalFormStyle.css';
-
+import Checkbox from '@mui/material/Checkbox';
+import FormControlLabel from '@mui/material/FormControlLabel';
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 
@@ -17,17 +18,38 @@ const initialState = {
   phone: '',
   surname: '',
   submitted: false,
+  acceptPrivacity: false
 };
 const emailRegex = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/;
 const phoneRegex = /^\d{7,14}$/;
+
 export const ModalForm = () => {
   const [formData, setFormData] = React.useState(initialState);
+  const [errors, setErrors] = React.useState({});
+  const [autoOpened, setAutoOpened] = React.useState(false); // Nuevo estado para controlar si se abrió automáticamente
+  const MySwal = withReactContent(Swal);
   const handleClose = () => {
     setFormData(initialState);
     setAutoOpened(false); // Restablecer el estado de autoOpened
+  };  
+
+  const [checked, setChecked] = React.useState(false); // Nuevo estado para el checkbox
+
+  const handleCheckboxChange = (event) => {
+    const { checked } = event.target;
+    setChecked(checked);
+  
+    // Actualizar el estado de errores
+    if (checked) {
+      const newErrors = { ...errors };
+      delete newErrors.acceptCookies; // Asumiendo que 'acceptCookies' es la llave para el error del checkbox
+      setErrors(newErrors);
+    } else {
+      setErrors({ ...errors, acceptCookies: 'Debes aceptar la política de privacidad.' });
+    }
   };
-  const [autoOpened, setAutoOpened] = React.useState(false); // Nuevo estado para controlar si se abrió automáticamente
-  const [errors, setErrors] = React.useState({});
+  
+  
   const handleOpen = () => {
     // Solo establecer como abierto automáticamente si aún no está abierto
     if (!formData.open) {
@@ -47,6 +69,11 @@ export const ModalForm = () => {
           return 'Número de teléfono inválido.';
         }
         break;
+      case 'acceptPrivacity':
+      if (!value) {
+        return 'Debes aceptar la política de privacidad.';
+      }
+      break;
       default:
         break;
     }
@@ -67,10 +94,15 @@ export const ModalForm = () => {
       phone: formData.phone,
       surname: formData.surname,
     };
-    const MySwal = withReactContent(Swal);
-
-    if (Object.values(errors).some(error => error)) {
+ 
+    if (!checked) {
+      setErrors({ ...errors, acceptCookies: 'Debes aceptar la política de privacidad.' });
       return;
+    }
+    if (Object.values(errors).some(error => error) && !checked) {
+      let title="";
+
+       return;
     } else {
       prietoStudioDB
       .post('/submitForm', data, {
@@ -103,20 +135,7 @@ export const ModalForm = () => {
 
     }
 
-
-    
   };
-
-  React.useEffect(() => {
-    const timer = setTimeout(() => {
-      // Solo abrir automáticamente si no se ha abierto manualmente
-      if (!autoOpened) {
-        handleOpen();
-      }
-    }, 25000);
-
-    return () => clearTimeout(timer);
-  }, [autoOpened]); // Asegúrate de añadir autoOpened como dependencia
 
   const modalStyle = {
     display: 'flex',
@@ -128,11 +147,20 @@ export const ModalForm = () => {
     style: {
       color: 'lightblue',
       background: '#FFFFFF40',
-      borderRadius: '10px',
       border: 'none',
       paddingLeft: '10px',
     },
   };
+  React.useEffect(() => {
+    const timer = setTimeout(() => {
+      // Solo abrir automáticamente si no se ha abierto manualmente
+      if (!autoOpened) {
+        handleOpen();
+      }
+    }, 25000);
+
+    return () => clearTimeout(timer);
+  }, [autoOpened]); // Asegúrate de añadir autoOpened como dependencia
 
   return (
     <div>
@@ -240,17 +268,42 @@ export const ModalForm = () => {
               }}
               InputProps={commonInputProps}
             />
-
+            <FormControlLabel
+              control={
+                <Checkbox
+                  checked={checked}
+                  onChange={handleCheckboxChange}
+                  name="acceptPrivacity"
+                  color="primary"
+                  sx={{
+                    color: 'white', // Esto cambia el color cuando el checkbox no está seleccionado
+                    '&.Mui-checked': {
+                      color: 'white', // Esto cambia el color del checkbox cuando está seleccionado
+                    },
+                    '& .MuiSvgIcon-root': { // Cambia el color del borde del icono
+                      color: 'white',
+                      borderColor: 'white',
+                      '&:not(.Mui-checked)': {
+                        borderColor: 'white',
+                      },
+                    },
+                  }}
+                />
+              }
+              label="He leido y acepto la política de privacidad y el uso de mis datos para recibir la información solicitada."
+            />
+            {errors.acceptCookies && (
+              <Typography variant="caption" style={{ color: 'red', fontSize: '0.75rem' }}>
+                {errors.acceptCookies}
+              </Typography>
+            )}
+            
             <div style={{ display: 'flex', justifyContent: 'center', marginTop: '0.5em' }}>
-              <span style={{ marginRight: '10px' }}>
-                <button type="submit" className="buttonSend" variant="contained" >Enviar</button>
-              </span>
+                <button type="submit" className="buttonSendForm" variant="contained" >Enviar</button>
               <span>
-                <button onClick={handleClose} className="buttonCancel" variant="contained" >Cancelar</button>
               </span>
             </div>
           </form>
-          {formData.submitted && <p style={{ color: 'green' }}>¡Solicitud enviada correctamente!</p>}
         </Box>
       </Modal>
     </div>

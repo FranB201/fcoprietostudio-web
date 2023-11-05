@@ -1,9 +1,15 @@
+.startRadialOnline {
 
+    background-color: #000101;
+    height: 100%;
+    padding: 0px 10% 0px 10%; /* top | right | bottom | left */
+}
 
 .container{
 
     height: 100%;
 }
+
 
 .background-sections-challenges{
 

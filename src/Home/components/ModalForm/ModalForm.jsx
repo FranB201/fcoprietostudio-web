@@ -127,7 +127,7 @@ export const ModalForm = () => {
   const commonInputProps = {
     style: {
       color: 'lightblue',
-      background: 'rgba(0, 0, 0, 0.4)',
+      background: '#FFFFFF40',
       borderRadius: '10px',
       border: 'none',
       paddingLeft: '10px',
@@ -184,7 +184,7 @@ export const ModalForm = () => {
               value={formData.email}
               onChange={handleChange}
               error={!!errors.email}
-              helperText={errors.email || ' '}
+              helperText={errors.email ? errors.email : null}
               required
               InputLabelProps={{
                 style: { color: 'lightblue' },
@@ -233,7 +233,7 @@ export const ModalForm = () => {
               value={formData.phone}
               onChange={handleChange}
               error={!!errors.phone}
-              helperText={errors.phone || ' '}
+              helperText={errors.phone ? errors.phone : null}
               required
               InputLabelProps={{
                 style: { color: 'lightblue' },

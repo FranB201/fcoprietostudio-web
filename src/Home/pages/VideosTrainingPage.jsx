@@ -10,12 +10,12 @@ import { ComingSoonVideos } from "../components";
 export const VideosTrainingPage = () => {
 
     const videos = [
-        { title: "Video 1", description: "Descripción breve del video 1.", category: "Categoría 1", thumbnail: VideoImg1 },
-        { title: "Video 2", description: "Descripción breve del video 2.", category: "Categoría 1", thumbnail: VideoImg2 },
-        { title: "Video 3", description: "Descripción breve del video 3.", category: "Categoría 1", thumbnail: VideoImg3 },
-        { title: "Video 4", description: "Descripción breve del video 3.", category: "Categoría 1", thumbnail: VideoImg4 },
-        { title: "Video 5", description: "Descripción breve del video 3.", category: "Categoría 1", thumbnail: VideoImg5 },
-        { title: "Video 6", description: "Descripción breve del video 3.", category: "Categoría 1", thumbnail: VideoImg1 },
+        { title: "Cuádriceps de acero", description: "Descripción breve del video 1.", category: "Piernas", thumbnail: VideoImg1 },
+        { title: "Sentadilla, técnica perfecta", description: "", category: "Piernas", thumbnail: VideoImg2 },
+        { title: "Femoral", description: "Descripción breve del video 3.", category: "Categoría 1", thumbnail: VideoImg3 },
+        { title: "Peso muerto", description: "Ejecuta un levantamiento perfecto y aplicalo en tu día a día.", category: "Piernas", thumbnail: VideoImg4 },
+        { title: "Reto de resistencia", description: "Ponte a prueba y admira tus progresos.", category: "Retos", thumbnail: VideoImg5 },
+        { title: "Zancadas", description: "No te imaginas cuantos musculos estas trabajando.", category: "Piernas", thumbnail: VideoImg1 },
     ];
 
     return (
@@ -29,7 +29,7 @@ export const VideosTrainingPage = () => {
                         </div> */}
                     </div>
                 </div>
-                <div className="px-5 pb-4" style={{ position: 'relative' }}>
+                <div className="px-5" style={{ position: 'relative' }}>
                     <Grid container spacing={5}>
                         {videos.map((video, index) => (
                             <Grid item xs={12} sm={6} md={4} key={index}>

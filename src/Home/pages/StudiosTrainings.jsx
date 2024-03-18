@@ -5,7 +5,7 @@ import grupxpressCard from "../../../src/assets/cardImages/grupoXpresSala.jpg";
 import personaltrainingCard from "../../../src/assets/cardImages/entrenamientoP2.jpg";
 import studio1 from "../../../src/assets/backgrounds/studio1.jpg";
 import appStudio from "../../../src/assets/nutritionImages/appStudio.png";
-import sixtyDays from "../../../src/assets/cardImages/PastillaRetoCard.png";
+import sixtyDays from "../../../src/assets/cardImages/fastfit.jpg";
 import "../../../src/Home/styles/StudiosTrainingStyle.css";
 import { FormOnly } from "../components/ModalForm/FormOnly";
 
@@ -62,12 +62,12 @@ export const StudiosTrainings = () => {
             <div id="personaltraining" className="col-lg-3 col-md-6 col-sm-12">
               <CardVertical
                 imageUrl={sixtyDays}
-                title="Reto 60 días"
+                title="Fast Fit"
                 descriptionItems={[
-                  "Seguimiento nutricional",
-                  "Mediciones semanales",
-                  "Soporte y motivación",
-                  "Entrenamientos personalizados"
+                  "Clases divertidas y desafiantes",
+                  "Aptas para todos los públicos",
+                  "Enfoque integral en salud y bienestar",
+                  "Entrenamiento periodizado"
                 ]}
               />
             </div>
